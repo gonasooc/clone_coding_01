@@ -19,6 +19,7 @@ a {
 
 #header .header_top {
     height: 100px;
+    text-align: center;
 }
 
                                 
@@ -28,6 +29,7 @@ a {
     margin: 0 auto;
     background: #fff;
     overflow: hidden;
+    position: relative;
 }
 
 #header .header_middle h1 {
@@ -37,11 +39,17 @@ a {
 }
 
 #header .header_middle .search {
-    float: left;
+    /* float: left; */
     width: 420px;
     height: 30px;
     border-bottom: 2px solid #000;
-    margin-top: 18px;
+    /* margin-top: 18px; */
+    /* 처음엔 float: left;로 정렬했는데 가운데로 오는 게 맞는 거 같아서 수정 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -15px;
+    margin-left: -210px;
 }
 
 #header .header_middle .search .searchbox {
@@ -245,6 +253,13 @@ a {
 
 /* 메인 종료 */
 
+#footer .footer_wrap .footer_top_content {
+    width: 1240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
 #footer .footer_wrap .footer_top_content .banner .banner_inner {
     text-align: center;
     margin-bottom: 80px;
@@ -259,9 +274,9 @@ a {
 
 #footer .footer_wrap .footer_top_content .notice {
     width: 600px;
-    height: 200px;
-    border: 1px solid red;
+    height: 220px;
     position: relative;
+    float: left;
 }
 
 #footer .footer_wrap .footer_top_content .notice .btn_wrap {
@@ -301,12 +316,139 @@ a {
 
 #footer .footer_wrap .footer_top_content .notice .newslist li {
     margin-bottom: 15px;
-    list-style: circle;
+    margin-left: 30px;
+    position: relative;
+}
+
+#footer .footer_wrap .footer_top_content .notice .newslist li:last-child {
+    margin-bottom: 0;
 }
 
 #footer .footer_wrap .footer_top_content .notice .newslist li a {
     font-size: 15px;
     color: #000;
     letter-spacing: -1px;
+    
+}
+
+#footer .footer_wrap .footer_top_content .notice .newslist li a span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 10px;
+}
+
+
+#footer .footer_wrap .footer_top_content .help {
+    float: right;
+    width: 600px;
+    height: 220px;
+    position: relative;
+    
+}
+
+#footer .footer_wrap .footer_top_content .help h2 {
+    margin-top: 45px;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+#footer .footer_wrap .footer_top_content .help h2 strong {
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+#footer .footer_wrap .footer_top_content .help p {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 74px;
+    
+}
+
+#footer .footer_wrap .footer_top_content .help span {
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 15px;
+    /* 정렬 이슈 + before나 after로 구분선 처리 필요 */
+}
+
+#footer .footer_wrap .footer_top_content .help .btn_wrap {
+
+}
+
+#footer .footer_wrap .footer_top_content .help .btn_wrap a {
+    display: inline-block;
+    width: 95px;
+    height: 38px;
+    border: 1px solid #000;
+    font-size: 13px;
+    line-height: 38px;
+    text-align: center;
+    color: #000300;
+    margin-right: 9px;
+}
+
+#footer .footer_wrap .footer_top_content .help .sns {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#footer .footer_wrap .footer_top_content .help .sns li {
+    display: inline-block;
+    margin-left: 9px;
+}
+
+#footer .footer_wrap .footer_top_content .help .sns a {
+    display: block;
+    width: 31px;
+    height: 31px;
+    background: #000;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -99999px;
+}
+
+#footer .footer_wrap .footer_top_content .help .sns a:before {
+    content: '';
+    width: 31px;
+    height: 31px;
+    background: url("../images/spr-footer.png") no-repeat;
+    background-position: -9px -106px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* 백그라운드 이미지 정렬 이슈 체크 필요 */
+
+#footer .footer_wrap .footer_top_content .help .sns .insta:before {
+    background-position: -100px -106px;
+}
+
+#footer .footer_wrap .footer_top_content .help .sns .pin:before {
+    background-position: -218px -106px;
+}
+
+#footer .footer_wrap .footer_top_content .help .sns .youtube:before {
+    background-position: -311px -106px;
+}
+
+#footer .footer_wrap .nav {
+    margin-top: 110px;
+    margin-bottom: 40px;
+    background: #848484;
+    height: 57px;
+    text-align: center;
+}
+
+#footer .footer_wrap .nav li {
+    display: inline-block;
+}
+
+#footer .footer_wrap .nav li a {
+    display: block;
+    padding: 22px 45px;
+    color: #fff;
+    font-size: 15px;
 }
 
