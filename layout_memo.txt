@@ -1,0 +1,31 @@
+
+<div id="footer">
+	<div class="footer_wrap">
+		<div class="footer_top_content">
+			<div class="banner">
+				<div class="banner_inner">
+
+				</div>
+			</div>
+			<div class="notice">
+				<div class="btn_wrap">
+					btn btn a (마지막에 after로 clear 후 border-bottom)
+				<ul>
+
+				</div>
+
+			</div>
+			<div class="help">
+
+			</div>
+
+		<div class="footer_nav">
+
+		</div>
+		<div class="footer_bottom_cotent">
+
+		</div>
+
+		</div>
+	</div>
+</div>

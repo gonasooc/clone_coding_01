@@ -1,5 +1,9 @@
 charset "utf-8";
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -215,26 +219,94 @@ a {
 }
 
 
-
-
 #main .sticker_banner {
     width: 100%;
     height: 150px;
-    overflow: hidden;
+    margin: 140px 0;
 }
 
 #main .sticker_banner li {
-    width: 50%
+    width: 50%;
     float: left;
     height: 150px;
 }
 
-#main .sticker_banner .sticker_banner_left {
-    background: #123c2e;
-    width: 50%;
+#main .sticker_banner li:last-child:after {
+    display: block;
+    content: '';
+    clear: both;
 }
 
-#main .sticker_banner .sticker_banner_right {
-    background: #ffdf00";
+#main .sticker_banner li > a {
+    display: block;
     width: 50%;
+    height: 150px;
 }
+
+/* 메인 종료 */
+
+#footer .footer_wrap .footer_top_content .banner .banner_inner {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#footer .footer_wrap .footer_top_content .banner .banner_inner a {
+    display: inline-block;
+    width: 408px;
+    /* 간격 이슈로 원래의 이미지 크기보다 작게 조절, 차후에 체크 바람 */
+    height: 130px;
+}
+
+#footer .footer_wrap .footer_top_content .notice {
+    width: 600px;
+    height: 200px;
+    border: 1px solid red;
+    position: relative;
+}
+
+#footer .footer_wrap .footer_top_content .notice .btn_wrap {
+    padding-bottom: 22px;
+    border-bottom: 2px solid #000;
+}
+
+#footer .footer_wrap .footer_top_content .notice button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    font-size: 20px;
+    color: #000200;
+    letter-spacing: -1px;
+}
+
+#footer .footer_wrap .footer_top_content .notice .btn_news {
+    margin-right: 38px;
+}
+
+#footer .footer_wrap .footer_top_content .notice .more {
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url("../images/spr-customer.png");
+    background-position-x: -200px;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    text-indent: -99999px;
+}
+
+#footer .footer_wrap .footer_top_content .notice .newslist {
+    margin-top: 25px;
+}
+
+#footer .footer_wrap .footer_top_content .notice .newslist li {
+    margin-bottom: 15px;
+    list-style: circle;
+}
+
+#footer .footer_wrap .footer_top_content .notice .newslist li a {
+    font-size: 15px;
+    color: #000;
+    letter-spacing: -1px;
+}
+
