@@ -98,22 +98,230 @@ button {
     width: 100%;
 }
 
-#main .event_banner h3 {
+#main .event_banner {
+    padding: 16px 9px;
+}
 
+#main .event_banner h3 {
+    font-size: 19px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 13px;
 }
 
 #main .event_banner h4 {
-    
+    font-size: 14px;
+    color: #000;
+    line-height: 18px;
+}
+
+#main .event_banner a {
+    display: block;
+    padding: 22px 20px;
+    margin-bottom: 15px;
+    border-radius: 3px;
 }
 
 
 #main .event_banner .event_banner1 {
+    background: #f1d4d8 url("../images/eventbanner01.jpg") no-repeat right center;
+    background-size: 280px;
 
 }
 
 #main .event_banner .event_banner2 {
+    background: #bde8fb url("../images/evenbanner02.jpg") no-repeat right center;
+    background-size: 280px;
+}
+
+#main .best_wrap {
+    width: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+#main .best_wrap h2 {
+    margin-bottom: 20px;
+}
+
+#main .best_wrap h2 a {
+    font-size: 17px; 
+    color: #000;
+    font-weight: bold;
+}
+
+#main .best_wrap h2 a .more {
+    display: inline-block;
+    margin-left: 4px;
+    width: 11px;
+    height: 14px;
+    background: url("../images/gogo_pc.png") no-repeat;
+    background-size: 11px 14px;
+    /* border: 1px solid #000; */
+}
+
+#main .best_wrap .best_list {
+    
+}
+
+#main .best_wrap .best_list li {
+    width: 50%;
+    float: left;
+    position: relative;
+    /* border: 1px solid #000; */
+    padding: 20px 28px;
+    box-sizing: border-box;
+}
+
+#main .best_wrap .best_list li a {
+    text-align: center;
+}
+
+
+
+#main .best_wrap .best_list li a .ranking {
+    display: inline-block;
+    width: 32px;
+    height: 32px; 
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    margin-left: -35%;
+    background: #8e8e90;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 50%;
+    
+}
+
+#main .best_wrap .best_list li a .image-bg {
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    border-radius: 50%;
+    opacity: 0.03;
+    margin-left: -5em;
 
 }
+
+#main .best_wrap .best_list li a .item-img {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#main .best_wrap .best_list li a .item-name {
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 7px;
+}
+
+#main .best_wrap .best_list li a .item-price {
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+}
+
+#main .new_wrap {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#main .new_wrap h2 {
+    margin-bottom: 12px;
+}
+
+#main .new_wrap h2 a {
+    font-size: 17px; 
+    color: #000;
+    font-weight: bold;
+}
+
+#main .new_wrap h2 a .more {
+    display: inline-block;
+    margin-left: 4px;
+    width: 11px;
+    height: 14px;
+    background: url("../images/gogo_pc.png") no-repeat;
+    background-size: 11px 14px;
+    /* border: 1px solid #000; */
+}
+
+#main .new_wrap .new_list {
+
+}
+
+#main .new_wrap .new_list li {
+    float: left;
+    width: 49%;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    border: 1px solid #000;
+}
+
+#main .new_wrap .new_list li:nth-child(2) {
+    margin-right: 0;
+}
+
+#main .new_wrap .new_list li:last-child {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+#main .new_wrap .new_list li a {
+    display: block;
+    height: 200px;
+    padding: 17px 5px 17px 17px;
+}
+
+#main .new_wrap .new_list li .newbox_1 {
+    background: #e9f9b8;
+}
+
+#main .new_wrap .new_list li .newbox_2 {
+    background: #ffe1df;
+}
+
+
+#main .new_wrap .new_list li:last-child a {
+    display: block;
+    height: 130px;
+    background: #fff5da;
+    padding: 17px 5px 17px 17px;
+
+}
+
+
+/* #main .new_wrap .newbox_1 {
+    display: inline-block;
+    width: 50%;
+    background: #e9f9b8;
+}
+
+#main .new_wrap .newbox_2 {
+    display: inline-block;
+    width: 50%;
+    background: #ffe1df;
+}
+
+#main .new_wrap .newbox_3 {
+    display: inline-block;
+    width: 100%;
+    background: #fff5da;
+} */
+
 
 
 
