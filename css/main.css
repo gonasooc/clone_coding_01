@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css); */
+
+body {
+    font-family: 'Saira Condensed', 'Spoqa Han Sans Neo', 'sans-serif'; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-indent: -99999px;
+}
+
+
+/* 헤더 시작 */
+#header {
+    width: 100%;
+    height: 65px;
+    background: #fff;
+    position: relative;
+}
+
+#header .m_menu {
+    width: 52.5px;
+    height: 52.5px;
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-52%);
+    background: url("../images/m_top_menu.png") no-repeat;
+    background-size: 52.5px;
+    /* border: 1px solid #000; */
+}
+
+#header h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -26.25px;
+    margin-left: -90.75px;
+}
+
+#header h1 a {
+    display: block;
+    width: 181.5px;
+    height: 52.5px;
+    background: url("../images/m_logo.png") no-repeat;
+    background-size: 181.5px;
+    text-indent: -99999px;
+}
+
+
+#header .m_search {
+    width: 52.5px;
+    height: 52.5px;
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-52%);
+    background: url("../images/m_top_search.png") no-repeat;
+    background-size: 52.5px;
+}
+
+#header .m_cart {
+    width: 52.5px;
+    height: 52.5px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-52%);
+    background: url("../images/m_top_cart.png") no-repeat;
+    background-size: 52.5px;
+}
+
+/* 메인 시작 */
+#main {
+    width: 100%;
+}
+
+#main .visual img {
+    width: 100%;
+}
+
+#main .event_banner h3 {
+
+}
+
+#main .event_banner h4 {
+    
+}
+
+
+#main .event_banner .event_banner1 {
+
+}
+
+#main .event_banner .event_banner2 {
+
+}
+
+
+
+/* 푸터, 푸터 탑 시작 */
+#footer {
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #eaeaea;
+}
+
+#footer .footer_top {
+    width: 100%;
+    padding: 15px 10px;
+    text-align: center;
+    border-bottom: 1px solid #ebebeb;
+}
+
+#footer .footer_top .footer_menu {
+    margin: 15px 0;
+}
+
+#footer .footer_top .footer_menu li {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+
+#footer .footer_top .footer_menu li:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #a9aaaf;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    margin-top: -7px;
+}
+
+#footer .footer_top .footer_menu li:nth-child(4) a {
+    color: #575e6e;
+}
+
+#footer .footer_top .footer_menu li:last-child {
+    margin-right: 0;
+}
+
+#footer .footer_top .footer_menu li:last-child:after {
+    display: none;
+}
+
+#footer .footer_top .footer_menu li a {
+    color: #a9aaaf;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#footer .footer_top h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #06000e;
+    margin-bottom: 13px;
+}
+
+#footer .footer_top p {
+    font-size: 12px;
+    color: #a9aaaf;
+    margin-bottom: 7px;
+}
+
+#footer .footer_top small {
+    display: block;
+    font-size: 12px;
+    color: #30414b;
+    margin-bottom: 10px;
+}
+
+#footer .footer_top > a {
+    display: inline-block;
+    width: 110px;
+    height: 30px;
+    border: 2px solid #d4d4d4;
+    font-size: 14px;
+    color: #a9aaaf;
+    text-align: center;
+    line-height: 26px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#footer .footer_top .cs_btn {
+margin-right: 0;
+}
+
+
+/* 푸터 바텀 시작 */
+#footer .footer_bottom {
+    width: 100%;
+    padding: 20px 28px 40px;
+    text-align: center;
+}
+#footer .footer_bottom address {
+    font-size: 12px;
+    color: #a9aaaf;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+#footer .footer_bottom .ib_info {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    border: 1px solid #a2a2a2;
+    color: #a2a2a2;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+#footer .footer_bottom .sns {
+    margin-bottom: 25px;
+}
+
+#footer .footer_bottom .sns li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+#footer .footer_bottom .sns li:last-child {
+    margin-right: 0;
+}
+
+#footer .footer_bottom .sns a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url("../images/youtube_m.png") no-repeat;
+    background-size: 25px;
+    text-indent: -99999px;
+}
+
+#footer .footer_bottom .sns .instagram {
+    background: url("../images/instagram_m.png") no-repeat;
+    background-size: 25px;
+}
+
+#footer .footer_bottom .sns .facebook {
+    background: url("../images/facebook_m.png") no-repeat;
+    background-size: 25px;
+}
+
+#footer .footer_bottom form .familysite {
+    width: 180px;
+    height: 37px;
+    border: 2px solid #d4d4d6;
+    color: #5d5d5b;
+    margin-bottom: 20px;
+    appearance: none;
+    text-indent: 15px;
+    font-size: 14px;
+    line-height: 37px;
+    background: url(../images/family_select_arrow.png) no-repeat 95% center;
+    background-size: 12px;
+}
+
+#footer .footer_bottom .copy {
+    font-size: 11px;
+    color: #9099a0;
+}
+
+
+
+
+
+
+
+
