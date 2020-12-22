@@ -286,7 +286,8 @@ button {
 #main .new_wrap .new_list li {
     float: left;
     width: 50%;
-    height: 256px;
+    /* height: 256px; */
+    height: 250px;
     padding: 3px;
     box-sizing: border-box;
 }
@@ -298,7 +299,7 @@ button {
 
 #main .new_wrap .new_list li a {
     display: block;
-    height: 250px;
+    height: 100%;
     padding: 20px;
 }
 
@@ -325,7 +326,7 @@ button {
 
 #main .new_wrap .new_list li:last-child a {
     display: block;
-    height: 160px;
+    height: 100%;
     background: #ffe5e4 url("../images/new03.jpg") no-repeat right center;
     background-size: 295px;
     padding: 60px 20px; 
@@ -563,6 +564,7 @@ button {
     width: 100%;
     padding: 30px 9px;
     overflow: hidden;
+    background: #fff;
 }
 
 #main .banner_bottom_wrap .banner_bottom_wrap_list {
@@ -598,7 +600,7 @@ button {
     border: 1px solid #fff;
     height: 100%;
     background: #deecf7 url("../images/icon_membershipapp_pc.png") no-repeat left center;
-    background-size: 40px;
+    background-size: 40px 79.5px;
     background-position-x: 40px;
     text-align: center;
     border-radius: 3px;
@@ -632,7 +634,7 @@ button {
 
 #main .banner_bottom_wrap .banner_bottom_wrap_list li .banner_bottom_02 {
     background: #f9f4ee url("../images/2020.12-thumb.jpg") no-repeat center center;
-    background-size: 160px;
+    background-size: 160px 150px;
 }
 
 #main .banner_bottom_wrap .banner_bottom_wrap_list li .banner_bottom_02 .icon_wrap {
@@ -651,20 +653,20 @@ button {
 
 #main .banner_bottom_wrap .banner_bottom_wrap_list li .banner_bottom_02 .ios_icon {
     background: url("../images/icon_ios.png") center center;
-    background-size: 45px;
+    background-size: 45px 45px;
     margin-right: 5px;
 }
 
 #main .banner_bottom_wrap .banner_bottom_wrap_list li .banner_bottom_02 .and_icon {
     background: url("../images/icon_android.png") center center;
-    background-size: 45px;
+    background-size: 45px 45px;
     margin-left: 5px;
 }
 
 #main .banner_bottom_wrap .banner_bottom_wrap_list li .banner_bottom_03 {
     background: #fff url("../images/icon_offlinestore_pc.png") no-repeat;
     background-position: center 27px;
-    background-size: 75px;
+    background-size: 75px 59.5px;
     border: 2px solid #dbdbdb;
 }
 
