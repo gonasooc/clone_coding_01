@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-/* @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css); */
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
 
 body {
-    font-family: 'Saira Condensed', 'Spoqa Han Sans Neo', 'sans-serif'; 
+    font-family: 'Saira Condensed', 'Noto Sans KR', 'sans-serif'; 
 }
 
 * {
@@ -31,8 +31,8 @@ button {
 
 .quick_btn {
     position: fixed;
-    right: 19px;
-    bottom: 86px;
+    right: 15px;
+    bottom: 70px;
     z-index: 20;
 }
 
@@ -51,8 +51,10 @@ button {
 #header {
     width: 100%;
     height: 65px;
-    background: #fff;
-    position: relative;
+    background:rgba(255, 255, 255, 0.9);
+    position: fixed;
+    z-index: 20;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 #header .m_menu {
@@ -64,7 +66,6 @@ button {
     transform: translateY(-52%);
     background: url("../images/m_top_menu.png") no-repeat;
     background-size: 52.5px;
-    /* border: 1px solid #000; */
 }
 
 #header h1 {
@@ -114,6 +115,7 @@ button {
 
 #main .visual img {
     width: 100%;
+    margin-top: 65px;
 }
 
 #main .event_banner {
@@ -140,7 +142,6 @@ button {
     border-radius: 3px;
 }
 
-
 #main .event_banner .event_banner1 {
     background: #f1d4d8 url("../images/eventbanner01.jpg") no-repeat right center;
     background-size: 280px;
@@ -154,7 +155,7 @@ button {
 
 #main .best_wrap {
     width: 100%;
-    padding: 0 10px;
+    padding: 25px 10px;
     overflow: hidden;
 }
 
@@ -163,7 +164,7 @@ button {
 }
 
 #main .best_wrap h2 a {
-    font-size: 17px; 
+    font-size: 22px; 
     color: #000;
     font-weight: bold;
 }
@@ -228,7 +229,6 @@ button {
     border-radius: 50%;
     opacity: 0.03;
     margin-left: -5em;
-
 }
 
 #main .best_wrap .best_list li a .item-img {
@@ -244,29 +244,27 @@ button {
     font-size: 13px;
     color: #000;
     margin-bottom: 7px;
-    letter-spacing: -1px;
 }
 
 #main .best_wrap .best_list li a .item-price {
     font-size: 12px;
     color: #000;
     font-weight: bold;
-    letter-spacing: -1px;
 }
 
 #main .new_wrap {
     width: 100%;
     background: #fff;
-    padding: 10px;
+    padding: 25px 10px;
     overflow: hidden;
 }
 
 #main .new_wrap h2 {
-    margin-bottom: 12px;
+    margin-bottom: 9px;
 }
 
 #main .new_wrap h2 a {
-    font-size: 17px; 
+    font-size: 22px; 
     color: #000;
     font-weight: bold;
 }
@@ -309,12 +307,10 @@ button {
     color: #000;
     font-weight: bold;
     margin-bottom: 13px;
-    letter-spacing: -1px;
 }
 #main .new_wrap .new_list li a h4 {
     font-size: 15px;
     color: #000;
-    letter-spacing: -1px;
 }
 
 #main .new_wrap .new_list li .newbox_1 {
@@ -340,7 +336,9 @@ button {
     width: 100%;
     background: #ffd2d2;
     overflow: hidden;
-    padding: 53px 9px;
+    padding: 0px 7px 40px;
+    box-sizing: border-box;
+    margin-top: 25px;
 }
 
 #main .event_product_wrap img {
@@ -369,15 +367,12 @@ button {
     font-size: 15px;
     color: #000;
     margin-bottom: 9px;
-    letter-spacing: -1px;
 }
 
 #main .event_product_wrap .event_product_list li a .product-price {
     font-size: 15px;
     color: #000;
     font-weight: bold;
-    letter-spacing: -1px;
-
 }
 
 #main .design_finder_wrap {
@@ -385,14 +380,25 @@ button {
     background: #fff;
     overflow: hidden;
     padding: 12px;
+    margin: 50px 0;
 }
 
 #main .design_finder_wrap h2 {
-    font-size: 17px; 
+    font-size: 22px; 
     color: #000;
     font-weight: bold;
     margin-bottom: 23px;
+    background: url(../images/designfinder_bg.png) no-repeat center right;
 }
+
+#main .design_finder_wrap h2 b {
+    display: inline-block;
+    width: 130px;
+    background: #fff;
+}
+
+
+
 
 #main .design_finder_wrap .design_finder_list {
     
@@ -403,7 +409,6 @@ button {
     float: left;
     width: 50%;
     padding: 5px;
-    /* border: 1px solid #000; */
 }
 
 #main .design_finder_wrap .design_finder_list li:last-child {
@@ -416,20 +421,20 @@ button {
 
 #main .design_finder_wrap .design_finder_list li img {
     width: 100%;
-    border-radius: 50%;
+    border-radius: 50%; 
 
 }
  
 #main .char_md_wrap {
     width: 100%;
     background: #f6f6f6;
-    padding: 46px 11px;
+    padding: 16px 9px;
 }
 
 #main .char_md_wrap ul {
     text-align: center;
-    margin-bottom: 35px;
-    padding: 20px 14px;
+    margin-bottom: 27px;
+    padding: 15px 11px;
     overflow: hidden;
     border-radius: 5px;
 }
@@ -437,26 +442,24 @@ button {
 #main .char_md_wrap ul li {
     float: left;
     width: 33.3%;
-    padding: 4px;
+    padding: 3px;
 }
 
 #main .char_md_wrap .char-product-img {
     width: 100%;
     border-radius: 50%;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
 }
 
 #main .char_md_wrap .char-product-name {
-    font-size: 14px;
+    font-size: 12px;
     color: #000;
-    letter-spacing: -1px;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
 }
 
 #main .char_md_wrap .char-product-price {
-    font-size: 14px;
+    font-size: 12px;
     color: #000;
-    letter-spacing: -1px;
     font-weight: bold;
 }
 
@@ -481,7 +484,7 @@ button {
 }
 
 #main .banner_wrap div {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 #main .banner_wrap img {
@@ -501,21 +504,22 @@ button {
 
 #main .instagram {
     width: 100%;
-    padding: 43px 11px;
+    padding: 17px 9px;
+    overflow: hidden;
 }
 
 #main .instagram h2 {
-    font-size: 17px; 
+    font-size: 22px; 
     color: #000;
     font-weight: bold;
-    margin-bottom: 11px;
+    margin-bottom: 9px;
+
 }
 
 #main .instagram h2 span {
-    font-size: 14px;
+    font-size: 12px;
     color: #b9aaa7;
-    margin-left: 6px;
-    letter-spacing: -2px;
+    margin-left: 5px;
 }
 
 #main .instagram .instagram_list {
@@ -523,18 +527,153 @@ button {
 }
 
 #main .instagram .instagram_list li {
-
+    width: 33.3%;
+    float: left;
+    padding: 0 4.5px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
 }
 
 #main .instagram .instagram_list li a {
-
+    /* border: 1px solid #000; */
 }
 
 #main .instagram .instagram_list li a img {
     width: 100%;
 }
 
+#main .event_banner_bottom {
+    width: 100%;
+    padding: 27px 9px;
+}
 
+#main .event_banner_bottom h2 {
+    font-size: 22px; 
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#main .event_banner_bottom a img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#main .banner_bottom_wrap {
+    width: 100%;
+    padding: 30px 9px;
+    overflow: hidden;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list {
+
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li {
+    width: 100%;
+    height: 160px;
+    /* border: 1px solid #000; */
+    /* padding: 6px; */
+    float: left;
+    box-sizing: border-box;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li:nth-child(n+2) {
+    width: 50%;
+    height: 280px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li:nth-child(2) {
+    padding-left: 0;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li:last-child {
+    padding-right: 0;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li a {
+    display: block;
+    border: 1px solid #fff;
+    height: 100%;
+    background: #deecf7 url("../images/icon_membershipapp_pc.png") no-repeat left center;
+    background-size: 40px;
+    background-position-x: 40px;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li h2 {
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 27px;
+    margin-bottom: 11px;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li h4 {
+    font-size: 13px;
+    color: #000;
+    line-height: 16px;
+    margin-bottom: 7px;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li p {
+    font-size: 11px;
+    color: #000;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li a .textbox {
+    text-align: left;
+    padding: 10px 0 0 130px;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li .banner_bottom_02 {
+    background: #f9f4ee url("../images/2020.12-thumb.jpg") no-repeat center center;
+    background-size: 160px;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li .banner_bottom_02 .icon_wrap {
+    position: absolute;
+    left: 50%;
+    bottom: 18px;
+    transform: translateX(-50%);
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li .banner_bottom_02 span {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-indent: -99999px;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li .banner_bottom_02 .ios_icon {
+    background: url("../images/icon_ios.png") center center;
+    background-size: 45px;
+    margin-right: 5px;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li .banner_bottom_02 .and_icon {
+    background: url("../images/icon_android.png") center center;
+    background-size: 45px;
+    margin-left: 5px;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li .banner_bottom_03 {
+    background: #fff url("../images/icon_offlinestore_pc.png") no-repeat;
+    background-position: center 27px;
+    background-size: 75px;
+    border: 2px solid #dbdbdb;
+}
+
+#main .banner_bottom_wrap .banner_bottom_wrap_list li .banner_bottom_03 h2 {
+    margin-top: 98px;
+    font-size: 24px;
+    line-height: 37px;
+    color: #373b53;
+}
 
 
 
@@ -576,7 +715,7 @@ button {
 
 #footer .footer_top .footer_menu li {
     display: inline-block;
-    margin-right: 15px;
+    padding: 0 10px;
     position: relative;
 }
 
@@ -586,7 +725,7 @@ button {
     height: 100%;
     background: #a9aaaf;
     position: absolute;
-    right: -10px;
+    right: -2px;
     top: 50%;
     margin-top: -7px;
 }
