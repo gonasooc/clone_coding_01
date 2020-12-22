@@ -29,6 +29,24 @@ button {
 }
 
 
+.quick_btn {
+    position: fixed;
+    right: 19px;
+    bottom: 86px;
+    z-index: 20;
+}
+
+.quick_btn .up {
+    display: block;
+    width: 50.25px;
+    height: 50.25px;
+    background: url("../images/btn_top.png");
+    background-size: 50.25px;
+    text-indent: -99999px;
+}
+
+
+
 /* 헤더 시작 */
 #header {
     width: 100%;
@@ -168,7 +186,6 @@ button {
     width: 50%;
     float: left;
     position: relative;
-    /* border: 1px solid #000; */
     padding: 20px 28px;
     box-sizing: border-box;
 }
@@ -193,7 +210,11 @@ button {
     text-align: center;
     line-height: 32px;
     border-radius: 50%;
-    
+    font-weight: bold;
+}
+
+#main .best_wrap .best_list li:first-child a .ranking {
+    background: #c80203;
 }
 
 #main .best_wrap .best_list li a .image-bg {
@@ -223,12 +244,14 @@ button {
     font-size: 13px;
     color: #000;
     margin-bottom: 7px;
+    letter-spacing: -1px;
 }
 
 #main .best_wrap .best_list li a .item-price {
     font-size: 12px;
     color: #000;
     font-weight: bold;
+    letter-spacing: -1px;
 }
 
 #main .new_wrap {
@@ -264,63 +287,271 @@ button {
 
 #main .new_wrap .new_list li {
     float: left;
-    width: 49%;
-    margin-right: 6px;
-    margin-bottom: 6px;
-    border: 1px solid #000;
-}
-
-#main .new_wrap .new_list li:nth-child(2) {
-    margin-right: 0;
+    width: 50%;
+    height: 256px;
+    padding: 3px;
+    box-sizing: border-box;
 }
 
 #main .new_wrap .new_list li:last-child {
     width: 100%;
-    margin-right: 0;
-    margin-bottom: 0;
+    height: 160px;
 }
 
 #main .new_wrap .new_list li a {
     display: block;
-    height: 200px;
-    padding: 17px 5px 17px 17px;
+    height: 250px;
+    padding: 20px;
+}
+
+#main .new_wrap .new_list li a h3 {
+    font-size: 19px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 13px;
+    letter-spacing: -1px;
+}
+#main .new_wrap .new_list li a h4 {
+    font-size: 15px;
+    color: #000;
+    letter-spacing: -1px;
 }
 
 #main .new_wrap .new_list li .newbox_1 {
-    background: #e9f9b8;
+    background: #e9f9b8 url("../images/new01.jpg") no-repeat right bottom;
+    background-size: 195px;
 }
 
 #main .new_wrap .new_list li .newbox_2 {
-    background: #ffe1df;
+    background: #e9f9b8 url("../images/new02.jpg") no-repeat right bottom;
+    background-size: 195px;
 }
-
 
 #main .new_wrap .new_list li:last-child a {
     display: block;
-    height: 130px;
-    background: #fff5da;
-    padding: 17px 5px 17px 17px;
-
+    height: 160px;
+    background: #ffe5e4 url("../images/new03.jpg") no-repeat right center;
+    background-size: 295px;
+    padding: 60px 20px; 
 }
 
 
-/* #main .new_wrap .newbox_1 {
-    display: inline-block;
-    width: 50%;
-    background: #e9f9b8;
-}
-
-#main .new_wrap .newbox_2 {
-    display: inline-block;
-    width: 50%;
-    background: #ffe1df;
-}
-
-#main .new_wrap .newbox_3 {
-    display: inline-block;
+#main .event_product_wrap {
     width: 100%;
-    background: #fff5da;
-} */
+    background: #ffd2d2;
+    overflow: hidden;
+    padding: 53px 9px;
+}
+
+#main .event_product_wrap img {
+    width: 100%;
+}
+
+#main .event_product_wrap .event_product_list {
+
+}
+
+#main .event_product_wrap .event_product_list li {
+    width: 33.3%;
+    float: left;
+    padding: 21.5px 4.5px;
+}
+
+#main .event_product_wrap .event_product_list li a {
+    text-align: center;
+}
+
+#main .event_product_wrap .event_product_list li a .product-image {
+    margin-bottom: 14px;
+}
+
+#main .event_product_wrap .event_product_list li a .product-name {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 9px;
+    letter-spacing: -1px;
+}
+
+#main .event_product_wrap .event_product_list li a .product-price {
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: -1px;
+
+}
+
+#main .design_finder_wrap {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    padding: 12px;
+}
+
+#main .design_finder_wrap h2 {
+    font-size: 17px; 
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+#main .design_finder_wrap .design_finder_list {
+    
+}
+
+#main .design_finder_wrap .design_finder_list li {
+    /* display: inline-block; */
+    float: left;
+    width: 50%;
+    padding: 5px;
+    /* border: 1px solid #000; */
+}
+
+#main .design_finder_wrap .design_finder_list li:last-child {
+    margin-right: 0;
+}
+
+#main .design_finder_wrap .design_finder_list li a {
+
+}
+
+#main .design_finder_wrap .design_finder_list li img {
+    width: 100%;
+    border-radius: 50%;
+
+}
+ 
+#main .char_md_wrap {
+    width: 100%;
+    background: #f6f6f6;
+    padding: 46px 11px;
+}
+
+#main .char_md_wrap ul {
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 20px 14px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#main .char_md_wrap ul li {
+    float: left;
+    width: 33.3%;
+    padding: 4px;
+}
+
+#main .char_md_wrap .char-product-img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 13px;
+}
+
+#main .char_md_wrap .char-product-name {
+    font-size: 14px;
+    color: #000;
+    letter-spacing: -1px;
+    margin-bottom: 9px;
+}
+
+#main .char_md_wrap .char-product-price {
+    font-size: 14px;
+    color: #000;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#main .char_md_wrap .char_box1 .char_box1_list {
+    background: #ceeddb;
+}
+
+#main .char_md_wrap .char_box2 .char_box2_list {
+    background: #f4d7eb;
+}
+
+#main .char_md_wrap .char_box3 .char_box3_list {
+    background: #e4d4f1;
+}
+
+#main .char_md_wrap .char_box4 .char_box4_list {
+    background: #f1e7ce;
+}
+
+#main .banner_wrap {
+    width: 100%;
+}
+
+#main .banner_wrap div {
+    margin-bottom: 50px;
+}
+
+#main .banner_wrap img {
+    width: 100%;
+}
+
+#main .banner_wrap .char_more {
+    width: 100%;
+    background: #a8bae8;
+    border-radius: 5px;
+}
+
+#main .banner_wrap .artbox_friends {
+    background: url("../images/artboxfriends_bg_m.png") repeat-x center center;
+    background-size: 1px 3px;
+}
+
+#main .instagram {
+    width: 100%;
+    padding: 43px 11px;
+}
+
+#main .instagram h2 {
+    font-size: 17px; 
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+
+#main .instagram h2 span {
+    font-size: 14px;
+    color: #b9aaa7;
+    margin-left: 6px;
+    letter-spacing: -2px;
+}
+
+#main .instagram .instagram_list {
+
+}
+
+#main .instagram .instagram_list li {
+
+}
+
+#main .instagram .instagram_list li a {
+
+}
+
+#main .instagram .instagram_list li a img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -492,6 +723,8 @@ margin-right: 0;
     font-size: 11px;
     color: #9099a0;
 }
+
+
 
 
 
