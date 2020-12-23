@@ -4,7 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
 
 body {
-    font-family: 'Saira Condensed', 'Noto Sans KR', 'sans-serif'; 
+    font-family: 'Noto Sans KR', 'sans-serif'; 
+}
+
+h2 {
+    font-family: 'Saira Condensed', 'sans-serif';
 }
 
 * {
@@ -28,7 +32,6 @@ button {
     text-indent: -99999px;
 }
 
-
 .quick_btn {
     position: fixed;
     right: 15px;
@@ -45,8 +48,6 @@ button {
     text-indent: -99999px;
 }
 
-
-
 /* 헤더 시작 */
 #header {
     width: 100%;
@@ -58,22 +59,23 @@ button {
 }
 
 #header .m_menu {
-    width: 52.5px;
-    height: 52.5px;
+    /* width: 52.5px;
+    height: 52.5px; */
+    width: 28px;
+    height: 28px;
     position: absolute;
     left: 18px;
     top: 50%;
     transform: translateY(-52%);
     background: url("../images/m_top_menu.png") no-repeat;
-    background-size: 52.5px;
+    background-size: 28px;
 }
 
 #header h1 {
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-top: -26.25px;
-    margin-left: -90.75px;
+    transform: translate(-50%, -50%);
 }
 
 #header h1 a {
@@ -85,27 +87,30 @@ button {
     text-indent: -99999px;
 }
 
-
 #header .m_search {
-    width: 52.5px;
-    height: 52.5px;
+    /* width: 52.5px;
+    height: 52.5px; */
+    width: 28px;
+    height: 28px;
     position: absolute;
-    right: 70px;
+    right: 60px;
     top: 50%;
     transform: translateY(-52%);
     background: url("../images/m_top_search.png") no-repeat;
-    background-size: 52.5px;
+    background-size: 28px;
 }
 
 #header .m_cart {
-    width: 52.5px;
-    height: 52.5px;
+    /* width: 52.5px;
+    height: 52.5px; */
+    width: 28px;
+    height: 28px;
     position: absolute;
-    right: 18px;
+    right: 20px;
     top: 50%;
     transform: translateY(-52%);
     background: url("../images/m_top_cart.png") no-repeat;
-    background-size: 52.5px;
+    background-size: 28px;
 }
 
 /* 메인 시작 */
@@ -123,16 +128,16 @@ button {
 }
 
 #main .event_banner h3 {
-    font-size: 19px;
+    font-size: 17px;
     color: #000;
     font-weight: bold;
     margin-bottom: 13px;
 }
 
 #main .event_banner h4 {
-    font-size: 14px;
+    font-size: 12px;
     color: #000;
-    line-height: 18px;
+    line-height: 17px;
 }
 
 #main .event_banner a {
@@ -145,7 +150,6 @@ button {
 #main .event_banner .event_banner1 {
     background: #f1d4d8 url("../images/eventbanner01.jpg") no-repeat right center;
     background-size: 280px;
-
 }
 
 #main .event_banner .event_banner2 {
@@ -176,7 +180,6 @@ button {
     height: 14px;
     background: url("../images/gogo_pc.png") no-repeat;
     background-size: 11px 14px;
-    /* border: 1px solid #000; */
 }
 
 #main .best_wrap .best_list {
@@ -186,16 +189,20 @@ button {
 #main .best_wrap .best_list li {
     width: 50%;
     float: left;
-    position: relative;
-    padding: 20px 28px;
     box-sizing: border-box;
 }
 
 #main .best_wrap .best_list li a {
     text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 28px;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+
 }
-
-
 
 #main .best_wrap .best_list li a .ranking {
     display: inline-block;
@@ -203,8 +210,8 @@ button {
     height: 32px; 
     position: absolute;
     left: 50%;
-    top: 20px;
-    margin-left: -35%;
+    top: 0;
+    margin-left: -80px;
     background: #8e8e90;
     color: rgba(255, 255, 255, 0.9);
     font-size: 15px;
@@ -220,29 +227,34 @@ button {
 
 #main .best_wrap .best_list li a .image-bg {
     display: inline-block;
-    width: 10rem;
-    height: 10rem;
+    /* width: 10rem;
+    height: 10rem; */
+    width: 160px;
+    height: 160px;
     background: #000;
     position: absolute;
     left: 50%;
-    top: 20px;
+    /* top: 20px; */
     border-radius: 50%;
     opacity: 0.03;
-    margin-left: -5em;
+    transform: translateX(-50%);
 }
 
 #main .best_wrap .best_list li a .item-img {
     display: block;
-    width: 10rem;
-    height: 10rem;
+    /* width: 10rem;
+    height: 10rem; */
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     margin: 0 auto;
-    margin-bottom: 10px;
+    /* 이미지 자체가 오른쪽으로 기울어져서 마진 -20으로 처리 / 이유는 추후 확인 필요 */
 }
 
 #main .best_wrap .best_list li a .item-name {
     font-size: 13px;
     color: #000;
+    margin-top: 10px;
     margin-bottom: 7px;
 }
 
@@ -250,6 +262,28 @@ button {
     font-size: 12px;
     color: #000;
     font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#main .best_wrap .best_list li a .item-price .sale-price {
+    color: #ff0000;
+}
+
+#main .best_wrap .best_list li a .stampiconwrap span {
+    display: inline-block;
+    width: 42px;
+    height: 13px;
+    text-indent: -99999px;
+}
+
+#main .best_wrap .best_list li a .stampiconwrap .stamponly {
+    background: url("../images/only.png") no-repeat center center;
+    background-size: contain;
+}
+
+#main .best_wrap .best_list li a .stampiconwrap .stampcoupon {
+    background: url("../images/coupon.png") no-repeat center center;
+    background-size: contain;
 }
 
 #main .new_wrap {
@@ -276,7 +310,6 @@ button {
     height: 14px;
     background: url("../images/gogo_pc.png") no-repeat;
     background-size: 11px 14px;
-    /* border: 1px solid #000; */
 }
 
 #main .new_wrap .new_list {
@@ -286,7 +319,6 @@ button {
 #main .new_wrap .new_list li {
     float: left;
     width: 50%;
-    /* height: 256px; */
     height: 250px;
     padding: 3px;
     box-sizing: border-box;
@@ -300,17 +332,18 @@ button {
 #main .new_wrap .new_list li a {
     display: block;
     height: 100%;
-    padding: 20px;
+    padding: 16px;
 }
 
 #main .new_wrap .new_list li a h3 {
-    font-size: 19px;
+    font-size: 16px;
     color: #000;
     font-weight: bold;
-    margin-bottom: 13px;
+    margin-bottom: 9px;
 }
+
 #main .new_wrap .new_list li a h4 {
-    font-size: 15px;
+    font-size: 14px;
     color: #000;
 }
 
@@ -329,9 +362,8 @@ button {
     height: 100%;
     background: #ffe5e4 url("../images/new03.jpg") no-repeat right center;
     background-size: 295px;
-    padding: 60px 20px; 
+    padding: 47px 16px; 
 }
-
 
 #main .event_product_wrap {
     width: 100%;
@@ -365,13 +397,13 @@ button {
 }
 
 #main .event_product_wrap .event_product_list li a .product-name {
-    font-size: 15px;
+    font-size: 13px;
     color: #000;
     margin-bottom: 9px;
 }
 
 #main .event_product_wrap .event_product_list li a .product-price {
-    font-size: 15px;
+    font-size: 13px;
     color: #000;
     font-weight: bold;
 }
@@ -398,15 +430,11 @@ button {
     background: #fff;
 }
 
-
-
-
 #main .design_finder_wrap .design_finder_list {
     
 }
 
 #main .design_finder_wrap .design_finder_list li {
-    /* display: inline-block; */
     float: left;
     width: 50%;
     padding: 5px;
@@ -423,7 +451,6 @@ button {
 #main .design_finder_wrap .design_finder_list li img {
     width: 100%;
     border-radius: 50%; 
-
 }
  
 #main .char_md_wrap {
@@ -462,6 +489,10 @@ button {
     font-size: 12px;
     color: #000;
     font-weight: bold;
+}
+
+#main .char_md_wrap .char-product-price .sale-price {
+    color: #ff0000;
 }
 
 #main .char_md_wrap .char_box1 .char_box1_list {
@@ -514,10 +545,9 @@ button {
     color: #000;
     font-weight: bold;
     margin-bottom: 9px;
-
 }
 
-#main .instagram h2 span {
+#main .instagram h2 a {
     font-size: 12px;
     color: #b9aaa7;
     margin-left: 5px;
@@ -531,12 +561,11 @@ button {
     width: 33.3%;
     float: left;
     padding: 0 4.5px;
-    /* border: 1px solid #000; */
     box-sizing: border-box;
 }
 
 #main .instagram .instagram_list li a {
-    /* border: 1px solid #000; */
+
 }
 
 #main .instagram .instagram_list li a img {
@@ -563,19 +592,16 @@ button {
 #main .banner_bottom_wrap {
     width: 100%;
     padding: 30px 9px;
-    overflow: hidden;
     background: #fff;
 }
 
 #main .banner_bottom_wrap .banner_bottom_wrap_list {
-
+    overflow: hidden;
 }
 
 #main .banner_bottom_wrap .banner_bottom_wrap_list li {
     width: 100%;
     height: 160px;
-    /* border: 1px solid #000; */
-    /* padding: 6px; */
     float: left;
     box-sizing: border-box;
 }
@@ -597,7 +623,6 @@ button {
 
 #main .banner_bottom_wrap .banner_bottom_wrap_list li a {
     display: block;
-    border: 1px solid #fff;
     height: 100%;
     background: #deecf7 url("../images/icon_membershipapp_pc.png") no-repeat left center;
     background-size: 40px 79.5px;
@@ -611,7 +636,7 @@ button {
     font-size: 22px;
     color: #000;
     font-weight: bold;
-    margin-top: 27px;
+    padding-top: 27px;
     margin-bottom: 11px;
 }
 
@@ -677,26 +702,6 @@ button {
     color: #373b53;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 푸터, 푸터 탑 시작 */
 #footer {
     width: 100%;
@@ -706,7 +711,7 @@ button {
 
 #footer .footer_top {
     width: 100%;
-    padding: 15px 10px;
+    padding: 15px 0;
     text-align: center;
     border-bottom: 1px solid #ebebeb;
 }
@@ -717,7 +722,7 @@ button {
 
 #footer .footer_top .footer_menu li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 3px;
     position: relative;
 }
 
@@ -852,25 +857,17 @@ margin-right: 0;
     border: 2px solid #d4d4d6;
     color: #5d5d5b;
     margin-bottom: 20px;
-    appearance: none;
     text-indent: 15px;
     font-size: 14px;
     line-height: 37px;
     background: url(../images/family_select_arrow.png) no-repeat 95% center;
     background-size: 12px;
+    appearance: none;
+    -webkit-appearance: none;
+
 }
 
 #footer .footer_bottom .copy {
     font-size: 11px;
     color: #9099a0;
 }
-
-
-
-
-
-
-
-
-
-
