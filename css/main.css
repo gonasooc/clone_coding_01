@@ -67,6 +67,7 @@ h2 {
     padding: 0 15px;
     height: 36px;
     line-height: 36px;
+    font-weight: 700;
 }
 
 #header .header_inner .header_nav li a:hover {
@@ -176,7 +177,7 @@ h2 {
     width: 1055px;
 }
 
-#main .main_inner .visual_wrap .visual_txt {
+#main .main_inner .visual_wrap .visual_text {
     background: #961011;
     height: 594px;
     padding: 55px 50px;
@@ -186,17 +187,17 @@ h2 {
 
 }
 
-#main .main_inner .visual_wrap .visual_txt h2 {
+#main .main_inner .visual_wrap .visual_text h2 {
     margin-bottom: 18px;
 }
 
-#main .main_inner .visual_wrap .visual_txt p {
+#main .main_inner .visual_wrap .visual_text p {
     font-size: 14px;
     line-height: 23px;
     margin-bottom: 37px;
 }
 
-#main .main_inner .visual_wrap .visual_txt a {
+#main .main_inner .visual_wrap .visual_text a {
     display: block;
     width: 106px;
     height: 40px;
@@ -206,6 +207,12 @@ h2 {
     text-align: center;
     font-size: 12px;
     color: #000;
+    font-weight: 700;
+    transition: background-color 0.2s;
+}
+
+#main .main_inner .visual_wrap .visual_text a:hover {
+    background: rgba(255, 255, 255, 0.9);
 }
 
 #main .main_inner .promo_wrap {
@@ -292,6 +299,11 @@ h2 {
     left: 32px;
     bottom: 32px;
     color: #000;
+    transition: background-color 0.2s;
+}
+
+#main .main_inner .promo_wrap .promo li div .btn_more:hover {
+    background: rgba(255, 255, 255, 0.9);
 }
 
 
