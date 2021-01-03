@@ -220,7 +220,7 @@ h2 {
 }
 
 #main .main_inner .promo_wrap .promo {
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 #main .main_inner .promo_wrap .promo li {
