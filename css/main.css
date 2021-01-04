@@ -306,6 +306,7 @@ h2 {
 #main .main_inner .new_wrap {
     width: 1600px;
     padding-top: 70px;
+    box-sizing: border-box;
 }
 
 #main .main_inner .new_wrap .new {
@@ -327,7 +328,6 @@ h2 {
     display: block;
     width: 790px;
     height: 1050px;
-
 }
 
 #main .main_inner .new_wrap .new li a img {
@@ -335,6 +335,247 @@ h2 {
     height: 100%;
     object-fit: cover;
 }
+
+#main .main_inner .solution_wrap {
+    width: 1600px;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+
+#main .main_inner .solution_wrap .solution {
+    overflow: hidden;
+}
+
+#main .main_inner .solution_wrap .solution li {
+    float: left;
+    margin-right: 20px;
+    width: 250px;
+    height: 310px;
+    position: relative;
+}
+
+#main .main_inner .solution_wrap .solution li:last-child {
+    margin-right: 0;
+}
+
+#main .main_inner .solution_wrap .solution .greenbox {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #00a553;
+    color: #fff;
+    padding: 44px 33px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+#main .main_inner .solution_wrap .solution .greenbox:hover {
+    text-decoration: underline;
+}
+
+#main .main_inner .solution_wrap .solution .greenbox i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    position: absolute;
+    left: 33px;
+    bottom: 40px;
+    transition: background-color 0.2s;
+}
+
+#main .main_inner .solution_wrap .solution .greenbox i:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+
+
+
+
+
+#main .main_inner .solution_wrap .solution li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#main .main_inner .solution_wrap .solution li .btn_sol {
+    display: block;
+    font-size: 12px;
+    color: #000;
+    padding: 14px 24px;
+    font-weight: 600;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: background-color 0.2s;
+}
+
+#main .main_inner .solution_wrap .solution li .btn_sol:hover {
+    background: #f5f5f5;
+}
+
+
+
+
+
+#main .main_inner .booknfood_wrap {
+    width: 1600px;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+
+#main .main_inner .booknfood {
+    overflow: hidden;
+}
+
+#main .main_inner .booknfood li {
+    float: left;
+    margin-right: 40px;
+    width: 780px;
+}
+
+#main .main_inner .booknfood li:last-child {
+    margin-right: 0;
+}
+
+#main .main_inner .booknfood li .img_box {
+    display: block;
+    width: 780px;
+    height: 438px;
+}
+
+#main .main_inner .booknfood li .img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#main .main_inner .booknfood li .btn_booknfood {
+    display: inline-block;
+    font-size: 12px;
+    color: #000;
+    padding: 14px 24px;
+    border: 1px solid #dedede;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: border 0.1s;
+    margin-top: 40px;
+}
+
+#main .main_inner .booknfood li .btn_booknfood:hover {
+    border: 1px solid #929292;
+}
+
+
+#main .main_inner .service_wrap {
+    width: 1600px;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+
+#main .main_inner .service_wrap .service {
+    overflow: hidden;
+}
+
+#main .main_inner .service_wrap .service li {
+    float: left;
+    width: 532.5px;
+    height: 170px;
+    background: #f5f5f5;
+    margin-right: 1px;
+    padding: 36px 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+#main .main_inner .service_wrap .service li:last-child {
+    margin-right: 0;
+}
+
+
+#main .main_inner .service_wrap .service li i {
+    color: #4e4e4e;
+    margin-bottom: 13px;
+    font-size: 18px;
+}
+
+#main .main_inner .service_wrap .service li h4 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 13px;
+    font-weight: 600;
+}
+
+#main .main_inner .service_wrap .service li p {
+    margin-bottom: 15px;
+}
+
+#main .main_inner .service_wrap .service li .more {
+    color: #4e4e4e;
+    text-decoration: underline;
+    transition: color 0.1s;
+}
+
+#main .main_inner .service_wrap .service li .more:hover {
+    color: #111;
+}
+
+
+
+
+#main .main_inner .guide_wrap {
+    width: 1600px;
+    padding-top: 64px;
+    padding-bottom: 128px;
+}
+
+#main .main_inner .guide_wrap .guide {
+    overflow: hidden;
+}
+
+#main .main_inner .guide_wrap .guide li {
+    float: left;
+    width: 780px;
+    margin-right: 40px;
+}
+
+#main .main_inner .guide_wrap .guide li:last-child {
+    margin-right: 0;
+}
+
+#main .main_inner .guide_wrap .guide li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+#main .main_inner .guide_wrap .guide li a {
+    display: inline-block;
+    font-size: 12px;
+    color: #000;
+    padding: 14px 24px;
+    border: 1px solid #dedede;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: border 0.1s;
+}
+
+#main .main_inner .guide_wrap .guide li a:hover {
+    border: 1px solid #929292;
+}
+
 
 
 
