@@ -18,6 +18,8 @@ button {
 h2 {
     font-weight: 700;
     font-size: 22px;
+    margin-bottom: 40px;
+
 }
 
 #header {
@@ -187,7 +189,7 @@ h2 {
 
 }
 
-#main .main_inner .visual_wrap .visual_text h2 {
+#main .main_inner .visual_wrap .visual_text h3 {
     margin-bottom: 18px;
 }
 
@@ -219,11 +221,6 @@ h2 {
     width: 1600px;
     padding-top: 70px;
     /* overflow: hidden; */
-
-}
-
-#main .main_inner .promo_wrap h2 {
-    margin-bottom: 40px;
 }
 
 #main .main_inner .promo_wrap .promo {
@@ -306,6 +303,74 @@ h2 {
     background: rgba(255, 255, 255, 0.9);
 }
 
+#main .main_inner .new_wrap {
+    width: 1600px;
+    padding-top: 70px;
+}
+
+#main .main_inner .new_wrap .new {
+    overflow: hidden;
+}
+
+#main .main_inner .new_wrap .new li {
+    float: left;
+    width: 790px;
+    height: 1050px;
+    margin-right: 20px;
+}
+
+#main .main_inner .new_wrap .new li:last-child {
+    margin-right: 0;
+}
+
+#main .main_inner .new_wrap .new li a {
+    display: block;
+    width: 790px;
+    height: 1050px;
+
+}
+
+#main .main_inner .new_wrap .new li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* 흰색 포인트 값 */
+/* .pub__shoppable-image__dot::after {
+    content: "";
+    transition: -webkit-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+    position: relative;
+    display: block;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.55);
+    width: .75rem;
+    height: .75rem;
+    border-radius: 64px; */
+
+    /* 바깥 포인트 값 */
+    /* .pub__shoppable-image__dot {
+        transition: border-color 250ms ease-in-out,opacity 250ms ease-in-out,visibility 250ms ease-in-out;
+        -webkit-transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(-1rem) translateY(-1rem);
+        padding: 0;
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid transparent;
+        position: absolute;
+        background: rgba(0,0,0,0.2);
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 64px;
+        line-height: .5;
+        display: flex;
+        align-items: center;
+        justify-content: center; */
 
 
 
@@ -333,7 +398,7 @@ h2 {
     height: 345px;
 }
 
-#footer .footer_inner .footer_top .family_box h2 {
+#footer .footer_inner .footer_top .family_box h3 {
     font-size: 18px;
     color: #000;
     margin-bottom: 26px;
@@ -534,4 +599,7 @@ h2 {
 #footer .footer_inner .footer_bottom .address .biz_info:hover {
     color: #111;
 }
+
+
+
 
