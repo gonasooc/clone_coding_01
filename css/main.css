@@ -191,7 +191,7 @@ button {
     float: left;
     box-sizing: border-box;
     /* border: 1px solid #000; */
-    padding: 14px 30px;
+    /* padding: 14px 30px; */
 }
 
 #main .best_wrap .best_list li a {
