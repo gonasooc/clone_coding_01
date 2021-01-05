@@ -405,7 +405,7 @@ h2 {
 }
 
 #main .main_inner .solution_wrap .solution li .btn_sol {
-    display: block;
+    display: inline-block;
     font-size: 12px;
     color: #000;
     padding: 14px 24px;
@@ -417,6 +417,7 @@ h2 {
     transform: translateX(-50%);
     background: #fff;
     transition: background-color 0.2s;
+    white-space: nowrap;
 }
 
 #main .main_inner .solution_wrap .solution li .btn_sol:hover {
