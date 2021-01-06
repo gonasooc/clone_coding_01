@@ -107,7 +107,7 @@ body {
 	border-radius: 2px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,.08);
 	transition-duration: 0.4s;
-
+	z-index: 1;
 }
 
 #header .header_inner .header_right .gnb .depth2 > li > a {
@@ -238,6 +238,7 @@ body {
 	left: 50%;
 	top: 85px;
 	margin-left: 655px;
+	z-index: 1;
 }
 
 #main .quick > li {
@@ -695,12 +696,74 @@ body {
 #main .content .banner .banner_inner {
 	width: 1400px;
 	height: 107px;
-	margin: 0 auto;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	margin: 0 auto; 
+	/* padding-top: 25px;
+	padding-bottom: 25px; */
+	overflow: hidden;
 }
 
-#main .content .banner .banner_inner .banner_list li {
+#main .content .banner .banner_inner .banner_control {
+	float: left;
+	width: 233px;
+	height: 107px;
+}
+
+#main .content .banner .banner_inner .banner_control h3 {
+	line-height: 107px;
+	font-size: 20px;
+    font-weight: 700;
+	color: #3d3d3d;
+}
+
+#main .content .banner .banner_inner .banner_slide {
+	float: right;
+	width: 1167px;
+	height: 107px;
+	padding: 26px 0;
+	position: relative;
+	box-sizing: border-box;
+}
+
+#main .content .banner .banner_inner .banner_slide .slick-prev {
+	width: 25px;
+	height: 25px;
+	background: #fff url('../images/img_banner_prev.png') no-repeat center center;
+	border: 1px solid #ececec;
+	outline: none;
+	cursor: pointer;
+	text-indent: -99999px;
+	position: absolute;
+	left: -138px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+#main .content .banner .banner_inner .banner_slide .slick-next {
+	width: 25px;
+	height: 25px;
+	background: #fff url('../images/img_banner_prev.png') no-repeat center center;
+	border: 1px solid #ececec;
+	outline: none;
+	cursor: pointer;
+	text-indent: -99999px;
+	transform: translateY(-50%) rotate(180deg);
+	/* transform: rotate(180deg); */
+	position: absolute;
+	left: -113px;
+	top: 50%;
+	z-index: 1;
+}
+
+
+
+
+#main .content .banner .banner_inner .banner_slide img {
+	border: 1px solid #e8e8e8;
+}
+
+
+/* #main .content .banner .banner_inner .banner_list li {
 	float: left;
 	margin-right: 14px;
 }
@@ -721,8 +784,7 @@ body {
 
 #main .content .banner .banner_inner .banner_list li a img:hover {
 	opacity: 0.7;
-	/* transition: all 0.5s; */
-}
+} */
 
 /* ���� ����, Ǫ�� ���� */
 
