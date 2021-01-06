@@ -167,10 +167,70 @@ body {
 	width: 100%;
 }
 
-#main .visual {
-	height: 474px;
-	background: url("../images/banner_1_20200915_0.jpg") no-repeat center top;
+
+#main .main_slide {
+	position: relative;
+	height: 475px;
 }
+
+#main .main_slide .main_slide1 {
+	height: 475px;
+	background: url("../images/slide1.jpg") no-repeat center top;
+}
+
+#main .main_slide .main_slide2 {
+	height: 475px;
+	background: url("../images/slide2.jpg") no-repeat center top;
+}
+
+#main .main_slide .main_slide3 {
+	height: 475px;
+	background: url("../images/slide3.jpg") no-repeat center top;
+}
+
+#main .main_slide .main_slide4 {
+	height: 475px;
+	background: url("../images/slide4.jpg") no-repeat center top;
+}
+
+#main .slick-dots {
+	position: absolute;
+	left: 50%;
+	bottom: 34px;
+	transform: translateX(-50%);
+}
+
+#main .slick-dots li {
+	float: left;
+	margin-right: 12px;
+}
+
+#main .slick-dots li:last-child {
+	margin-right: 0;
+}
+
+#main .slick-dots button {
+	width: 12px;
+	height: 12px;
+	background: rgba(255,255,255,0.5);
+	border-radius: 50%;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	text-indent: -99999px;
+}
+
+#main .slick-active button {
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	border-radius: 50%;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	text-indent: -99999px;
+}
+
 
 /* ���� �� �޴� */
 #main .quick {
