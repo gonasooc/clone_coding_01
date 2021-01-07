@@ -492,6 +492,10 @@ button {
     font-weight: bold;
 }
 
+#main .char_md_wrap .char_img {
+    display: block;
+}
+
 #main .char_md_wrap .char-product-price .sale-price {
     color: #ff0000;
 }
