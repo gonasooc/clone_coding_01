@@ -118,9 +118,41 @@ button {
     width: 100%;
 }
 
-#main .visual img {
+#main .visual-slide {
     width: 100%;
-    margin-top: 65px;
+    padding-top: 65px;
+    position: relative;
+}
+
+#main .visual-slide .swiper-wrapper {
+    width: 100%;
+}
+
+#main .visual-slide .swiper-wrapper img {
+    width: 100%;
+}
+
+#main .visual-slide .swiper-pagination {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    width: auto;
+}
+
+#main .visual-slide .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+}
+
+#main .visual-slide .swiper-pagination .swiper-pagination-bullet:last-child {
+    margin-right: 0;
+}
+
+#main .visual-slide .swiper-pagination .swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
 }
 
 #main .event_banner {
@@ -180,10 +212,6 @@ button {
     height: 14px;
     background: url("../images/gogo_pc.png") no-repeat;
     background-size: 11px 14px;
-}
-
-#main .best_wrap .best_list {
-    
 }
 
 #main .best_wrap .best_list li {
@@ -313,10 +341,6 @@ button {
     background-size: 11px 14px;
 }
 
-#main .new_wrap .new_list {
-
-}
-
 #main .new_wrap .new_list li {
     float: left;
     width: 50%;
@@ -379,10 +403,6 @@ button {
     width: 100%;
 }
 
-#main .event_product_wrap .event_product_list {
-
-}
-
 #main .event_product_wrap .event_product_list li {
     width: 33.3%;
     float: left;
@@ -431,10 +451,6 @@ button {
     background: #fff;
 }
 
-#main .design_finder_wrap .design_finder_list {
-    
-}
-
 #main .design_finder_wrap .design_finder_list li {
     float: left;
     width: 50%;
@@ -443,10 +459,6 @@ button {
 
 #main .design_finder_wrap .design_finder_list li:last-child {
     margin-right: 0;
-}
-
-#main .design_finder_wrap .design_finder_list li a {
-
 }
 
 #main .design_finder_wrap .design_finder_list li img {
@@ -558,19 +570,11 @@ button {
     margin-left: 5px;
 }
 
-#main .instagram .instagram_list {
-
-}
-
 #main .instagram .instagram_list li {
     width: 33.3%;
     float: left;
     padding: 0 4.5px;
     box-sizing: border-box;
-}
-
-#main .instagram .instagram_list li a {
-
 }
 
 #main .instagram .instagram_list li a img {
