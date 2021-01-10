@@ -369,6 +369,11 @@ a {
     height: 150px;
 }
 
+/* 개발자와 같은 방식으로 적용해도 이미지 정렬이 안 됨 이슈 체크 필요 */
+/* #main .sticker_banner li:first-child {
+    text-align: right;
+} */ 
+
 #main .sticker_banner li:last-child:after {
     display: block;
     content: '';
