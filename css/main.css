@@ -226,8 +226,8 @@ a {
 }
 
 #main .visual-slide .slick-dots li button {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     background-color: #000;
     opacity: 0.4;
     text-indent: -99999px;
@@ -236,6 +236,8 @@ a {
     outline: none;
     cursor: pointer;
     border: none;
+    padding: 0;
+    /* swiper js코드 자체에 padding이 들어가 있어서 제거 */
 }
 
 #main .visual-slide .slick-dots .slick-active button {
@@ -299,7 +301,6 @@ a {
 
 #main .stylestory_wrap {
     width: 100%;
-    height: 640px;
 }
 
 #main .stylestory_wrap h3 {
@@ -311,15 +312,14 @@ a {
 }
 
 #main .stylestory_wrap .stylestory {
-    width: 1560px;
-    height: 640px;
+    width: 1880px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 #main .stylestory > li {
     float: left;
     margin-right: 10px;
-
 }
 
 #main .stylestory > li:last-child {
@@ -328,12 +328,11 @@ a {
 
 #main .stylestory > li > a {
     display: block;
-    width: 380px;
-    height: 630px;
+    width: 462.5px;
 }
 
 #main .stylestory > li > a > img {
-    width: 380px;
+    width: 462.5px;
 }
 
 #main .stylestory .smalltitle {
