@@ -1,4 +1,16 @@
 $(function(){
+    $('.m_menu').click(function(){
+      $('.m_gnb').animate({'left':0}, 400);
+      $('.cover').fadeIn();
+      $('body').css({'overflow':'hidden'});
+      $('.m_gnb').css({'overflow-y':'auto'});
+    });
+    $('.close').click(function(){
+      $('.m_gnb').animate({'left':'-100%'}, 400);
+      $('.cover').fadeOut();
+      $('body').css({'overflow':'auto'});
+    });
+
     var mySwiper = new Swiper('.visual-slide', {
         // Optional parameters
         direction: 'horizontal',
