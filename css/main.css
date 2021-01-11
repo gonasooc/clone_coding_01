@@ -231,6 +231,7 @@ a {
     background-color: #000;
     opacity: 0.4;
     text-indent: -99999px;
+    font-size: 0;
     border-radius: 50%;
     outline: none;
     cursor: pointer;
@@ -296,11 +297,6 @@ a {
     background: url('../images/slide13.jpg') no-repeat center top;
 }
 
-/* #main .visual {
-    height: 600px;
-    background: url("../images/pc02_1920x600_20201203160513.jpg") no-repeat center top;
-} */
-
 #main .stylestory_wrap {
     width: 100%;
     height: 640px;
@@ -361,6 +357,7 @@ a {
     width: 100%;
     height: 150px;
     margin: 140px 0;
+    overflow: hidden;
 }
 
 #main .sticker_banner li {
@@ -369,10 +366,14 @@ a {
     height: 150px;
 }
 
-/* 개발자와 같은 방식으로 적용해도 이미지 정렬이 안 됨 이슈 체크 필요 */
-/* #main .sticker_banner li:first-child {
+#main .sticker_banner li a {
+    display: block;
+    width: 100%;
+}
+
+#main .sticker_banner li:first-child a {
     text-align: right;
-} */ 
+}
 
 #main .sticker_banner li:last-child:after {
     display: block;
@@ -382,7 +383,7 @@ a {
 
 #main .sticker_banner li > a {
     display: block;
-    width: 50%;
+    width: 100%;
     height: 150px;
 }
 
