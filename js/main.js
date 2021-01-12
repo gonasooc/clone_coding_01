@@ -20,46 +20,47 @@ $(function(){
       
         // If we need pagination
         pagination: {
-          el: '.swiper-pagination',
+          el: '.visual-slide .swiper-pagination',
+          clickable: true,
         },
       
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.visual-slide .swiper-button-next',
+          prevEl: '.visual-slide .swiper-button-prev',
         },
       
         // And if we need scrollbar
         scrollbar: {
-          el: '.swiper-scrollbar',
+          el: '.visual-slide .swiper-scrollbar',
         },
-      })
+      });
     var mySwiper2 = new Swiper('.best_wrap-slide', {
       // Optional parameters
       direction: 'horizontal',
       loop: true,
       slidesPerView: 3,
       slidesPerGroup: 3,
-      autoplay: {delay: 4000},
-        speed: 1000,
-      // spaceBetween: 200,
+      autoplay: {delay: 2000},
+      speed: 1000,
+      centeredSlides: true,
     
       // If we need pagination
       pagination: {
-        el: '.swiper-pagination',
+        el: '.best_wrap-slide .swiper-pagination',
       },
     
       // Navigation arrows
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.best_wrap-slide .swiper-button-next',
+        prevEl: '.best_wrap-slide .swiper-button-prev',
       },
     
       // And if we need scrollbar
       scrollbar: {
-        el: '.swiper-scrollbar',
+        el: '.best_wrap-slide .swiper-scrollbar',
       },
-    })
+    });
     var mySwiper3 = new Swiper('.design_finder-slide', {
       // Optional parameters
       direction: 'horizontal',
@@ -67,22 +68,23 @@ $(function(){
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 20,
-      autoplay: {delay: 4000},
+      autoplay: {delay: 2000},
         speed: 1000,
       // If we need pagination
       pagination: {
-        el: '.swiper-pagination',
+        el: '.design_finder-slide .swiper-pagination',
+      centeredSlides: true,
       },
     
       // Navigation arrows
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.design_finder-slide .swiper-button-next',
+        prevEl: '.design_finder-slide .swiper-button-prev',
       },
     
       // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
       },
-    })
+    });
 });
