@@ -14,5 +14,13 @@ $(function(){
         slidesToScroll: 1,
         speed: 1000
     });
+    $('.hamburger_btn').click(function(){
+        $('.allmenu').fadeIn(200);
+        $('.allmenu_cover').fadeIn(200);
+    })
+    $('.exit_btn').click(function(){
+        $('.allmenu').fadeOut(200);
+        $('.allmenu_cover').fadeOut(200);
+    })
 });
 
