@@ -78,6 +78,7 @@ a {
     color: #000;
     font-weight: bold;
     font-size: 16px;
+    line-height: 1.4;
 }
 
 #header .header_inner .gnb_util_wrap .gnb .depth2 {
@@ -90,6 +91,20 @@ a {
     background: #fff;
     display: none;
     z-index: 2;
+}
+
+#header .header_inner .gnb_util_wrap .gnb .depth2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    margin-left: -4px;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    border-top: 1px solid #b9b9;
+    border-left: 1px solid #b9b9;
 }
 
 #header .header_inner .gnb_util_wrap .gnb .depth2 > li {
@@ -240,7 +255,7 @@ a {
 }
 
 #main .visual-slide_wrap .visual-slide .imgbox5 {
-    background: url('../images/visual_slide_05.jpg') no-repeat center center;
+    background: url('../images/visual_slide_05.png') no-repeat center center;
     background-size: cover;
 }
 
