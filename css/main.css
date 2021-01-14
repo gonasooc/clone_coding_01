@@ -177,6 +177,7 @@ a {
 #main .visual-slide_wrap {
     width: 100%;
     background-color: #f6f6f6;
+    position: relative;
 }
 
 #main .visual-slide_wrap .visual-slide {
@@ -293,8 +294,8 @@ a {
 #main .visual-slide_wrap .visual-slide .swiper-pagination .swiper-pagination-bullet {
     width: 16px;
     height: 16px;
-    background-color: #d3dde9;
-    border: 3px solid #d3dde9;
+    background-color: #356cb1;
+    border: 3px solid #356cb1;
     border-radius: 50%;
     box-sizing: border-box;
     margin-right: 10px;
@@ -309,4 +310,23 @@ a {
     border-color: #356cb1;
 }
 
+#main .visual-slide_wrap .btn_slide {
+    display: block;
+    width: 14px;
+    height: 18px;
+    background: url('../images/icons_pc.png') no-repeat -100px -100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+    bottom: 42px;
+    text-indent: -99999px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#main .visual-slide_wrap .btn_slide.on {
+    width: 14px;
+    height: 18px;
+    background: url('../images/icons_pc.png') no-repeat -80px -100px;
+}
 
