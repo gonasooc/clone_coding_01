@@ -125,6 +125,11 @@ a {
     white-space: nowrap;
 }
 
+#header .header_inner .gnb_util_wrap .gnb .depth2 > li > a:hover {
+    color: #000;
+}
+
+
 #header .header_inner .gnb_util_wrap .util {
     float: left;
     padding-top: 11px;
@@ -431,6 +436,82 @@ a {
     margin: 0 auto;
 }
 
+#main .container {
+    width: 1360px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+#main .container .news_wrap {
+    width: 860px;
+    border: 1px solid #000;
+    float: left;
+    padding: 55px 0 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#main .container .news_wrap h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    height: 58px;
+}
+
+#main .container .news_wrap .btn_more {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 55px;
+}
+
+#main .container .news_wrap .newslist {
+
+}
+
+#main .container .news_wrap .newslist li {
+
+}
+
+#main .container .news_wrap .newslist li a {
+
+}
+
+#main .container .news_wrap .newslist li a .mask {
+    display: block;
+    width: 63.61%;
+}
+
+#main .container .news_wrap .newslist li a .mask .imgbox {
+
+}
+
+#main .container .news_wrap .newslist li a .textbox {
+
+}
+
+#main .container .news_wrap .newslist li a .textbox .newstab {
+
+}
+
+#main .container .news_wrap .newslist li a .textbox .title {
+
+}
+
+#main .container .news_wrap .newslist li a .textbox .date {
+
+}
+
+
+
+#main .container .side_wrap {
+    width: 420px;
+    border: 1px solid #000;
+    float: right;
+}
 
 
 
