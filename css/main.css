@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body {
+    font-family: 'Signika', 'NanumSquare', sans-serif;
+}
+
+* {
+    font-size: 14px;
+    color: #000;
+    line-height: 1.6;
+    letter-spacing: -1px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    width: 100%;
+    background: #fff;
+}
+
+#header .header_inner {
+    width: 1390px;
+    height: 87px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#header .header_inner h1 {
+    float: left;
+    line-height: 87px;
+    border: 1px solid #000;
+}
+
+#header .header_inner h1 img {
+    vertical-align: middle;
+    border: 1px solid #000;
+}
+
+#header .header_inner .gnb {
+    float: left;
+    height: 87px;
+    border: 1px solid #000;
+}
+
+#header .header_inner .gnb > li {
+    float: left;
+    padding: 0 35px;
+}
+
+#header .header_inner .util {
+    float: right;
+}
+
+#header .header_inner .util li {
+    float: left;
+}
+
