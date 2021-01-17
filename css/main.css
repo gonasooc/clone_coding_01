@@ -30,36 +30,87 @@ a {
     box-sizing: border-box;
     border: 1px solid #000;
     margin: 0 auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #header .header_inner h1 {
     float: left;
     line-height: 87px;
-    border: 1px solid #000;
 }
 
 #header .header_inner h1 img {
     vertical-align: middle;
-    border: 1px solid #000;
 }
 
 #header .header_inner .gnb {
     float: left;
     height: 87px;
     border: 1px solid #000;
+    width: 864px;
+    height: 87px;
+    padding-left: 4%;
 }
 
 #header .header_inner .gnb > li {
-    float: left;
+    display: inline-block;
     padding: 0 35px;
 }
 
+#header .header_inner .gnb > li > a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #444444;
+    letter-spacing: 0px;
+    line-height: 105px;
+    /* 살짝 아래로 정렬하고자 할 때 line-height로 조정 가능 */
+    border: 1px solid #000;
+}
+
+
+
 #header .header_inner .util {
     float: right;
+    margin-top: 30px;
+    
 }
 
 #header .header_inner .util li {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
 }
 
+#header .header_inner .util li:last-child {
+    margin-right: 0;
+}
+
+#header .header_inner .util li .cart {
+    position: relative;
+}
+
+#header .header_inner .util li .cart .cart_count {
+    position: absolute;
+    right: -10px;
+    bottom: -2px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    background: #ff0200;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+#main {
+    width: 100%;
+    height: 500px;
+    background: lightgray;
+}
+
+#footer {
+    width: 100%;
+}
