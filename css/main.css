@@ -260,7 +260,7 @@ a {
 }
 
 
-#main .slick-prev {
+#main .slide .slick-prev {
     background: url('../images/btn_slide_prev.png') no-repeat center center;
     width: 78px;
     height: 78px;
@@ -276,7 +276,7 @@ a {
     cursor: pointer;
 }
 
-#main .slick-next {
+#main .slide .slick-next {
     background: url('../images/btn_slide_next.png') no-repeat center center;
     width: 78px;
     height: 78px;
@@ -292,24 +292,24 @@ a {
     cursor: pointer;
 }
 
-#main .slick-dots {
+#main .slide .slick-dots {
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
 }
 
-#main .slick-dots li {
+#main .slide .slick-dots li {
     float: left;
     margin-right: 3px;
     margin-bottom: 85px;
 }
 
-#main .slick-dots li:last-child {
+#main .slide .slick-dots li:last-child {
     margin-right: 0;
 }
 
-#main .slick-dots li button {
+#main .slide .slick-dots li button {
     width: 12px;
     height: 12px;
     background: url('../images/ico_slide_control.png') no-repeat center center;
@@ -319,7 +319,7 @@ a {
     cursor: pointer;
 }
 
-#main .slick-dots .slick-active button {
+#main .slide .slick-dots .slick-active button {
     width: 26px;
     height: 12px;
     background: url('../images/ico_slide_control2_on.png') no-repeat center center;
@@ -335,6 +335,158 @@ a {
 	background: #ffcc93 url("../images/mainimage.jpg") no-repeat center top;
 } */
 
+#main .section1 {
+	width: 100%;
+	background: #fff url('../images/bg_product_tab01.jpg') no-repeat center top;
+}
+
+#main .section1 .section1_inner {
+	width: 1140px;
+	height: 945px;
+	margin: 0 auto;
+	padding: 70px 0 60px;
+	position: relative;
+}
+
+#main .section1 .section1_inner .title {
+	text-align: center;
+}
+
+#main .section1 .section1_inner .title h2 {
+	color: #222;
+    font-size: 46px;
+    line-height: 46px;
+    font-weight: 500;
+}
+
+#main .section1 .section1_inner .title p {
+    margin-top: 20px;
+    color: #666;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+#main .section1 .section1_inner .title h3 {
+	margin-top: 50px;
+    color: #222;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+#main .section1 .section1_inner .list {
+	width: 380px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+#main .section1 .section1_inner .list li {
+	display: inline-block;
+	line-height: 20px;
+    color: #666;
+    font-size: 15px;
+    font-weight: 400;
+	text-align: center;
+	margin-right: 14px;
+	letter-spacing: -1px;
+}
+
+#main .section1 .section1_inner .list li:last-child {
+	margin-right: 0;
+}
+
+#main .section1 .section1_inner .list li h4 {
+
+}
+
+#main .section1 .section1_inner .list li a {
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin-top: 15px;
+	background: url('../images/product_tab1.png') no-repeat center top;
+}
+
+#main .section1 .section1_inner .list li.on a {
+	background-position: center -80px;
+}
+
+#main .section1 .section1_inner .list li a:hover {
+	background-position: center -80px;
+}
+
+#main .section1 .section1_inner .list li .snack {
+	background: url('../images/product_tab2.png') no-repeat center top;
+}
+
+#main .section1 .section1_inner .list li .milk {
+	background: url('../images/product_tab3.png') no-repeat center top;
+}
+
+#main .section1 .section1_inner .list li .simple {
+	background: url('../images/product_tab4.png') no-repeat center top;
+}
+
+
+#main .section1 .section1_inner .newbox {
+	width: 250px;
+	height: 330px;
+	background: url('../images/product_new_bg.png') no-repeat 8px 0;
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+
+#main .section1 .section1_inner .newbox .newbox_list {
+	position: relative;
+}
+
+#main .section1 .section1_inner .newbox .newbox_list li {
+
+}
+
+#main .section1 .section1_inner .newbox .newbox_list li a {
+	display: block;
+	width: 180px;
+	height: 180px;
+	margin-top: 90px;
+	margin-left: 40px;
+	outline: none;
+}
+
+#main .section1 .section1_inner .newbox .newbox_list .slick-dots {
+	position: absolute;
+	right: 20px;
+	top: 40px;
+}
+
+#main .section1 .section1_inner .newbox .newbox_list .slick-dots li {
+	float: left;
+	margin-right: 2px;
+}
+
+#main .section1 .section1_inner .newbox .newbox_list .slick-dots li:last-child {
+	margin-right: 0;
+}
+
+#main .section1 .section1_inner .newbox .newbox_list .slick-dots li button {
+    width: 12px;
+    height: 12px;
+	background: url('../images/ico_slide_control.png') no-repeat center center;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	text-indent: -99999px;
+}
+
+#main .section1 .section1_inner .newbox .newbox_list .slick-dots .slick-active button {
+	width: 12px;
+    height: 12px;
+	background: url('../images/ico_slide_control_on.png') no-repeat center center;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	text-indent: -99999px;
+}
 
 
 
