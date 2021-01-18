@@ -1,0 +1,307 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#header {
+    width: 100%;
+    height: 90px;
+    padding: 0 16px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+#header h1 {
+    width: 160px;
+    height: 54px;
+    padding-top: 20px;
+    float: left;
+}
+
+#header h1 a {
+    display: block;
+    width: 160px;
+    height: 54px;
+    background: url('../images/m_logo.png') no-repeat center center;
+    background-size: contain;
+    text-indent: -99999px;
+}
+
+#header .hamburger_btn {
+    width: 30px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+#header .hamburger_btn .line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 8px;
+}
+
+#header .hamburger_btn .line:last-child {
+    margin-bottom: 0;
+}
+
+#header .hamburger_btn .line:nth-child(2) {
+    width: 20px;
+    margin-left: 10px;
+}
+
+#main {
+    width: 100%;   
+}
+
+#main .visual {
+    width: 100%;
+    height: 628px;
+    background: url('../images/main_bg_top.png') no-repeat center top;
+    background-size: cover;
+}
+
+#main .main_info {
+    width: 100%;
+    background: #fff;
+}
+
+#main .main_info ul {
+    overflow: hidden;
+}
+
+#main .main_info ul li {
+    float: left;
+    width: 50%;
+    /* height: 66px; */
+    box-sizing: border-box;
+    text-align: center;
+    height: 66px;
+    padding: 15px 0;
+}
+
+#main .main_info ul li:first-child {
+    background: url('../images/main_border01.png') no-repeat right center;
+}
+
+#main .main_info ul li img {
+    display: inline-block;
+    margin-right: 10px;
+    width: 16%;
+    width: 38px;
+    height: 38px;
+    vertical-align: middle;
+}
+
+#main .main_info ul li .text {
+    display: inline-block;
+    font-size: 12px;
+    color: #333333;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+}
+
+#main .main_event {
+    width: 100%;
+    height: 513px;
+    padding: 48px 0 64px;
+    box-sizing: border-box;
+    background: #308fb2 url('../images/main_img01.jpg') no-repeat center top;
+}
+
+#main .main_event h2 {
+    font-weight: 500;
+    padding-bottom: 8px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+}
+
+#main .main_event .content {
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+#main .main_event .main-event-slide {
+    margin: 0 auto;
+    position: relative;
+}
+
+#main .main_event .main-event-slide a {
+    display: block;
+    width: 258px;
+    margin: 0 auto;
+}
+
+#main .main_event .main-event-slide .imgbox1 {
+    width: 258px;
+    height: 250px;
+    background: url('../images/slide01.jpg') no-repeat center center;
+    background-size: 258px;
+}
+
+#main .main_event .main-event-slide .imgbox2 {
+    width: 258px;
+    height: 250px;
+    background: url('../images/slide02.jpg') no-repeat center center;
+    background-size: 258px;
+}
+
+#main .main_event .main-event-slide .textbox {
+    width: 258px;
+    height: 66px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+#main .main_event .main-event-slide .textbox .title {
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
+
+#main .main_event .main-event-slide .textbox .date {
+    font-size: 12px;
+    color: #979797;
+    letter-spacing: -0.5px;
+}
+
+#main .main_event .main-event-slide .slick-prev {
+    width: 18px;
+    height: 34px;
+    background: url('../images/slider_left.png') no-repeat center center;
+    outline: none;
+    text-indent: -99999px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#main .main_event .main-event-slide .slick-next {
+    width: 18px;
+    height: 34px;
+    background: url('../images/slider_right.png') no-repeat center center;
+    outline: none;
+    text-indent: -99999px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#main .main_contents {
+    width: 100%;
+    padding: 60px 32px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+#main .main_contents h2 {
+    font-size: 16px;
+    color: #000;
+    letter-spacing: -0.5px;
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+#main .main_contents h2 em {
+    font-weight: bold;
+}
+
+#main .main_contents .more_content {
+    margin-bottom: 30px;
+    color: #9d9d9d;
+    text-align: center;
+    font-size: 12px;
+}
+
+#main .main_contents .menu-slide {
+    border: 1px solid #000;
+    /* overflow: hidden; */
+}
+
+#main .main_contents .menu-slide li {
+    float: left;
+    width: 33.3%;
+    height: 150px;
+    border: 1px solid #dedede;
+    text-align: center;
+    padding: 23px 0;
+    box-sizing: border-box;
+    border-right: none;
+}
+
+#main .main_contents .menu-slide li:last-child {
+    border-right: 1px solid #dedede;
+}
+
+#main .main_contents .menu-slide li a {
+    display: inline-block;
+}
+
+#main .main_contents .menu-slide li img {
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+}
+
+#main .main_contents .menu-slide li .menu_text {
+    font-size: 12px;
+    color: #333333;
+    padding-top: 30px;
+}
+
+
+/* #main .main_contents .menu-slide .slick-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+#main .main_contents .menu-slide .slick-dots button {
+    display: block;
+    width: 10px;
+    height: 14px;
+    border: 1px solid #4292ba;
+    border-radius: 50%;
+    background: #fff;
+    text-indent: -9999px;
+    cursor: pointer;
+    outline: none;
+}
+
+#main .main_contents .menu-slide .slick-active button {
+    display: block;
+    width: 10px;
+    height: 14px;
+    border: 1px solid #4292ba;
+    border-radius: 50%;
+    background: #4292ba;
+    text-indent: -9999px;
+    cursor: pointer;
+    outline: none;
+}
+
