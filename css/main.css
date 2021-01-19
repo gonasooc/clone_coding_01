@@ -21,6 +21,7 @@ a {
 #header {
     width: 100%;
     background: #fff;
+    position: relative;
 }
 
 #header .header_inner {
@@ -49,11 +50,14 @@ a {
     width: 864px;
     height: 87px;
     padding-left: 4%;
+    /* position: relative; */
 }
 
 #header .header_inner .gnb > li {
     display: inline-block;
     padding: 0 35px;
+    border: 1px solid #000;
+    /* position: relative; */
 }
 
 #header .header_inner .gnb > li > a {
@@ -63,8 +67,29 @@ a {
     letter-spacing: 0px;
     line-height: 105px;
     /* 살짝 아래로 정렬하고자 할 때 line-height로 조정 가능 */
+}
+
+#header .header_inner .gnb > li:hover .depth2_wrap {
+    display: block;
+}
+
+#header .header_inner .gnb > li .depth2_wrap {
+    position: absolute;
+    left: 0;
+    top: 87px;
+    z-index: 10;
+    width: 100%;
+    background: white;
+    text-align: left;
+    padding: 30px 0;
+    display: none;
+}
+
+#header .header_inner .gnb > li .depth2_wrap .depth2 {
+    /* margin-left: 610px; */
     border: 1px solid #000;
 }
+
 
 
 
@@ -119,12 +144,13 @@ a {
 
 #footer .footer_inner {
     width: 1390px;
-    border: 1px solid #000;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 #footer .footer_inner .footer_inner_left {
     width: 81%;
+    float: left;
 }
 
 #footer .footer_inner .footer_inner_left .fl_top {
@@ -237,4 +263,29 @@ a {
 
 #footer .footer_inner .footer_inner_right {
     float: right;
+}
+
+
+#footer .footer_inner .footer_inner_right .sns {
+    margin-top: 50px;
+}
+
+#footer .footer_inner .footer_inner_right .sns li {
+    display: inline-block;
+}
+
+#footer .footer_inner .footer_inner_right .sns li:not(:last-child) {
+    margin-right: 25px;
+}
+
+#footer .footer_inner .footer_inner_right .sns li a {
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+
+#footer .footer_inner .footer_inner_right .sns li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
