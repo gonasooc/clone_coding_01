@@ -10,6 +10,125 @@ body.on {
 }
 
 
+.quick {
+    /* border: 1px solid #000; */
+    position: relative;
+    width: 300px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    z-index: 9;
+    transform: translateX(-50%);
+    
+}
+
+.quick .trigger_btn {
+    display: inline-block;
+    background-color: #9acd91;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    font-size: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 3;
+}
+
+.quick .trigger_btn .btn_line {
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    z-index: 3;
+    position: relative;
+}
+
+.quick .trigger_btn .btn_line::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    transition: all 0.5s;
+}
+
+.quick .trigger_btn .btn_line.on::before {
+    transform: rotate(45deg);
+}
+
+.quick .trigger_btn .btn_line::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    transition: all 0.5s;
+}
+
+.quick .trigger_btn .btn_line.on::after {
+    transform: rotate(45deg);
+}
+
+
+.quick .quick_list {
+    background: #8ac57f;
+    /* border: 1px solid #000; */
+    height: 60px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: all 0.5s;
+    display: none;
+}
+
+.quick .quick_list.on {
+    display: block;
+}
+
+.quick .quick_list li {
+    float: left;
+}
+
+.quick .quick_list li:nth-child(2) {
+    margin-right: 60px;
+}
+
+.quick .quick_list li a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid #000; */
+    background: url('../images/MQmember.png') no-repeat center center;
+    background-size: 20px;
+    text-indent: -99999px;
+}
+
+.quick .quick_list li .camera {
+    background: url('../images/MQcamera.png') no-repeat center center;
+    background-size: 20px;
+}
+
+.quick .quick_list li .program {
+    background: url('../images/MQprogram.png') no-repeat center center;
+    background-size: 20px;
+}
+
+.quick .quick_list li .ticket {
+    background: url('../images/main_img11.png') no-repeat center center;
+    background-size: 20px;
+}
+
+
 .m_gnb {
     padding-top: 90px;
     width: 100%;
@@ -48,6 +167,7 @@ body.on {
 
 .m_gnb .home .btn_wrap .lang_wrap {
     display: inline-block;
+    position: relative;
 }
 
 .m_gnb .home .btn_wrap .lang_wrap .lang_btn {
@@ -67,6 +187,10 @@ body.on {
     width: 100px;
     font-size: 11px;
     display: none;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    z-index: 11;
 }
 
 .m_gnb .home .btn_wrap .lang_wrap .lang_list li {
@@ -77,11 +201,20 @@ body.on {
     box-sizing: border-box;
     text-align: left;
     text-indent: 5px;
+    background: #fff;
+}
+
+.m_gnb .home .btn_wrap .lang_wrap .lang_list li:hover {
+    background: #1e90ff;
+}
+
+.m_gnb .home .btn_wrap .lang_wrap .lang_list li:hover a {
+    color: #fff;
 }
 
 .m_gnb .home .btn_wrap .lang_wrap .lang_list li a {
-    color: #000;
-    font-weight: bold;
+    color: #333;
+    font-weight: 500;
 }
 
 .m_gnb .sidemenu {
@@ -103,6 +236,10 @@ body.on {
     font-weight: 500;
     position: relative;
     border-top: 1px solid #e7e7e7;
+}
+
+.m_gnb .sidemenu > li > a.on {
+    color: #0056a0;
 }
 
 .m_gnb .sidemenu > li > a::after {
@@ -182,9 +319,10 @@ body.on {
 #header .hamburger_btn {
     display: block;
     width: 30px;
-    height: 20px;
+    height: 22px;
     float: right;
     margin-top: 35px;
+    /* border: 1px solid #000; */
     /* overflow: hidden; */
 }
 
@@ -196,11 +334,12 @@ body.on {
     margin-bottom: 8px;
     position: relative;
     margin-top: 10px;
-    float: right;
+    /* float: right; */
 }
 
 #header .hamburger_btn .line.on {
     width: 0;
+    transform-origin: left top;
 }
 
 #header .hamburger_btn .line::before {
@@ -210,7 +349,7 @@ body.on {
     background: #fff;
     position: absolute;
     top: -10px;
-    left: -10px;
+    left: 0;
     transition: all 0.5s;
 }
 
@@ -227,7 +366,7 @@ body.on {
     background: #fff;
     position: absolute;
     top: 10px;
-    left: -10px;
+    left: 0px;
     transition: all 0.5s;
 }
 

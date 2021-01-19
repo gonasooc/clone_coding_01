@@ -12,25 +12,22 @@ $(document).ready(function(){
     var btn_lang_sw = true;
     $('.lang_btn').click(function(){
       if(btn_lang_sw == true){
-        $('.lang_list').slideDown();
+        $('.lang_list').show();
         btn_lang_sw = false;
       } else {
-        $('.lang_list').slideUp();
+        $('.lang_list').hide();
         btn_lang_sw = true;
       }
     });
     $('.m_gnb .sidemenu > li > a').click(function(){
       $(this).next().slideToggle().parent().siblings().find('.depth2').slideUp();
-    });
-    $('.m_gnb .sidemenu > li > a').click(function(){
       $(this).toggleClass('on').parent().siblings().find('a').removeClass('on');
     });
-
     $('.hamburger_btn').click(function(){
-      $('#header h1 a').toggleClass('on');
-      $('.m_gnb').toggleClass('on');
-      $('.line').toggleClass('on');
-      $('body').toggleClass('on');
+      $('#header h1 a, .m_gnb, .line, body').toggleClass('on');
     });
-
+    $('.quick .trigger_btn').click(function(){
+      $(this).find('.btn_line').toggleClass('on');
+      $(this).next().toggleClass('on');
+    });
   });
