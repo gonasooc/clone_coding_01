@@ -599,7 +599,6 @@ body.on {
     height: 150px;
     text-align: center;
     box-sizing: border-box;
-    border-right: 1px solid #dedede;
 }
 
 #main .main_contents .menu-slide .menu-list:last-child {
@@ -610,6 +609,13 @@ body.on {
     display: block;
     outline: none;
     padding-top: 20px;
+    height: 150px;
+    box-sizing: border-box;
+    border-right: 1px solid #dedede;
+}
+
+#main .main_contents .menu-slide .menu-list:last-child .border-none {
+    border-right: none;
 }
 
 #main .main_contents .menu-slide .menu-list .imgbox {
@@ -716,13 +722,14 @@ body.on {
 
 #footer .footer_info {
     height: 100%;
-    padding-top: 80px;
+    padding-top: 120px;
     background: url('../images/footerLogo.png') no-repeat center 20px;
-    background-size: 110px;
+    background-size: 180px;
     font-size: 10px;
     color: #333;
     letter-spacing: -0.5px;
     line-height: 18px;
+    /* text-align: center; */
 }
 
 #footer .footer_info a {
