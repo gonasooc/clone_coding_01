@@ -398,6 +398,25 @@ a {
     background: #fff url('../images/main_btn3.png') no-repeat 85% center;
 }
 
+#main .vitagram_wrap {
+    width: 100%;
+    padding-top: 115px;
+}
+
+#main .vitagram_wrap .vitagram_inner {
+
+}
+
+#main .vitagram_wrap .vitagram_inner h2 {
+    font-size: 62px;
+    margin-bottom: 15px;
+    color: #000;
+    text-align: center;
+}
+
+
+
+
 
 #main .notice_wrap {
     width: 100%;
@@ -422,7 +441,27 @@ a {
     padding: 42px 40px;
     box-sizing: border-box;
     background: #f6f6f6;
+    position: relative;
 }
+
+#main .notice_wrap .notice_inner ul li::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff0200;
+    transition: all 0.5s;
+}
+
+#main .notice_wrap .notice_inner ul li:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+
 
 #main .notice_wrap .notice_inner ul li:not(:last-child) {
     margin-right: 20px;
@@ -449,6 +488,14 @@ a {
     font-size: 24px;
     font-weight: 400;
     color: #232323;
+}
+
+#main .notice_wrap .notice_inner ul li:hover .tbox strong {
+    color: #fff;
+}
+
+#main .notice_wrap .notice_inner ul li:hover .tbox p {
+    color: #fff;
 }
 
 #main .notice_wrap .notice_inner .tbox p {
