@@ -13,7 +13,6 @@
     <script src="./js/main.js"></script>
 </head>
 <body>
-
     <div class="quick">
         <a href="javascript:;" class="trigger_btn">
             빠른메뉴보기
@@ -33,7 +32,7 @@
                 <a href="#" class="login">로그인</a>
                 <a href="#" class="join">회원가입</a>
                 <div class="lang_wrap">
-                    <button type="button" class="lang_btn">LANGUAGE</button>
+                    <button type='button' class="lang_btn">LANGUAGE</button>
                     <ul class="lang_list">
                         <li><a href="#">LANGUAGE</a></li>
                         <li><a href="#">KR</a></li>
@@ -104,33 +103,34 @@
         </ul>
     </div>
 
+    <span id="scroll_point"></span>
     <div id="header">
         <h1>
-            <a href="#">아쿠아리움 로고</a>
+            <a href="./index.html">아쿠아리움 로고</a>
         </h1>
         <a href="#" class="hamburger_btn">
             <span class="line"></span>
         </a>
     </div>
-    
+
     <div id="main">
         <div class="visual"></div>
         <div class="main_info">
             <ul>
                 <li class="time">
-                    <img src="./images/main_img01.png">
+                    <img src="./images/main_img01.png" alt="오늘의운영시간">
                     <span class="text">오늘의 운영시간<br />10:00 - 20:00</span>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./images/main_img02.png">
+                        <img src="./images/main_img02.png" alt="이티켓구매">
                         <span class="text">e-TICKET 구매</span>
                     </a>
                 </li>
             </ul>
         </div>
         <div class="main_event">
-            <h2>코엑스아쿠아리움 소식을 확인해보세요.</h2>
+            <h2><em>코엑스아쿠아리움 소식</em>을 확인해보세요.</h2>
             <p class="content">이벤트를 클릭하시면 더 자세한 정보를 확인하실 수 있습니다.</p>
             <div class="main-event-slide">
                 <div>
@@ -157,25 +157,25 @@
             <h2>코엑스아쿠아리움에서 <em>다양한 혜택</em>을 드립니다</h2>
             <p class="more_content">버튼을 눌러 자세한 내용을 확인하세요.</p>
             <ul class="menu-slide">
-                <li>
+                <li class="menu-list">
                     <a href="#">
                         <div class="imgbox imgbox1"></div>
                         <p class="menu_text">이용요금</p>
                     </a>
                 </li>
-                <li>
+                <li class="menu-list">
                     <a href="#">
                         <div class="imgbox imgbox2"></div>
                         <p class="menu_text">공연시간</p>
                     </a>
                 </li>
-                <li>
+                <li class="menu-list">
                     <a href="#">
                         <div class="imgbox imgbox3"></div>
                         <p class="menu_text">우대할인</p>
                     </a>
                 </li>
-                <li>
+                <li class="menu-list">
                     <a href="#">
                         <div class="imgbox imgbox4"></div>
                         <p class="menu_text">프로그램 안내</p>
@@ -207,13 +207,6 @@
             <li><a href="#" class="youtube">유튜브</a></li>
         </ul>
         <a href="#" class="footer_banner"></a>
-    </div>
-
-
-
-
-
-
-    
+    </div>    
 </body>
 </html>

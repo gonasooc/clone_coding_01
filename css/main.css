@@ -1,6 +1,10 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+* {
+    letter-spacing: -0.5px;
+}
+
 body {
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -9,9 +13,7 @@ body.on {
     overflow: hidden;
 }
 
-
 .quick {
-    /* border: 1px solid #000; */
     position: relative;
     width: 300px;
     height: 60px;
@@ -20,7 +22,6 @@ body.on {
     left: 50%;
     z-index: 9;
     transform: translateX(-50%);
-    
 }
 
 .quick .trigger_btn {
@@ -33,7 +34,7 @@ body.on {
     font-size: 0;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    margin-left: -30px;
     top: 0;
     z-index: 3;
 }
@@ -45,6 +46,11 @@ body.on {
     line-height: 60px;
     z-index: 3;
     position: relative;
+    transition: all 0.3s;
+}
+
+.quick .trigger_btn .btn_line.on {
+    transform: rotate(-225deg);
 }
 
 .quick .trigger_btn .btn_line::before {
@@ -54,13 +60,10 @@ body.on {
     height: 2px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: -8px;
+    margin-top: -1px;
     background-color: #ffffff;
     transition: all 0.5s;
-}
-
-.quick .trigger_btn .btn_line.on::before {
-    transform: rotate(45deg);
 }
 
 .quick .trigger_btn .btn_line::after {
@@ -70,15 +73,11 @@ body.on {
     height: 16px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: -1px;
+    margin-top: -8px;
     background-color: #ffffff;
     transition: all 0.5s;
 }
-
-.quick .trigger_btn .btn_line.on::after {
-    transform: rotate(45deg);
-}
-
 
 .quick .quick_list {
     background: #8ac57f;
@@ -87,12 +86,15 @@ body.on {
     width: 300px;
     overflow: hidden;
     border-radius: 30px;
-    transition: all 0.5s;
-    display: none;
+    transition: all 0.3s;
+    visibility: hidden;
+    transform: scaleX(0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 .quick .quick_list.on {
-    display: block;
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 .quick .quick_list li {
@@ -107,7 +109,6 @@ body.on {
     display: inline-block;
     width: 60px;
     height: 60px;
-    /* border: 1px solid #000; */
     background: url('../images/MQmember.png') no-repeat center center;
     background-size: 20px;
     text-indent: -99999px;
@@ -128,9 +129,9 @@ body.on {
     background-size: 20px;
 }
 
-
 .m_gnb {
     padding-top: 90px;
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -138,7 +139,8 @@ body.on {
     top: 0;
     background: #fff;
     transition: all 0.5s;
-    z-index: 10;
+    z-index: 50;
+    overflow: auto;
 }
 
 .m_gnb.on {
@@ -156,13 +158,14 @@ body.on {
 
 .m_gnb .home .btn_wrap > a {
     display: inline-block;
-    width: 100px;
+    width: 90px;
     height: 35px;
     line-height: 35px;
     text-align: center;
     border: 1px solid #ccc;
     font-size: 14px;
     color: #333;
+    margin-right: 5px;
 }
 
 .m_gnb .home .btn_wrap .lang_wrap {
@@ -172,25 +175,36 @@ body.on {
 
 .m_gnb .home .btn_wrap .lang_wrap .lang_btn {
     display: block;
-    width: 100px;
-    height: 35px;
+    width: 92px;
+    height: 37px;
     border: 1px solid #ccc;
     background: #fff;
-    font-size: 12px;
+    font-size: 11px;
     text-align: left;
-    background: url('../images/select.png') no-repeat 90% center;   
+    background: url('../images/select.png') no-repeat 90% 55%;
+    background-size: 10px;
+    letter-spacing: -1px;
+    box-sizing: border-box;
+    line-height: 37px;
+    outline: none;
+}
+
+.m_gnb .home .btn_wrap .lang_wrap .lang_btn.on {
+    background: url('../images/select_on.png') no-repeat 90% 55%;
+    background-size: 10px;
 }
 
 
 .m_gnb .home .btn_wrap .lang_wrap .lang_list {
     border: 1px solid #ccc;
-    width: 100px;
+    width: 90px;
     font-size: 11px;
     display: none;
     position: absolute;
     left: 0;
     top: 35px;
     z-index: 11;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .m_gnb .home .btn_wrap .lang_wrap .lang_list li {
@@ -244,18 +258,21 @@ body.on {
 
 .m_gnb .sidemenu > li > a::after {
     content: '';
-    width: 10px;
-    height: 5px;
-    background: url('../images/ico_1.png') no-repeat center center;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #ccc;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    transition: all .2s ease-in-out;
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    transition: all 0.3s;
 }
 
 .m_gnb .sidemenu > li > a.on::after {
-    background: url('../images/ico_2.png') no-repeat center center;
+    border-top: 6px solid #00a086;;
     transform: rotate(-180deg)
 }
 
@@ -265,7 +282,6 @@ body.on {
 }
 
 .m_gnb .sidemenu .depth2 li {
-    /* border: 1px solid #000; */
 }
 
 .m_gnb .sidemenu .depth2 li a {
@@ -284,6 +300,13 @@ body.on {
     border-bottom: none;
 }
 
+#scroll_point {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 90px;
+}
+
 #header {
     width: 100%;
     height: 90px;
@@ -294,6 +317,11 @@ body.on {
     top: 0;
     z-index: 99;
     background: transparent;
+}
+
+#header.on {
+    background-color: rgba(0,0,0,0.3);
+    border-bottom: 1px solid #e0e0e0;
 }
 
 #header h1 {
@@ -322,8 +350,6 @@ body.on {
     height: 22px;
     float: right;
     margin-top: 35px;
-    /* border: 1px solid #000; */
-    /* overflow: hidden; */
 }
 
 #header .hamburger_btn .line {
@@ -334,7 +360,6 @@ body.on {
     margin-bottom: 8px;
     position: relative;
     margin-top: 10px;
-    /* float: right; */
 }
 
 #header .hamburger_btn .line.on {
@@ -355,7 +380,7 @@ body.on {
 
 #header .hamburger_btn .line.on::before {
     transform-origin: left top;
-    transform: translateY(-1.5px) rotate(45deg);
+    transform: translateY(-0.5px) rotate(45deg);
     background-color: #cacaca;
 }
 
@@ -372,7 +397,7 @@ body.on {
 
 #header .hamburger_btn .line.on::after {
     transform-origin: left bottom;
-    transform: rotate(-45deg);
+    transform: translateY(0.5px)rotate(-45deg);
     background-color: #cacaca;
 }
 
@@ -399,7 +424,6 @@ body.on {
 #main .main_info ul li {
     float: left;
     width: 50%;
-    /* height: 66px; */
     box-sizing: border-box;
     text-align: center;
     height: 66px;
@@ -439,12 +463,15 @@ body.on {
 }
 
 #main .main_event h2 {
-    font-weight: 500;
     padding-bottom: 8px;
     color: #fff;
     text-align: center;
     font-size: 16px;
     letter-spacing: -0.5px;
+}
+
+#main .main_event h2 em {
+    font-weight: 500;
 }
 
 #main .main_event .content {
@@ -458,12 +485,14 @@ body.on {
 #main .main_event .main-event-slide {
     margin: 0 auto;
     position: relative;
+    width: 258px;
 }
 
 #main .main_event .main-event-slide a {
     display: block;
     width: 258px;
     margin: 0 auto;
+    outline: none;
 }
 
 #main .main_event .main-event-slide .imgbox1 {
@@ -511,7 +540,8 @@ body.on {
     border: none;
     cursor: pointer;
     position: absolute;
-    left: 15%;
+    left: 50%;
+    margin-left: -170px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
@@ -526,7 +556,8 @@ body.on {
     border: none;
     cursor: pointer;
     position: absolute;
-    right: 15%;
+    right: 50%;
+    margin-right: -170px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
@@ -534,7 +565,7 @@ body.on {
 
 #main .main_contents {
     width: 100%;
-    padding: 60px 32px;
+    padding: 60px 32px 90px;
     box-sizing: border-box;
 }
 
@@ -558,32 +589,30 @@ body.on {
 }
 
 #main .main_contents .menu-slide {
-    /* overflow: hidden; */
     text-align: center;
-    /* border: 1px solid #dedede; */
     height: 150px;
-
+    border: 1px solid #dedede;
 }
 
-#main .main_contents .menu-slide > li {
+#main .main_contents .menu-slide .menu-list {
     width: 33.3%;
     height: 150px;
     text-align: center;
-    /* padding: 23px 0; */
     box-sizing: border-box;
     border-right: 1px solid #dedede;
 }
 
-#main .main_contents .menu-slide > li:last-child {
-    border-right: 1px solid #dedede;
+#main .main_contents .menu-slide .menu-list:last-child {
+    border-right: none;
 }
 
-#main .main_contents .menu-slide > li > a {
-    display: inline-block;
+#main .main_contents .menu-slide .menu-list > a {
+    display: block;
     outline: none;
+    padding-top: 20px;
 }
 
-#main .main_contents .menu-slide li .imgbox {
+#main .main_contents .menu-slide .menu-list .imgbox {
     width: 80px;
     height: 60px;
     margin: 0 auto;
@@ -591,23 +620,23 @@ body.on {
     background-size: contain;
 }
 
-#main .main_contents .menu-slide li .imgbox2 {
+#main .main_contents .menu-slide .menu-list .imgbox2 {
     background: url('../images/main_img07.png') no-repeat center center;
     background-size: contain;
 }
 
-#main .main_contents .menu-slide li .imgbox3 {
+#main .main_contents .menu-slide .menu-list .imgbox3 {
     background: url('../images/main_img04.png') no-repeat center center;
     background-size: contain;
 }
 
-#main .main_contents .menu-slide li .imgbox4 {
+#main .main_contents .menu-slide .menu-list .imgbox4 {
     background: url('../images/main_img15.png') no-repeat center center;
     background-size: contain;
 }
 
 
-#main .main_contents .menu-slide li .menu_text {
+#main .main_contents .menu-slide .menu-list .menu_text {
     font-size: 12px;
     color: #333333;
     padding-top: 30px;
@@ -630,28 +659,29 @@ body.on {
 
 #main .main_contents .menu-slide .slick-dots button {
     display: block;
-    width: 10px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     border: 1px solid #4292ba;
     border-radius: 50%;
     background: #fff;
     text-indent: -9999px;
     cursor: pointer;
     outline: none;
+    padding: 0;
 }
 
 #main .main_contents .menu-slide .slick-active button {
     display: block;
-    width: 10px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     border: 1px solid #4292ba;
     border-radius: 50%;
     background: #4292ba;
     text-indent: -9999px;
     cursor: pointer;
     outline: none;
+    padding: 0;
 }
-
 
 #footer {
     width: 100%;
@@ -689,10 +719,14 @@ body.on {
     padding-top: 80px;
     background: url('../images/footerLogo.png') no-repeat center 20px;
     background-size: 110px;
-    font-size: 11px;
+    font-size: 10px;
     color: #333;
     letter-spacing: -0.5px;
     line-height: 18px;
+}
+
+#footer .footer_info a {
+    color: #333;
 }
 
 #footer .footer_info p {
@@ -742,5 +776,4 @@ body.on {
     background: url('../images/cmc_banner.jpg') no-repeat center center;
     background-size: 170px;
     margin-top: 10px;
-
 }
