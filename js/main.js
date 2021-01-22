@@ -21,7 +21,6 @@ $(function(){
         arrows: false
     })
 
-
     $('.slider').bxSlider({
         minSlides: 7,
         maxSlides: 7,
@@ -29,6 +28,10 @@ $(function(){
         slideWidth: 1000,
         infiniteLoop: false,
         controls: false
+    });
+
+    $('.box2').bxSlider({
+        arrows: false
     });
     
     $('.bxslider_wrap .bx-wrapper:gt(0)').hide();
