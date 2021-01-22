@@ -8,10 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/reset.css">
 <link rel="stylesheet" href="./css/slick.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <link rel="stylesheet" href="./css/main.css">
 <script src="./js/jquery-3.5.0.min.js"></script>
 <script src="./js/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="./js/main.js"></script>
+
  </head>
  <body>
 
@@ -109,27 +112,13 @@
 	<!-- main 부분 -->
 	<div id="main">
 		<div class="slide">
-			<div class="slide1">
-                <a href="#"></a>
-            </div>
-            <div class="slide2">
-                <a href="#"></a>
-            </div>
-            <div class="slide3">
-                <a href="#"></a>
-            </div>
-            <div class="slide4">
-                <a href="#"></a>
-            </div>
-            <div class="slide5">
-                <a href="#"></a>
-            </div>
-            <div class="slide6">
-                <a href="#"></a>
-            </div>
-            <div class="slide7">
-                <a href="#"></a>
-            </div>
+			<div class="slide1"><a href="#"></a></div>
+            <div class="slide2"><a href="#"></a></div>
+            <div class="slide3"><a href="#"></a></div>
+            <div class="slide4"><a href="#"></a></div>
+            <div class="slide5"><a href="#"></a></div>
+            <div class="slide6"><a href="#"></a></div>
+            <div class="slide7"><a href="#"></a></div>
 		</div>
 		<div class="section1">
 			<div class="section1_inner">
@@ -138,7 +127,14 @@
 					<p>Delicious Together!</p>
 					<h3>다양한 제품을<br />한곳에서 즐기세요!</h3>
 				</div>
-				<ul class="list">
+				<div class="newbox">
+					<ul class="newbox_list">
+						<li><a href="#"><img src="./images/ramyun/r01.png" alt="삼양라면컵"></a></li>
+						<li><a href="#"><img src="./images/ramyun/r02.png" alt="찐수타라면"></a></li>
+						<li><a href="#"><img src="./images/ramyun/r03.png" alt="불닭볶음면김치맛"></a></li>
+					</ul>
+				</div>
+				<ul class="btn_tab">
 					<li class="on">
 						<h4>라면</h4>
 						<a href="#" class="ramyun"></a>
@@ -156,15 +152,271 @@
 						<a href="#" class="simple"></a>
 					</li>
 				</ul>
-				<div class="newbox">
-					<ul class="newbox_list">
-						<li><a href="#"><img src="./images/r01.png" alt="삼양라면컵"></a></li>
-						<li><a href="#"><img src="./images/r02.png" alt="찐수타라면"></a></li>
-						<li><a href="#"><img src="./images/r03.png" alt="불닭볶음면김치맛"></a></li>
-					</ul>
-				</div>
 			</div>
-
+			<div class="bxslider_wrap">
+				<div class="prevbox"></div>
+				<div class="nextbox"></div>
+				<ul class="slider">
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r01.png" alt="삼양라면골드">
+							<p class="product-des">깊고 시원한 해물맛</p>
+							<p class="product-name">큰컵 삼양라면골드</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r02.png" alt="찐수타">
+							<p class="product-des">수타식 제면공법으로 면이 다른</p>
+							<p class="product-name">찐수타육개장</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r03.png" alt="김치불닭볶음면">
+							<p class="product-des">초깔끔한 매운맛!</p>
+							<p class="product-name">김치불닭볶음면</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r04.png" alt="크림까르보불닭볶음면">
+							<p class="product-des">크림에 빠져 더욱 부드러워진~</p>
+							<p class="product-name">크림까르보불닭볶음면</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r05.png" alt="큰컵 크림까르보불닭볶음면">
+							<p class="product-des">크림에 빠져 더욱 부드러워진~</p>
+							<p class="product-name">큰컵 크림까르보불닭볶음면</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r06.png" alt="치킨이타고있어요">
+							<p class="product-des">숯불향 더한 바비큐치킨맛 볶음면</p>
+							<p class="product-name">치킨이타고있어요</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r07.png" alt="불타는고추짬뽕">
+							<p class="product-des">추운 겨울에 어울리는 화끈한 불맛 짬뽕</p>
+							<p class="product-name">불타는 고추짬뽕</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r08.png" alt="미트스파게티 불닭볶음면">
+							<p class="product-des">미트 스파게티와 불닭의 화끈한 케미</p>
+							<p class="product-name">미트스파게티 불닭볶음면</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r09.png" alt="큰컵 미트스파게티 불닭볶음면">
+							<p class="product-des">미트 스파게티와 불닭의 화끈한 케미</p>
+							<p class="product-name">큰컵 미트스파게티 불닭볶음면</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r10.png" alt="라이트 불닭볶음면">
+							<p class="product-des">걱정을 Light하게 덜었다!</p>
+							<p class="product-name">라이트 불닭볶음면</p>
+						</a>
+					</li>
+				</ul>
+				<ul class="slider">
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/snack/s01.png" alt="미니짱구 멕시카나훌라이드치킨맛">
+							<p class="product-des">삼양식품x멕시카나</p>
+							<p class="product-name">미니짱구 멕시카나훌라이드치킨맛</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/snack/s02.png" alt="미니짱구 멕시카나양념치킨맛">
+							<p class="product-des">삼양식품x멕시카나</p>
+							<p class="product-name">미니짱구 멕시카나양념치킨맛</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/snack/s03.png" alt="사또밥 갈릭버터맛">
+							<p class="product-des">갈릭버터를 품은 사또밥</p>
+							<p class="product-name">사또밥 갈릭버터맛</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/snack/s04.png" alt="흑당짱구">
+							<p class="product-des">스모키한 달달함</p>
+							<p class="product-name">흑당짱구</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/snack/s05.png" alt="사또밥">
+							<p class="product-des">부드럽고 달콤한 영양 간식</p>
+							<p class="product-name">사또밥</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/snack/s06.png" alt="짱구">
+							<p class="product-des">베스트 장수 스낵</p>
+							<p class="product-name">짱구</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/snack/s07.png" alt="별뽀빠이">
+							<p class="product-des">국내 최초 라면과자</p>
+							<p class="product-name">별뽀빠이</p>
+						</a>
+					</li>
+				</ul>
+				<ul class="slider">
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/milk/u01.png" alt="유기농원유 100%">
+							<p class="product-des">삼양목장유기농우유 200ml</p>
+							<p class="product-name">유기농원유 100%</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/milk/u02.png" alt="제주담은우유 125ml">
+							<p class="product-des">제주의 신선함이 담긴 멸균강화우유</p>
+							<p class="product-name">제주담은우유 125ml</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/milk/u03.png" alt="삼양우유 200ml">
+							<p class="product-des">건강한 삼양 오리지널 우유</p>
+							<p class="product-name">삼양우유 200ml</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/milk/u04.png" alt="삼양딸기우유">
+							<p class="product-des">신선한 우유 속에 상큼한 딸기과즙</p>
+							<p class="product-name">삼양딸기우유</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/milk/u05.png" alt="삼양초코우유">
+							<p class="product-des">초콜릿 풍미 가득</p>
+							<p class="product-name">삼양초코우유</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/milk/u06.png" alt="삼양요거트 복숭아">
+							<p class="product-des">천연 과일 시럽과 유산균이 풍부한</p>
+							<p class="product-name">삼양요거트 복숭아</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/milk/u07.png" alt="삼양요거트 딸기">
+							<p class="product-des">천연 과일 시럽과 유산균이 풍부한</p>
+							<p class="product-name">삼양요거트 딸기</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/milk/u08.png" alt="무항생제우유 200ml">
+							<p class="product-des">자연을 마신다</p>
+							<p class="product-name">무항생제우유 200ml</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/milk/u09.png" alt="제주 슈레드 모짜렐라 치즈">
+							<p class="product-des">프리미엄 슈레드 모짜렐라 치즈</p>
+							<p class="product-name">제주 슈레드 모짜렐라 치즈</p>
+						</a>
+					</li>
+				</ul>
+				<ul class="slider">
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r01.png" alt="불닭소스 스틱">
+							<p class="product-des">언제 어디서나 간편하게!</p>
+							<p class="product-name">불닭소스 스틱</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r02.png" alt="불닭볶음김치">
+							<p class="product-des">화끈하게 매운 Real 밥도둑!</p>
+							<p class="product-name">불닭볶음김치</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r03.png" alt="불닭마요">
+							<p class="product-des">고소한 마요네즈에 화끈한 불닭을 더했다!</p>
+							<p class="product-name">불닭마요</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r04.png" alt="훈제란">
+							<p class="product-des">핵불닭소스와 함께 즐기는</p>
+							<p class="product-name">훈제란</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r05.png" alt="반숙란">
+							<p class="product-des">핵불닭소스와 함께 즐기는</p>
+							<p class="product-name">반숙란</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r06.png" alt="까르보불닭소스">
+							<p class="product-des">크리미한 매운맛</p>
+							<p class="product-name">까르보불닭소스</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r07.png" alt="핵불닭소스">
+							<p class="product-des">간편하게 즐기는 핵불닭소스</p>
+							<p class="product-name">핵불닭소스</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r08.png" alt="불닭소스">
+							<p class="product-des">간편하게 즐기는 불닭소스</p>
+							<p class="product-name">불닭소스</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r09.png" alt="까르보 불닭떡볶이">
+							<p class="product-des">매콤한 불닭과 부드러운 크림의 조화</p>
+							<p class="product-name">까르보 불닭떡볶이</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="product_info">
+							<img src="./images/ramyun/r10.png" alt="불닭떡볶이">
+							<p class="product-des">간편하게 즐기는 화끈한 매운맛 떡볶이</p>
+							<p class="product-name">불닭떡볶이</p>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
