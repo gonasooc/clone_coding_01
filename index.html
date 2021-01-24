@@ -6,9 +6,11 @@
     <title>비타브리드C¹²</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/jquery-3.5.0.min.js"></script>
     <script src="./js/slick.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
 <body>
@@ -87,8 +89,12 @@
                         <span class="cart_count">0</span>
                     </a>
                 </li>
-                <li>
+                <li class="login_off_list">
                     <a href="#" class="login_off"><img src="./images/login_off.png" alt="마이페이지"></a>
+                    <div class="login-box">
+                        <a class="login" href="#">login</a> 
+                        <a class="join" href="#">join</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -136,15 +142,17 @@
         <div class="vitagram_wrap">
             <div class="vitagram_inner">
                 <h2>#Vitagram</h2>
-                <ul class="vitagram_list">
-                    <li><a href="#"><img src="./images/vitagram01.png" alt="인스타그램배너1"></a></li>
-                    <li><a href="#"><img src="./images/vitagram02.png" alt="인스타그램배너2"></a></li>
-                    <li><a href="#"><img src="./images/vitagram03.png" alt="인스타그램배너3"></a></li>
-                    <li><a href="#"><img src="./images/vitagram04.png" alt="인스타그램배너4"></a></li>
-                    <li><a href="#"><img src="./images/vitagram05.png" alt="인스타그램배너5"></a></li>
-                    <li><a href="#"><img src="./images/vitagram06.png" alt="인스타그램배너6"></a></li>
-                    <li><a href="#"><img src="./images/vitagram07.png" alt="인스타그램배너7"></a></li>
-                </ul>
+                <div class="vitagram-slide">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"><img src="./images/vitagram01.png" alt="인스타그램배너1"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./images/vitagram02.png" alt="인스타그램배너2"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./images/vitagram03.png" alt="인스타그램배너3"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./images/vitagram04.png" alt="인스타그램배너4"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./images/vitagram05.png" alt="인스타그램배너5"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./images/vitagram06.png" alt="인스타그램배너6"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./images/vitagram07.png" alt="인스타그램배너7"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 

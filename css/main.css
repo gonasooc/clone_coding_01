@@ -137,6 +137,41 @@ a {
     text-align: center;
 }
 
+#header .header_inner .util .login_off_list {
+    position: relative;
+}
+
+#header .header_inner .util .login_off_list .login_off {
+
+}
+
+#header .header_inner .util .login_off_list .login-box {
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+#header .header_inner .util .login_off_list .login-box a {
+    display: block;
+    border-radius: 50px;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 28px;
+    width: 104px;
+    box-sizing: border-box;
+    background: #ff0200;
+    color: #fff;
+}
+
+#header .header_inner .util .login_off_list .login-box .join {
+    background: #fff;
+    color: #000;
+    margin-top: 5px;
+    border: 1px solid rgba(0,0,0,.4);
+}
+
 
 #main {
     width: 100%;
@@ -409,7 +444,7 @@ a {
 
 #main .vitagram_wrap .vitagram_inner h2 {
     font-size: 62px;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     color: #000;
     text-align: center;
 }
