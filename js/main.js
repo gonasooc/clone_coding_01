@@ -43,7 +43,9 @@ $(function(){
       slidesPerGroup: 3,
       autoplay: {delay: 2000},
       speed: 1000,
-      centeredSlides: true,
+      slidesOffsetBefore: 10,
+      slidesOffsetAfter: 10,
+      // centeredSlides: true,
     
       // If we need pagination
       pagination: {
@@ -73,7 +75,7 @@ $(function(){
       // If we need pagination
       pagination: {
         el: '.design_finder-slide .swiper-pagination',
-      centeredSlides: true,
+      // centeredSlides: true,
       },
     
       // Navigation arrows
