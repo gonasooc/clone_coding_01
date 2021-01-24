@@ -53,6 +53,14 @@ $(document).ready(function(){
         sw2 = true;
       }
     }); 
-  }); 
+
+  $('body, html').click(function(e){
+    if(!$(e.target).hasClass('family_btn')){
+      $('#footer .footer_inner .footer_left .terms li .familysite_box button').removeClass('on');
+        bdBtView('none', '1px solid #fff');
+        sw2 = true;
+    }
+  })
+}); 
 
     
