@@ -433,13 +433,168 @@ a {
     background: #fff url('../images/main_btn3.png') no-repeat 85% center;
 }
 
+
+#main .middle-banner_wrap {
+    width: 100%;
+}
+
+#main .middle-banner_wrap .middle-banner_inner {
+    width: 1390px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#main .middle-banner_wrap .middle-banner_inner a {
+    float: left;
+}
+
+#main .middle-banner_wrap .middle-banner_inner a img {
+    display: block;
+}
+
+#main .lounge_wrap {
+    padding: 120px 0 100px;
+    box-sizing: border-box;
+    background: #fbfbfb;
+}
+
+#main .lounge_wrap .lounge_inner {
+    padding: 0 30px;
+    width: 1390px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#main .lounge_wrap .lounge_inner h2 {
+    font-size: 62px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#main .lounge_wrap .lounge_inner > p {
+    
+    font-size: 18px;
+    color: #444;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-bottom: 50px;
+}
+
+#main .lounge_wrap .lounge_inner .global-list {
+    overflow: hidden;
+}
+
+#main .lounge_wrap .lounge_inner .global-list li {
+    width: 416px;
+    height: 560px;
+    /* border: 1px solid #000; */
+    position: relative;
+    float: left;
+    margin-right: 40px;
+}
+
+#main .lounge_wrap .lounge_inner .global-list li:last-child {
+    margin-right: 0;
+}
+
+#main .lounge_wrap .lounge_inner .global-list li .global-box {
+    display: block;
+    width: 416px;
+    height: 560px;
+    position: relative;
+}
+
+#main .lounge_wrap .lounge_inner .global-list li .global-box.on {
+
+}
+
+#main .lounge_wrap .lounge_inner .global-list li .global-box .hover_title {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: scaleY(0) translate(-50%, 50%);
+    z-index: 3;
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.6s ease-in-out;
+
+}
+
+#main .lounge_wrap .lounge_inner .global-list li .global-box.on .hover_title {
+    transform: scaleY(1) translate(-50%, 50%);
+}
+
+#main .lounge_wrap .lounge_inner .global-list li .global-box::before {
+    content: '';
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transition: all 0.6s ease-in-out;
+}
+
+#main .lounge_wrap .lounge_inner .global-list li .global-box.on::before {
+    height: 100%;
+}
+
+#main .lounge_wrap .lounge_inner .global-list li .global-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#main .lounge_wrap .lounge_inner .global-list li .text_wrap {
+    width: 416px;
+    height: 85px;
+    padding-top: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fbfbfb;
+    box-sizing: border-box;
+    transition: all 0.6s ease-in-out;
+}
+
+#main .lounge_wrap .lounge_inner .global-list li .text_wrap.on {
+    height: 0;
+}
+
+#main .lounge_wrap .lounge_inner .global-list li .text_wrap .category {
+    font-size: 22px;
+    font-weight: 400;
+    color: #232323;
+    line-height: 1.6;
+}
+
+#main .lounge_wrap .lounge_inner .global-list li .text_wrap p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #main .vitagram_wrap {
     width: 100%;
     padding-top: 115px;
 }
 
 #main .vitagram_wrap .vitagram_inner {
-
+    
 }
 
 #main .vitagram_wrap .vitagram_inner h2 {
