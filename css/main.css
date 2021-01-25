@@ -23,6 +23,53 @@ a {
 	text-decoration: none;
 }
 
+
+#quickmenu {
+	width: 142px;
+	height: 261px;
+	background: url('../images/quick_bg.png') no-repeat center center;
+	position: absolute;
+	left: 50%;
+	margin-left: 570px;
+	top: 480px;
+	z-index: 20;
+}
+
+#quickmenu ul {
+	margin-top: 110px;
+}
+
+#quickmenu ul li a {
+	display: block;
+	height: 29px;
+	margin: 0 auto;
+	color: #333;
+	font-size: 13px;
+	line-height: 25px;
+	font-weight: 400;
+	text-align: center;
+    letter-spacing: -1px;
+}
+
+#quickmenu ul li a:hover {
+	color: #fff;
+	background: url('../images/quick_hover.png') no-repeat center center;
+}
+
+#quickmenu .move-top {
+	margin-top: 12px;
+	background: url('../images/quick_arrow.png') no-repeat center center;
+	text-indent: -99999px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
 /* header 부분 */
 
 #header_wrap {
@@ -53,7 +100,6 @@ a {
 	height: 45px;
 	/* border: 1px solid red; */
 	margin: 0 auto;
-	overflow: hidden;
 }
 
 #header .header_inner p {
@@ -70,7 +116,6 @@ a {
 
 #header .header_inner .header_menu {
 	float: right;
-	/* border: 1px solid red; */
 }
 
 #header .header_inner .header_menu .sns {
@@ -126,6 +171,50 @@ a {
 	padding-right: 17px;
 	background: url("../images/ico_lang_down.gif") no-repeat 90% 50%;
 }
+
+#header .header_inner .header_menu .util .lang {
+	position: relative;
+}
+
+#header .header_inner .header_menu .util .lang .lang_btn {
+	font-size: 13px;
+}
+
+#header .header_inner .header_menu .util .lang .lang-list {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border: 1px solid #ddd;
+	background: #fff;
+	display: none;
+}
+
+#header .header_inner .header_menu .util .lang .lang-list a {
+	display: block;
+	/* width: 30px; */
+	height: 20px;
+	line-height: 20px;
+	color: #888;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 0 17px 0 10px;
+	box-sizing: border-box;
+	letter-spacing: -1px;
+	text-align: center;
+	
+}
+
+#header .header_inner .header_menu .util .lang .lang-list a:hover {
+	background: #f4f4f6;
+}
+
+
+
+
+
+
+
 
 
 #header .header_bottom {
@@ -601,7 +690,7 @@ a {
 /* content 부분 */
 
 
-.con_wrap {
+#main .con_wrap {
 	width: 1140px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -609,7 +698,7 @@ a {
 }
 
 
-.con_wrap .con_left .bx-wrapper {
+#main .con_wrap .con_left .bx-wrapper {
 	border: none;
 	width: 313px;
 	height: 417px;
@@ -617,52 +706,51 @@ a {
 }
 
 
-.con_wrap .con_left .bx-wrapper .bx-pager {
+#main .con_wrap .con_left .bx-wrapper .bx-pager {
 	position: absolute;
 	top: 0;
 	right: -100px;
 }
 
-.con_wrap .con_left .bx-wrapper .bx-pager .bx-pager-item {
+#main .con_wrap .con_left .bx-wrapper .bx-pager .bx-pager-item {
 	margin-right: 1px;
 	padding: none;
 }
 
-.con_wrap .con_left .bx-wrapper .bx-pager .bx-pager-item .bx-pager-link {
+#main .con_wrap .con_left .bx-wrapper .bx-pager .bx-pager-item .bx-pager-link {
     width: 14px;
     height: 14px;
     background: url('../images/ico_slide2_control.png') no-repeat center center;
 }
 
-.con_wrap .con_left .bx-wrapper .bx-pager .bx-pager-item .active {
+#main .con_wrap .con_left .bx-wrapper .bx-pager .bx-pager-item .active {
     background: url('../images/ico_slide2_control_on.png') no-repeat center center;
 
 }
-
 
 /* .con_wrap .con_left .box2-slide {
 	display: block;
 } */
 
-.con_wrap li {
+#main .con_wrap li {
 	list-style: none;
 	padding: 35px;
 	margin-bottom: 20px;
 
 }
 
-.con_wrap ul:not(:last-child) {
+#main .con_wrap ul:not(:last-child) {
 	margin-right: 20px;
 }
 
 
-.con_wrap li h3 {
+#main .con_wrap li h3 {
 	font-size: 22px;
 	color: #fff;
 	letter-spacing: -1.4px;
 }
 
-.con_wrap li p {
+#main .con_wrap li p {
 	font-size: 16px;
 	color: #fff;
 	margin: 23px 0 32px 0;
@@ -670,79 +758,79 @@ a {
 	letter-spacing: -1.4px;
 }
 
-.con_wrap li span {
+#main .con_wrap li span {
 	font-size: 10px;
 	color: #aca0a4;
 }
 
-.con_wrap .con_left {
+#main .con_wrap .con_left {
 	float: left;
 }
 
-.con_wrap .con_left .box1 {
+#main .con_wrap .con_left .box1 {
 	width: 313px;
 	height: 225px;
 	background: #ffffff url("../images/facebook_resizing.jpg") no-repeat 30px 20px;
 }
 
-.con_wrap .con_left .box1 h3 {
+#main .con_wrap .con_left .box1 h3 {
 	color: #000;
 }
 
-.con_wrap .con_left .box1 p {
+#main .con_wrap .con_left .box1 p {
 	color: #000;
 }
 
-.con_wrap .con_left .box2 {
+#main .con_wrap .con_left .box2 {
 	padding: 0;
 }
 
-.con_wrap .con_left .bx-wrapper {
+#main .con_wrap .con_left .bx-wrapper {
 	width: 313px;
 	height: 417px;
 }
 
-.con_wrap .con_center {
+#main .con_wrap .con_center {
 	float: left;
 }
 
-.con_wrap .con_center .box3 {
+#main .con_wrap .con_center .box3 {
 	width: 474px;
 	height: 430px;
 	background: url("../images/vod_bg.png") no-repeat;
 }
 
-.con_wrap .con_center .box4 {
+#main .con_wrap .con_center .box4 {
 	width: 474px;
 	height: 212px;
 	background: #91c849 url("../images/bg_comm_tab04.png") no-repeat 310px 40px;
 }
 
-.con_wrap .con_right {
+#main .con_wrap .con_right {
 	float: left;
 }
 
-.con_wrap .con_right .box5 {
+#main .con_wrap .con_right .box5 {
 	width: 313px;
 	height: 215px;
 	background: #6fc8ea url("../images/bg_comm_tab_new.png") no-repeat 220px 130px;
 }
 
-.con_wrap .con_right .box6 {
+#main .con_wrap .con_right .box6 {
 	width: 313px;
 	height: 195px;
 	background: #ffffff url("../images/btn_notice.png") no-repeat 270px 35px;
 }
 
-.con_wrap .con_right .box6 h3 {
+#main .con_wrap .con_right .box6 h3 {
 	color: #000;
 }
 
-.con_wrap .con_right .box6 p {
+#main.con_wrap .con_right .box6 p {
 	color: #000;
 }
 
-.con_wrap .con_right .box7 {
+#main .con_wrap .con_right .box7 {
 	width: 313px;
 	height: 212px;
 	background: #c28ef2 url("../images/bg_comm_tab07.png") no-repeat 220px 135px;
@@ -840,6 +928,7 @@ a {
 
 #footer .footer_inner .footer_sns .family_site {
 	float: left;
+	position: relative;
 }
 
 #footer .footer_inner .footer_sns .family_site .btn_family {
@@ -849,11 +938,41 @@ a {
 	text-align: left;
 	color: #636272;
 	text-indent: 20px;
-	background: #fff url("../images/ico_sel_arr.gif") no-repeat 90% center;
+	background: #fff url("../images/ico_sel_arr_up.gif") no-repeat 90% center;
 	font-size: 13px;
 	cursor: pointer; /* 손모양 만들어주는 명령어 */
 	outline: none;
 }
+
+#footer .footer_inner .footer_sns .family_site .family-list {
+	position: absolute;
+	left: 0;
+	bottom: 40px;
+	background: #fff;
+	border: 1px solid #c7c7c7;
+	display: none;
+
+}
+
+#footer .footer_inner .footer_sns .family_site .family-list a {
+	display: block;
+    width: 240px;
+    height: 30px;
+    padding: 0 5px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+	line-height: 30px;
+	text-indent: 14px;
+	
+}
+
+#footer .footer_inner .footer_sns .family_site .family-list a:hover {
+	color: #000;
+	background: #f4f4f6;
+}
+
+
 
 #footer .footer_inner .footer_sns p {
 	clear: both;
