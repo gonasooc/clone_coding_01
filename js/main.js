@@ -97,10 +97,12 @@ $(function(){
     $('#main .box3').click(function(){
         $('.modal_wrap').stop().fadeIn();
         $('body, html').css({'overflow':'hidden'});
+        $('#ytplay').attr('src', 'https://www.youtube.com/embed/EgcFCHlvGhA');
     });
     $('.modal_wrap .modal_close_btn').click(function(){
         $('.modal_wrap').stop().fadeOut();
         $('body, html').css({'overflow':'auto'});
+        $('#ytplay').attr('src', '');
     })
 
 
