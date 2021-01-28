@@ -1,13 +1,34 @@
-window.onload = function() {
-    setTimeout (function() {
-    scrollTo(0, 0);
-    }, 100);
-}
+// 새로고침하면 최상단으로 올라감
+// window.onload = function() {
+//     setTimeout (function() {
+//     scrollTo(0, 0);
+//     }, 100);
+// }
+
 
 $(document).ready(function(){
-    $('.banner_today_wrap .btn_img_close, .banner_today_wrap input').click(function(){
-        $('.banner_today_wrap').slideUp();
+    // $('.banner_today_wrap .btn_img_close, .banner_today_wrap input').click(function(){
+    //     $('.banner_today_wrap').slideUp();
+    //     $('#body_wrap').animate({'margin-top':0});
+    // });
+
+
+    if(getCookie('daelim') == 'close'){
+        $('.banner_today_wrap').hide();
         $('#body_wrap').animate({'margin-top':0});
+    } else {
+        $('.banner_today_wrap').show();
+    }
+
+    $('.banner_today_wrap .btn_img_close, .banner_today_wrap input').click(function(){
+        if($('.banner_today_wrap input[name=today_close]').is(':checked')){
+            setCookie('daelim', 'close', 1);
+            $('.banner_today_wrap').slideUp();
+            $('#body_wrap').animate({'margin-top':0});
+        } else {
+            $('.banner_today_wrap').slideUp();
+            $('#body_wrap').animate({'margin-top':0});
+        }
     });
 
     $('.allmenu').click(function(){
@@ -53,17 +74,29 @@ $(document).ready(function(){
       });
 
     $('.visual_bg-slide').slick({
-        autoplay: true,
+        autoplay: false,
         arrows: false,
-        fade: true
+        fade: true,
+        speed: 2000
     });
    
     $('#main .video-list > li').mouseenter(function(){
         $(this).addClass('on');
+        var video_index_num = $(this).index();
+        console.log(video_index_num);
+        $('#main .visual_bg-slide').slick('slickGoTo', video_index_num);
     });
     $('#main .video-list > li').mouseleave(function(){
         $(this).removeClass('on');
-    })
+    });
+
+    $('#main .newslist li').hover(function(){
+        $(this).addClass('on').siblings().css({'opacity':'0.2'});
+        }, function(){
+            $('#main .newslist li').css({'opacity':'1'}).removeClass('on');
+    });
+
+    
 
 
     $('.family_menu li .family_btn').click(function(){
@@ -71,7 +104,34 @@ $(document).ready(function(){
         $(this).toggleClass('on').parent().siblings().children('.family_btn').removeClass('on');
     });
     $('.family-box .close_btn').click(function(){
-        $('.family_menu_wrap .family-box').hide();
+         $('.family_menu_wrap .family-box').hide();
     });
 
-})
+});
+
+
+// getCookie
+function getCookie(name){
+    var value=null, search=name+"=";
+    if(document.cookie.length > 0){
+        var offset=document.cookie.indexOf(search);
+        if(offset != -1){
+            offset+=search.length;
+            var end=document.cookie.indexOf(";", offset);
+            if(end == -1) end=document.cookie.length;
+            value=unescape(document.cookie.substring(offset, end));
+        }
+    } return value;
+}
+// setCookie
+function setCookie(name, value, expiredays){
+    var days=10;
+    if(days){
+        var date=new Date(); 
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires="; expires="+date.toGMTString();
+    }else{
+        var expires=""; 
+    }
+    document.cookie=name+"="+value+expires+"; path=/";
+}
