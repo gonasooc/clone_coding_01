@@ -68,6 +68,55 @@ a {
 	cursor: pointer;
 }
 
+#wrap {
+	position: relative;
+}
+
+#wrap .popup_wrap {
+	position: absolute;
+	left: 80px;
+	top: 120px;
+	z-index: 20;
+	display: none;
+}
+
+#wrap .popup_wrap .popup_body {
+
+}
+
+#wrap .popup_wrap .popup_body img {
+	display: block;
+}
+
+#wrap .popup_wrap .popup_close {
+	padding: 5px 10px;
+	color: #333;
+	font-weight: 400;
+	background: #e9e9e9;
+	box-sizing: border-box;
+	position: relative;
+}
+
+#wrap .popup_wrap .popup_close input {
+	vertical-align: middle;
+}
+
+#wrap .popup_wrap .popup_close label {
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+#wrap .popup_wrap .popup_close .btn_close {
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: url('../images/layer_close02.png') no-repeat center center;
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	text-indent: -99999px;
+}
 
 
 
@@ -797,14 +846,33 @@ a {
 #main .con_wrap .con_center .box3 {
 	width: 474px;
 	height: 430px;
-	background: url("../images/vod_bg.png") no-repeat;
+	background: url("../images/main_video_thumb.jpg") no-repeat;
+	cursor: pointer;
+	position: relative;
+	transition: filter 0.5s;
 }
+#main .con_wrap .con_center .box3::before {
+	content: '';
+	width: 474px;
+	height: 430px;
+	background: url('../images/video_play.png') no-repeat center center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#main .con_wrap .con_center .box3:hover {
+	filter: brightness(60%);
+}
+
 
 #main .con_wrap .con_center .box4 {
 	width: 474px;
 	height: 212px;
 	background: #91c849 url("../images/bg_comm_tab04.png") no-repeat 310px 40px;
 }
+
 
 #main .con_wrap .con_right {
 	float: left;
@@ -835,6 +903,38 @@ a {
 	height: 212px;
 	background: #c28ef2 url("../images/bg_comm_tab07.png") no-repeat 220px 135px;
 }
+
+#main .modal_wrap {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 20;
+	display: none;
+}
+
+#main .modal_wrap .modal_video {
+	width: 900px;
+	height: 600px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#main .modal_wrap .modal_video .modal_close_btn {
+	display: block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right: -30px;
+	top: 0;
+	background: url('../images/btn_close.png') no-repeat center center;
+	text-indent: -99999px;
+}
+
 
 /* footer 부분 */
 
