@@ -1,9 +1,9 @@
 // 새로고침하면 최상단으로 올라감
-// window.onload = function() {
-//     setTimeout (function() {
-//     scrollTo(0, 0);
-//     }, 100);
-// }
+window.onload = function() {
+    setTimeout (function() {
+    scrollTo(0, 0);
+    }, 100);
+}
 
 
 $(document).ready(function(){
@@ -15,7 +15,6 @@ $(document).ready(function(){
 
     if(getCookie('daelim') == 'close'){
         $('.banner_today_wrap').hide();
-        $('#body_wrap').animate({'margin-top':0});
     } else {
         $('.banner_today_wrap').show();
     }
@@ -24,10 +23,8 @@ $(document).ready(function(){
         if($('.banner_today_wrap input[name=today_close]').is(':checked')){
             setCookie('daelim', 'close', 1);
             $('.banner_today_wrap').slideUp();
-            $('#body_wrap').animate({'margin-top':0});
         } else {
             $('.banner_today_wrap').slideUp();
-            $('#body_wrap').animate({'margin-top':0});
         }
     });
 
@@ -68,9 +65,16 @@ $(document).ready(function(){
         $('#body_wrap .depth2').stop().slideUp(300);
     });
 
+    $('#header .util .search').click(function(){
+        $('#header .search-box').slideDown();
+    });
+
+
     $('.visual-slide').slick({
         autoplay: false,
-        arrows: false
+        arrows: false,
+        infinite: false,
+        draggable: false
       });
 
     $('.visual_bg-slide').slick({
@@ -83,7 +87,7 @@ $(document).ready(function(){
     $('#main .video-list > li').mouseenter(function(){
         $(this).addClass('on');
         var video_index_num = $(this).index();
-        console.log(video_index_num);
+        // console.log(video_index_num);
         $('#main .visual_bg-slide').slick('slickGoTo', video_index_num);
     });
     $('#main .video-list > li').mouseleave(function(){
@@ -96,7 +100,16 @@ $(document).ready(function(){
             $('#main .newslist li').css({'opacity':'1'}).removeClass('on');
     });
 
-    
+    $('#main .go-innovation').click(function(){
+        $('#main .visual-slide').slick('slickGoTo', 0);
+    });
+    $('#main .go-news').click(function(){
+        $('#main .visual-slide').slick('slickGoTo', 1);
+    });
+    $('#main .go-story').click(function(){
+        $('#main .visual-slide').slick('slickGoTo', 2);
+    });
+   
 
 
     $('.family_menu li .family_btn').click(function(){

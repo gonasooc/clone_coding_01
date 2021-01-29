@@ -13,6 +13,7 @@
 </head>
 <body>
 <div id="wrap">
+	<!-- 올메뉴 ------------------------------------------------------------------- -->
 	<div class="allmenu_wrap">
 		<div class="allmenu_inner">
 			<a href="#" class="allmenu_close_btn">닫기</a>
@@ -195,6 +196,8 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- 투데이 배너 ------------------------------------------------------------- -->
 	<div class="banner_today_wrap">
 		<div class="banner_today_inner">
 			<div class="banner_today_left">
@@ -212,6 +215,7 @@
 		</div>
 	</div>
 
+	<!-- 바디랩 ------------------------------------------------------------------  -->
 	<div id="body_wrap">
 		<div class="gnb_fulldown">
 			<div class="gnb_fulldown_inner">
@@ -300,9 +304,16 @@
 					<li><a href="#" class="eng_ver">영문버전</a></li>
 					<li><a href="#" class="allmenu">전체메뉴</a></li>
 				</ul>
+				<div class="search-box">
+					<form action="">
+						<input type="text" class="search-bar" placeholder="검색어를 입력해주세요.">
+						<a href="#" class="btn_pic">이미지검색</a>
+					</form>
+				</div>
 			</div>
 		</div>
 
+		<!-- 메인 --------------------------------------------------------  -->
 		<div id="main">
 			<div class="main_wrap">
 				<div class="visual-slide">
@@ -314,8 +325,8 @@
 						</div>
 						<div class="content_wrap1">
 							<ul class="arrow">
-								<li><a href="#"><img src="./images/pic_mainetc01_2.png" alt="뉴스로가기"></a></li>
-								<li><a href="#"><img src="./images/pic_mainetc01_3.png" alt="스토리로가기"></a></li>
+								<li class="go-news"><a href="#"><img src="./images/pic_mainetc01_2.png" alt="뉴스로가기"></a></li>
+								<li class="go-story"><a href="#"><img src="./images/pic_mainetc01_3.png" alt="스토리로가기"></a></li>
 							</ul>
 							<div class="content-box">
 								<h2><img src="./images/pic_maintxt01_2.png" alt="INNOVATION"></h2>
@@ -342,17 +353,14 @@
 								</ul>
 								<p class="txt02">대한민국 건설을 리드해온 DL이앤씨는<br />이제 종합설게시공(EPC) 뿐만 아니라 토탈솔루션 사업자로서 도약합니다.</p>
 								<a href="#" class="btn_biz_quick">사업소개 바로가기</a>
-
 							</div>
-
-
 						</div>
 					</div>
 					<div class="visual02">
 						<div class="content_wrap2">
 							<ul class="arrow">
-								<li><a href="#"><img src="./images/pic_mainetc02_2.png" alt="이노베이션으로가기"></a></li>
-								<li><a href="#"><img src="./images/pic_mainetc02_3.png" alt="스토리로가기"></a></li>
+								<li class="go-innovation"><a href="#"><img src="./images/pic_mainetc02_2.png" alt="이노베이션으로가기"></a></li>
+								<li class="go-story"><a href="#"><img src="./images/pic_mainetc02_3.png" alt="스토리로가기"></a></li>
 							</ul>
 							<div class="content-box">
 								<h2><img src="./images/pic_maintxt02.png" alt="NEWS"></h2>
@@ -381,9 +389,7 @@
 									</li>
 								</ul>
 								<a href="#" class="news_btn_more">더보기</a>
-
 							</div>
-
 						</div>
 					</div>
 					<div class="visual03">
@@ -391,54 +397,48 @@
 							<h2><img src="./images/pic_maintxt03.png" alt="STORY"></h2>
 							<p class="story-des">DL이앤씨를 말하다</p>
 							<ul class="arrow">
-								<li><a href="#"><img src="./images/btn_innovation.png" alt="이노베이션으로가기"></a></li>
-								<li><a href="#"><img src="./images/btn_news.png" alt="뉴스로가기"></a></li>
+								<li class="go-innovation"><a href="#"><img src="./images/btn_innovation.png" alt="이노베이션으로가기"></a></li>
+								<li class="go-news"><a href="#"><img src="./images/btn_news.png" alt="뉴스로가기"></a></li>
 							</ul>
 							<div class="content-box">
 								<a href="#" class="menu menu01">
-									<span class="title">80년,<br>가장 오래된<br>혁신의 역사</span>
-									<span class="txt">원리원칙을 지키고 고객에게<br>정성을 다해온 80년의 기본</span>
-									<span class="content_btn_more"></span>
+									<span class="story-title">80년,<br>가장 오래된<br>혁신의 역사</span>
+									<span class="story-txt">원리원칙을 지키고 고객에게<br>정성을 다해온 80년의 기본</span>
+									<span class="story-btn_more"></span>
 								</a>
 								<a href="#" class="menu menu02">
-									<span class="title">DL이앤씨의<br>기술로 역사를<br>쓰다</span>
-									<span class="txt">대한민국 건설의<br>역사와 함께 성장하다.</span>
-									<span class="content_btn_more"></span>
+									<span class="story-title">DL이앤씨의<br>기술로 역사를<br>쓰다</span>
+									<span class="story-txt">대한민국 건설의<br>역사와 함께 성장하다.</span>
+									<span class="story-btn_more"></span>
 								</a>
 								<a href="#" class="menu menu03">
-									<span class="title">개척자가<br>새로운<br>길을 연다</span>
-									<span class="txt">1966년 1월 28일,<br>DL이앤씨가 베트남 진출에<br>첫 발을</span>
-									<span class="content_btn_more"></span>
+									<span class="story-title">개척자가<br>새로운<br>길을 연다</span>
+									<span class="story-txt">1966년 1월 28일,<br>DL이앤씨가 베트남 진출에<br>첫 발을</span>
+									<span class="story-btn_more"></span>
 								</a>
 								<a href="#" class="menu menu04">
-									<span class="title">디벨로퍼의<br>바른 기준</span>
-									<span class="txt">우리나라 최초 기업형<br>주택임대사업'뉴스테이'</span>
-									<span class="content_btn_more"></span>
+									<span class="story-title">디벨로퍼의<br>바른 기준</span>
+									<span class="story-txt">우리나라 최초 기업형<br>주택임대사업'뉴스테이'</span>
+									<span class="story-btn_more"></span>
 								</a>
 								<a href="#" class="menu menu05">
-									<span class="title">아파트는<br>삶이다</span>
-									<span class="txt">우리는 사람들의<br>Life Style을 고민합니다.</span>
-									<span class="content_btn_more"></span>
+									<span class="story-title">아파트는<br>삶이다</span>
+									<span class="story-txt">우리는 사람들의<br>Life Style을 고민합니다.</span>
+									<span class="story-btn_more"></span>
 								</a>
 								<a href="#" class="menu menu06">
-									<span class="title">모두를 위한<br>미술관</span>
-									<span class="txt">예술을 꼭 눈으로만<br>봐야 할까요?</span>
-									<span class="content_btn_more"></span>
+									<span class="story-title">모두를 위한<br>미술관</span>
+									<span class="story-txt">예술을 꼭 눈으로만<br>봐야 할까요?</span>
+									<span class="story-btn_more"></span>
 								</a>
-
-
-
 							</div>
-
-
-
-
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<!-- 푸터 ---------------------------------------------------------------  -->
 		<div id="footer">
 			<div class="footer_inner">
 				<div class="footer_menu">
@@ -455,7 +455,6 @@
 					</ul>
 					<p>서울 종로구 통일로 134 센터포인트 D타워 돈의문 COPYRIGHT (c) 2021 DL이앤씨 All RIGHTS RESERVED.</p>
 				</div>
-			
 				<div class="family_menu_wrap">
 					<ul class="family_menu">
 						<li>
