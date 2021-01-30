@@ -12,7 +12,7 @@ $(document).ready(function(){
     //     $('#body_wrap').animate({'margin-top':0});
     // });
 
-
+// 상단 배너 오늘 하루 띄우지 않기 쿠키 ---------------------------------------------
     if(getCookie('daelim') == 'close'){
         $('.banner_today_wrap').hide();
     } else {
@@ -28,6 +28,8 @@ $(document).ready(function(){
         }
     });
 
+
+// 올메뉴 관련 ---------------------------------------------------------------------
     $('.allmenu').click(function(){
         $('.allmenu_wrap').show();
         $('body, html').css({'overflow':'hidden'});
@@ -56,20 +58,26 @@ $(document).ready(function(){
         }
     });
 
+
+// 헤더 풀다운 ----------------------------------------------------------------------
     $('#header .header_inner .gnb, .gnb_fulldown').mouseenter(function(){
         $('.gnb_fulldown').stop().slideDown(300);
         $('#body_wrap .depth2').stop().slideDown(300);
+        $('#header .search-box').stop().slideUp(200);
     });
     $('#header .header_inner .gnb, .gnb_fulldown').mouseleave(function(){
         $('.gnb_fulldown').stop().slideUp(300);
         $('#body_wrap .depth2').stop().slideUp(300);
+
     });
 
+// 헤더 서치박스 ------------------------------------------------------------- 
     $('#header .util .search').click(function(){
-        $('#header .search-box').slideDown();
+        $('#header .search-box').slideToggle(200);
     });
 
 
+// 메인 슬라이드 관련 ------------------------------------------------------------
     $('.visual-slide').slick({
         autoplay: false,
         arrows: false,
@@ -84,6 +92,10 @@ $(document).ready(function(){
         speed: 2000
     });
    
+    var video_url = ['https://www.youtube.com/embed/lAJ3SGjbdr4', 'https://www.youtube.com/embed/U7GoYtXvGvA', 'https://www.youtube.com/embed/Dhk2zl4FUEw'];
+    var modal_title = ['D TOWER', 'Yi Sun Sin Bridge', 'Petrochemical Plant'];
+    var modal_des = ['도시를 개발하다.', '세계 6번째 현수교 기술자립국, 세계최고의 기술력, 대림.', '1973년 해외플랜트 수출1호, 기본과 원칙으로 쌓아온 플랜트 노하우 43년.'];
+
     $('#main .video-list > li').mouseenter(function(){
         $(this).addClass('on');
         var video_index_num = $(this).index();
@@ -93,6 +105,22 @@ $(document).ready(function(){
     $('#main .video-list > li').mouseleave(function(){
         $(this).removeClass('on');
     });
+
+    $('#main .video-list li').click(function(){
+        var video_index_num2 = $(this).index();
+        console.log(video_index_num2);
+        $('.cover').show();
+        $('.cover iframe').attr('src', video_url[video_index_num2]);
+        $('.cover .modal-title').html(modal_title[video_index_num2]);
+        $('.cover .modal-des').html(modal_des[video_index_num2]);
+        $('body, html').css({'overflow':'hidden'});
+    });
+    $('.cover .modal-close_btn').click(function(){
+        $('.cover').hide();
+        $('.cover iframe').attr('src', 'about:blank;');
+        $('body, html').css({'overflow':'auto'});
+    });
+
 
     $('#main .newslist li').hover(function(){
         $(this).addClass('on').siblings().css({'opacity':'0.2'});
@@ -111,13 +139,14 @@ $(document).ready(function(){
     });
    
 
-
+// 푸터 패밀스박스 관련 -------------------------------------------------------
     $('.family_menu li .family_btn').click(function(){
         $(this).siblings().fadeToggle(0).parents('li').siblings().children('.family-box').hide();
         $(this).toggleClass('on').parent().siblings().children('.family_btn').removeClass('on');
     });
     $('.family-box .close_btn').click(function(){
          $('.family_menu_wrap .family-box').hide();
+         $('.family_menu_wrap .family_btn').removeClass('on');
     });
 
 });

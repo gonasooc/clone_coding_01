@@ -10,6 +10,79 @@ body {
 	overflow: hidden;
 }
 
+#wrap .cover {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 50;
+	display: none;
+}
+
+#wrap .cover .modal_wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#wrap .cover .modal_wrap .modal_con {
+	width: 1280px;
+	height: 800px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#wrap .cover .modal_wrap .modal_con .modal-title {
+	font-size: 30px;
+	color: #fff;
+    font-weight: 600;
+}
+
+#wrap .cover .modal_wrap .modal_con .modal-des {
+	font-size: 14px;
+    margin: 10px 0 20px;
+	line-height: 20px;
+	color: #a6a6a6;
+	font-weight: 300;
+	letter-spacing: -0.5px;
+}
+
+#wrap .cover .modal_wrap .modal_con .arrow_wrap {
+	position: absolute;
+	right: 0;
+	top: 18px;
+}
+
+#wrap .cover .modal_wrap .modal_con .arrow_wrap a {
+	display: inline-block;
+	margin-right: 56px;
+	text-indent: -99999px;
+}
+
+#wrap .cover .modal_wrap .modal_con .arrow_wrap .modal-arrow_prev {
+	width: 11px;
+	height: 15px;
+	background: url('../images/btn_main_youtube_l.png') no-repeat center center;
+}
+
+#wrap .cover .modal_wrap .modal_con .arrow_wrap .modal-arrow_next {
+	width: 11px;
+	height: 15px;
+	background: url('../images/btn_main_youtube_r.png') no-repeat center center;
+}
+
+#wrap .cover .modal_wrap .modal_con .arrow_wrap .modal-close_btn {
+	width: 14px;
+	height: 14px;
+	background: url('../images/btn_main_youtube_close.png') no-repeat center center;
+	margin-right: 0;
+}
+
+
 /* 올메뉴 ----------------------------------------------------------------- */
 #wrap .allmenu_wrap {
 	width: 100%;
@@ -209,6 +282,7 @@ body {
 	margin-right: 30px;
 	line-height: 106px;
 	font-weight: 200;
+	letter-spacing: -0.5px;
 }
 
 #wrap .banner_today_wrap .banner_today_inner .banner_today_right .btn_img_close {
@@ -230,7 +304,7 @@ body {
 	/* border: 1px solid #000; */
 	position: absolute;
 	left: 0;
-	top: 70px;
+	top: 71px;
 	background: #fff;
 	display: none;
 	z-index: 20;
@@ -407,7 +481,7 @@ body {
 	top: 60px;
 	right: 40px;
 	background: url('../images/bg_searchbox.png') no-repeat center center;
-	z-index: 20;
+	z-index: 30;
 	overflow: hidden;
 	display: none;
 }
@@ -960,7 +1034,8 @@ body {
 #footer .footer_inner .footer_menu .util li a {
 	font-size: 13px;
 	color: #222;
-	cursor: pointer;
+	letter-spacing: -0.5px;
+	font-weight: 300;
 }
 
 #footer .footer_inner .footer_menu .util li a:hover {
@@ -978,6 +1053,7 @@ body {
 	color: #555;
 	padding-top: 10px;
 	font-weight: 300;
+	letter-spacing: -0.5px;
 }
 
 #footer .footer_inner .family_menu_wrap {
