@@ -102,7 +102,7 @@ $(function(){
     $('.modal_wrap .modal_close_btn').click(function(){
         $('.modal_wrap').stop().fadeOut();
         $('body, html').css({'overflow':'auto'});
-        $('#ytplay').attr('src', '');
+        $('#ytplay').attr('src', 'about:blank;');
     })
 
 
