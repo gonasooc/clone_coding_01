@@ -50,6 +50,7 @@ $(document).ready(function(){
       }
     });
 
+    $('.popup_wrap').show();
     if(getCookie('vitabrid') == 'close') {
       $('.popup_wrap').hide();
     } else {

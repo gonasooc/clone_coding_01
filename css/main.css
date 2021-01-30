@@ -18,6 +18,12 @@ a {
     text-decoration: none;
 }
 
+::selection {
+    color: #fff;
+    background: #ff0200;
+}
+
+
 
 #wrap {
     position: relative;
@@ -28,6 +34,7 @@ a {
     top: 350px;
     left: 1200px;
     z-index: 2;
+    display; none;
 }
 
 .popup_wrap .imgbox {
@@ -78,6 +85,7 @@ a {
     width: 100%;
     background: #fff;
     position: relative;
+    border-bottom: 1px solid #cccccc;
 }
 
 #header .header_inner {
@@ -132,18 +140,18 @@ a {
 #header .header_inner .gnb > li .depth2_wrap {
     position: absolute;
     left: 0;
-    top: 87px;
+    top: 88px;
     z-index: 10;
     width: 100%;
-    background: white;
-    text-align: left;
+    background: #fff;
     padding: 30px 0;
+    box-sizing: border-box;
+    text-align: left;
     display: none;
 }
 
 #header .header_inner .gnb > li .depth2_wrap .depth2 {
-    margin-left: 450px;
-    border: 1px solid #000;
+    padding-left: 620px;
 }
 
 #header .header_inner .gnb > li .depth2_wrap .depth2 li {
@@ -151,8 +159,19 @@ a {
 }
 
 #header .header_inner .gnb > li .depth2_wrap .depth2 li a {
+    display: block;
     font-size: 15px;
     color: #444444;
+    width: 285px;
+    height: 34px;
+    padding: 0 25px;
+    line-height: 34px;
+    box-sizing: border-box;
+}
+
+#header .header_inner .gnb > li .depth2_wrap .depth2 .bg-arrow a {
+    background: url('../images/item_arrow.png') no-repeat 90% center;
+    background-size: 8px;
 }
 
 
@@ -767,14 +786,14 @@ a {
 #footer {
     width: 100%;
     background: #ededed;
-    padding: 60px 0;
-    box-sizing: border-box;
 }
 
 #footer .footer_inner {
     width: 1390px;
     margin: 0 auto;
     overflow: hidden;
+    padding: 60px 0;
+    box-sizing: border-box;
 }
 
 #footer .footer_inner .footer_inner_left {
@@ -917,4 +936,24 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#footer .copyright_wrap {
+    width: 100%;
+    height: 52px;
+    background: #2a2a2a;
+}
+
+#footer .copyright_wrap .copyright {
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+    text-align: center;
+    height: 52px;
+    line-height: 52px;
+}
+
+#footer .copyright_wrap .copyright strong {
+    color: #727272;
+    font-weight: 700;
 }
