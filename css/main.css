@@ -18,6 +18,62 @@ a {
     text-decoration: none;
 }
 
+
+#wrap {
+    position: relative;
+}
+
+.popup_wrap {
+    position: absolute;
+    top: 350px;
+    left: 1200px;
+    z-index: 2;
+}
+
+.popup_wrap .imgbox {
+    width: 300px;
+    position: relative;
+}
+
+.popup_wrap .imgbox img {
+    display: block;
+}
+
+.popup_wrap .imgbox .popup-close_btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    background: url('../images/layer-close.png') no-repeat center center;
+    text-indent: -99999px;
+}
+
+.popup_wrap .today_close {
+    width: 300px;
+    height: 49px;
+    padding: 9px 10px 9px 0;
+    box-sizing: border-box;
+}
+
+.popup_wrap .today_close #today_close {
+    vertical-align: middle;
+}
+
+.popup_wrap .today_close label {
+    font-size: 15px;
+    color: #7c7c7c;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 #header {
     width: 100%;
     background: #fff;

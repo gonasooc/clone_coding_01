@@ -34,21 +34,61 @@ $(document).ready(function(){
 
     $('.login_off').mouseover(function(){
       $('.login-box').stop().fadeIn();
-    })
+    });
     $('.login_off').mouseleave(function(){
       $('.login-box').stop().fadeOut();
-    })
+    });
+
+
+    // 팝업창 부분 --------------------------------------------------- 서버에서 테스트 필요 ---
+    $('.popup_wrap .popup-close_btn, #today_close').click(function(){
+      if($('input[name=today_close]').is(':checked')){
+        setCookie('vitabrid', 'close', 1);
+        $('.popup_wrap').hide();
+      } else {
+        $('.popup_wrap').hide();
+      }
+    });
+
+    if(getCookie('vitabrid') == 'close') {
+      $('.popup_wrap').hide();
+    } else {
+      $('.popup_wrap').show();
+    }
 
     $('.global-box').mouseenter(function(){
       $(this).addClass('on');
       $(this).parent().find('.text_wrap').addClass('on');
-    })
+    });
     $('.global-box').mouseleave(function(){
       $(this).removeClass('on');
       $(this).parent().find('.text_wrap').removeClass('on');
+    });
+});
 
-    })
 
-    
-
-})
+// getCookie
+function getCookie(name){
+  var value=null, search=name+"=";
+  if(document.cookie.length > 0){
+      var offset=document.cookie.indexOf(search);
+      if(offset != -1){
+          offset+=search.length;
+          var end=document.cookie.indexOf(";", offset);
+          if(end == -1) end=document.cookie.length;
+          value=unescape(document.cookie.substring(offset, end));
+      }
+  } return value;
+}
+// setCookie
+function setCookie(name, value, expiredays){
+  var days=10;
+  if(days){
+      var date=new Date(); 
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires="; expires="+date.toGMTString();
+  }else{
+      var expires=""; 
+  }
+  document.cookie=name+"="+value+expires+"; path=/";
+}
