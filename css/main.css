@@ -349,6 +349,7 @@ a {
     text-align: center;
     margin-top: 20px;
     line-height: 19px;
+    margin: 15px 50px 37px;
 }
 
 
@@ -386,6 +387,262 @@ a {
     height: 150px;
 }
 
+
+#main .wdna_wrap {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 100px;
+}
+
+#main .wdna_wrap .wdna_inner {
+    width: 1560px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+#main .wdna_wrap .wdna_inner h2 {
+    color: #333;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#main .wdna_wrap .wdna_inner .tab {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#main .wdna_wrap .wdna_inner .tab li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+#main .wdna_wrap .wdna_inner .tab li:hover {
+}
+
+
+#main .wdna_wrap .wdna_inner .tab li a {
+    display: block;
+    padding: 7px 0;
+    color: #b5b5b5;
+    border-bottom: 3px solid transparent;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+
+}
+
+#main .wdna_wrap .wdna_inner .tab li a.on {
+    border-bottom: 3px solid #000;
+
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul {
+    overflow: hidden;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li {
+    float: left;
+    margin-right: 21px;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li:last-child {
+    margin-right: 0;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li a {
+    display: block;
+    width: 242px;
+    height: 242px;
+    position: relative;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .all01 {
+    background: url('../images/all01.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .all02 {
+    background: url('../images/all02.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .all03 {
+    background: url('../images/all03.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .all04 {
+    background: url('../images/all04.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .all05 {
+    background: url('../images/all05.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .all06 {
+    background: url('../images/all06.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li a .txtbox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 42px;
+    padding: 0 22px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li a .txtbox .insta-id {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li a .txtbox .insta-like {
+    display: block;
+    width: 19px;
+    height: 17px;
+    background: url('../images/icon-heart-white.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .women01 {
+    background: url('../images/women01.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .women02 {
+    background: url('../images/women02.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .women03 {
+    background: url('../images/women03.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .women04 {
+    background: url('../images/women04.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .women05 {
+    background: url('../images/women05.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .women06 {
+    background: url('../images/women06.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .men01 {
+    background: url('../images/men01.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .men02 {
+    background: url('../images/men02.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .men03 {
+    background: url('../images/men03.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .men04 {
+    background: url('../images/men04.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .men05 {
+    background: url('../images/men05.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .men06 {
+    background: url('../images/men06.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .life01 {
+    background: url('../images/life01.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .life02 {
+    background: url('../images/life02.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .life03 {
+    background: url('../images/life03.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .life04 {
+    background: url('../images/life04.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .life05 {
+    background: url('../images/life05.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .life06 {
+    background: url('../images/life06.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .beauty01 {
+    background: url('../images/beauty01.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .beauty02 {
+    background: url('../images/beauty02.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .beauty03 {
+    background: url('../images/beauty03.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .beauty04 {
+    background: url('../images/beauty04.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .beauty05 {
+    background: url('../images/beauty05.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list ul li .beauty06 {
+    background: url('../images/beauty06.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#main .wdna_wrap .wdna_inner .tab-list .hidden-list {
+    display: none;
+}
+
+
+
+
+
 /* 메인 종료 */
 
 #footer .footer_wrap .footer_top_content {
@@ -409,7 +666,7 @@ a {
 
 #footer .footer_wrap .footer_top_content .notice {
     width: 600px;
-    height: 220px;
+    /* height: 220px; */
     position: relative;
     float: left;
 }
@@ -425,9 +682,14 @@ a {
     cursor: pointer;
     background: transparent;
     font-size: 20px;
-    color: #000200;
+    color: #a3a3a3;
     letter-spacing: -1px;
 }
+
+#footer .footer_wrap .footer_top_content .notice button.on {
+    color: #000200;
+}
+
 
 #footer .footer_wrap .footer_top_content .notice .btn_news {
     margin-right: 38px;
@@ -445,32 +707,36 @@ a {
     text-indent: -99999px;
 }
 
-#footer .footer_wrap .footer_top_content .notice .newslist {
+#footer .footer_wrap .footer_top_content .notice ul {
     margin-top: 25px;
 }
 
-#footer .footer_wrap .footer_top_content .notice .newslist li {
+#footer .footer_wrap .footer_top_content .notice ul li {
     margin-bottom: 15px;
     margin-left: 30px;
     position: relative;
 }
 
-#footer .footer_wrap .footer_top_content .notice .newslist li:last-child {
+#footer .footer_wrap .footer_top_content .notice ul li:last-child {
     margin-bottom: 0;
 }
 
-#footer .footer_wrap .footer_top_content .notice .newslist li a {
+#footer .footer_wrap .footer_top_content .notice ul li a {
     font-size: 15px;
     color: #000;
     letter-spacing: -1px;
     
 }
 
-#footer .footer_wrap .footer_top_content .notice .newslist li a span {
+#footer .footer_wrap .footer_top_content .notice ul li a span {
     position: absolute;
     right: 0;
     top: 0;
     font-size: 10px;
+}
+
+#footer .footer_wrap .footer_top_content .notice .tab-list .hidden-list {
+    display: none;
 }
 
 
