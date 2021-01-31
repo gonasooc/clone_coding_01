@@ -21,6 +21,7 @@ a {
     top: 600px;
     left: 150px;
     z-index: 100;
+    display: none;
 }
 
 #wrap .popup_wrap2 {
@@ -28,6 +29,7 @@ a {
     top: 600px;
     left: 476px;
     z-index: 100;
+    display: none;
 }
 
 #wrap .close {

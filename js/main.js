@@ -23,6 +23,7 @@ $(function(){
       $('.wdna_wrap .tab-list ul').eq(wdna_index_num).show();
     });
 
+    $('#wrap .popup_wrap1').show();
     $('#wrap .popup_wrap1 .popup-close_btn1, .popup_wrap1 #today_close').click(function(){
       if($('.popup_wrap1 input[name=today_close]').is(':checked')){
         $('#wrap .popup_wrap1').hide();
@@ -32,6 +33,7 @@ $(function(){
       }
     });
 
+    $('#wrap .popup_wrap2').show();
     $('#wrap .popup_wrap2 .popup-close_btn2, .popup_wrap2 #today_close2').click(function(){
       if($('.popup_wrap2 input[name=today_close]').is(':checked')){
         $('#wrap .popup_wrap2').hide();
