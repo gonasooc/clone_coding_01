@@ -285,7 +285,7 @@ body {
     transform: translateX(-50%);
     bottom: 50px;
     z-index: 100;
-    text-indent: -99999px;
+    font-size: 0;
 }
 
 #main .main-slide_wrap .swiper-container .section2 {
@@ -387,7 +387,7 @@ body {
     transform: translateX(-50%);
     bottom: 50px;
     z-index: 100;
-    text-indent: -99999px;
+    font-size: 0;
 }
 
 #main .main-slide_wrap .swiper-container .section3 {
