@@ -133,9 +133,9 @@ a {
     /* 살짝 아래로 정렬하고자 할 때 line-height로 조정 가능 */
 }
 
-#header .header_inner .gnb > li:hover .depth2_wrap {
+/* #header .header_inner .gnb > li:hover .depth2_wrap {
     display: block;
-}
+} */
 
 #header .header_inner .gnb > li .depth2_wrap {
     position: absolute;
@@ -148,20 +148,23 @@ a {
     box-sizing: border-box;
     text-align: left;
     display: none;
+    height: 320px;
 }
 
 #header .header_inner .gnb > li .depth2_wrap .depth2 {
-    padding-left: 620px;
+    margin-left: 620px;
+    width: 285px;
+    position: relative;
+    
 }
 
-#header .header_inner .gnb > li .depth2_wrap .depth2 li {
-    padding: 5px 25px;
+#header .header_inner .gnb > li .depth2_wrap .depth2 > li {
 }
 
-#header .header_inner .gnb > li .depth2_wrap .depth2 li a {
+#header .header_inner .gnb > li .depth2_wrap .depth2 > li > a {
     display: block;
     font-size: 15px;
-    color: #444444;
+    color: #999999;
     width: 285px;
     height: 34px;
     padding: 0 25px;
@@ -169,10 +172,48 @@ a {
     box-sizing: border-box;
 }
 
-#header .header_inner .gnb > li .depth2_wrap .depth2 .bg-arrow a {
+
+
+
+#header .header_inner .gnb > li .depth2_wrap .depth2 .bg-arrow > a {
     background: url('../images/item_arrow.png') no-repeat 90% center;
     background-size: 8px;
 }
+
+#header .header_inner .gnb > li .depth2_wrap .depth2 .depth3_wrap {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    /* border: 1px solid #000; */
+    z-index: 100;
+    width: 285px;
+    height: 100%;
+    /* padding: 0 45px; */
+    box-sizing: border-box;
+    display: none;
+}
+
+/* #header .header_inner .gnb > li .depth2_wrap .depth2 li:hover .depth3_wrap {
+    display: block;
+} */
+
+#header .header_inner .gnb > li .depth2_wrap .depth2 .depth3_wrap .depth3 {
+    
+}
+
+#header .header_inner .gnb > li .depth2_wrap .depth2 .depth3_wrap .depth3 a {
+    display: block;
+    font-size: 15px;
+    color: #999999;
+    width: 285px;
+    height: 34px;
+    padding: 0 25px;
+    line-height: 34px;
+    box-sizing: border-box;
+}
+
+
+
 
 
 
