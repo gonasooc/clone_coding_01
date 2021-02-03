@@ -61,9 +61,17 @@ $(document).ready(function(){
     $('#header .gnb > li').mouseenter(function(){
       $(this).find('.depth2_wrap').stop().slideDown();
     });
-    $('#header .depth2_wrap').mouseleave(function(){
-      $('#header .depth2_wrap').stop().slideUp();
+    $('#header .gnb > li').mouseleave(function(){
+      $(this).find('.depth2_wrap').hide();
     });
+
+    $('#header .depth2_wrap .depth2 > li').mouseenter(function(){
+      $(this).find('.depth3_wrap .depth3 li').addClass('on');
+    })
+    $('#header .depth2_wrap .depth2 > li').mouseleave(function(){
+      $(this).find('.depth3_wrap .depth3 li').removeClass('on');
+    })
+    
 
     // $('#header .depth2 > li').mouseenter(function(){
     //   $(this).find('.depth3_wrap').stop().slideDown();

@@ -23,8 +23,6 @@ a {
     background: #ff0200;
 }
 
-
-
 #wrap {
     position: relative;
 }
@@ -75,14 +73,9 @@ a {
 }
 
 
-
-
-
-
-
-
 #header {
     width: 100%;
+    height: 87px;
     background: #fff;
     position: relative;
     border-bottom: 1px solid #cccccc;
@@ -92,10 +85,7 @@ a {
     width: 1390px;
     height: 87px;
     padding: 0 30px;
-    box-sizing: border-box;
-    /* border: 1px solid #000; */
     margin: 0 auto;
-    /* overflow: hidden; */
 }
 
 #header .header_inner h1 {
@@ -110,18 +100,19 @@ a {
 #header .header_inner .gnb {
     float: left;
     height: 87px;
-    /* border: 1px solid #000; */
     width: 864px;
     height: 87px;
     padding-left: 4%;
-    /* position: relative; */
+    overflow: hidden;
 }
 
 #header .header_inner .gnb > li {
-    display: inline-block;
+    float: left;
     padding: 0 35px;
-    /* border: 1px solid #000; */
-    /* position: relative; */
+}
+
+#header .header_inner .gnb > li:hover > a::before {
+    transform: scale(1);
 }
 
 #header .header_inner .gnb > li > a {
@@ -131,6 +122,25 @@ a {
     letter-spacing: 0px;
     line-height: 105px;
     /* 살짝 아래로 정렬하고자 할 때 line-height로 조정 가능 */
+    position: relative;
+    transition: all 0.5s;
+}
+
+#header .header_inner .gnb > li:hover > a {
+    color: #ff0200;
+}
+
+#header .header_inner .gnb > li > a::before {
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    bottom: -22px;
+    z-index: 1001;
+    height: 2px;
+    content: '';
+    background-color: #ff0200;
+    transform: scale(0);
+    transition: all 0.5s;
 }
 
 /* #header .header_inner .gnb > li:hover .depth2_wrap {
@@ -140,22 +150,23 @@ a {
 #header .header_inner .gnb > li .depth2_wrap {
     position: absolute;
     left: 0;
-    top: 88px;
+    top: 87px;
     z-index: 10;
     width: 100%;
-    background: #fff;
     padding: 30px 0;
     box-sizing: border-box;
     text-align: left;
     display: none;
     height: 320px;
+    background: #fbfbfb;
+
 }
 
 #header .header_inner .gnb > li .depth2_wrap .depth2 {
-    margin-left: 620px;
+    margin-left: 520px;
     width: 285px;
     position: relative;
-    
+    background: #fbfbfb;
 }
 
 #header .header_inner .gnb > li .depth2_wrap .depth2 > li {
@@ -170,13 +181,20 @@ a {
     padding: 0 25px;
     line-height: 34px;
     box-sizing: border-box;
+    transition: all 0.2s;
 }
 
-
-
+#header .header_inner .gnb > li .depth2_wrap .depth2 > li:hover > a {
+    background: #f3f3f3;
+    color: #444;
+}
 
 #header .header_inner .gnb > li .depth2_wrap .depth2 .bg-arrow > a {
     background: url('../images/item_arrow.png') no-repeat 90% center;
+    background-size: 8px;
+}
+#header .header_inner .gnb > li .depth2_wrap .depth2 .bg-arrow:hover > a {
+    background: #f3f3f3 url('../images/item_arrow.png') no-repeat 90% center;
     background-size: 8px;
 }
 
@@ -186,11 +204,14 @@ a {
     top: 0;
     /* border: 1px solid #000; */
     z-index: 100;
-    width: 285px;
+    width: 100%;
     height: 100%;
     /* padding: 0 45px; */
     box-sizing: border-box;
-    display: none;
+    /* visibility: hidden;
+    transition: all 0.5s; */
+    /* border: 1px solid #000; */
+    /* overflow: hidden; */
 }
 
 /* #header .header_inner .gnb > li .depth2_wrap .depth2 li:hover .depth3_wrap {
@@ -198,8 +219,28 @@ a {
 } */
 
 #header .header_inner .gnb > li .depth2_wrap .depth2 .depth3_wrap .depth3 {
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+    /* transition: all 0.5s; */
+    overflow: hidden;
+}
+
+
+#header .header_inner .gnb > li .depth2_wrap .depth2 .depth3_wrap .depth3 li {
+    position: relative;
+    transform: translate(-100%, 0);
+    transition: all 0.6s;
     
 }
+
+#header .header_inner .gnb > li .depth2_wrap .depth2 .depth3_wrap .depth3 li.on {
+    transform: translate(0, 0);
+}
+
+/* #header .header_inner .gnb > li .depth2_wrap .depth2 .depth3_wrap .depth3.on {
+    left: 0;
+} */
 
 #header .header_inner .gnb > li .depth2_wrap .depth2 .depth3_wrap .depth3 a {
     display: block;
@@ -210,12 +251,12 @@ a {
     padding: 0 25px;
     line-height: 34px;
     box-sizing: border-box;
+    transition: all 0.2s;
 }
 
-
-
-
-
+#header .header_inner .gnb > li .depth2_wrap .depth2 .depth3_wrap .depth3 a:hover {
+    color: #444;
+}
 
 #header .header_inner .util {
     float: right;
@@ -288,7 +329,6 @@ a {
     border: 1px solid rgba(0,0,0,.4);
 }
 
-
 #main {
     width: 100%;
 }
@@ -320,7 +360,6 @@ a {
     float: left;
     margin-right: 20px;
 }
-
 
 #main .main-slide_wrap .main-slide li button {
     width: 11px;
@@ -371,10 +410,7 @@ a {
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
-
 }
-
-
 
 #main .main-slide_wrap .btn_more {
     display: block;
