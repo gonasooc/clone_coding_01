@@ -95,7 +95,7 @@ body {
 }
 
 #header .header_inner {
-    width: 1000px;
+    max-width: 1000px;
     height: 80px;
     margin: 0 auto;
     position: relative;
@@ -226,7 +226,7 @@ body {
 }
 
 #main .search_wrap .search_inner {
-    width: 1000px;
+    max-width: 1000px;
     height: 60px;
     margin: 0 auto;
     overflow: hidden;
@@ -323,7 +323,7 @@ body {
 }
 
 #main .story_wrap .story_inner {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -380,7 +380,7 @@ body {
 }
 
 #main .gallery_wrap .gallery_inner {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -427,7 +427,7 @@ body {
 }
 
 #main .talk-news_wrap .talk-news_inner {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -502,7 +502,7 @@ body {
 }
 
 #main .sns_wrap .sns_inner {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
     border: 2px solid #65c8e8;
@@ -576,7 +576,7 @@ body {
 }
 
 #footer .footer_inner {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     font-size: 14px;
 }
