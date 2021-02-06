@@ -1,4 +1,13 @@
 $(function(){
+
+    var scrollValue = $(window).scrollTop();
+    console.log(scrollValue);
+
+    // $(window).scroll(function(){
+    //   $('#header').slideUp(250);
+    // });
+
+
     const swiper = new Swiper('.visual-slide .swiper-container', {
         // Optional parameters
         direction: 'horizontal',
@@ -24,6 +33,14 @@ $(function(){
         scrollbar: {
           el: '.visual-slide .swiper-scrollbar',
         },
+      });
+
+
+      $('.gnb > li').mouseover(function(){
+        $(this).find('.depth2_wrap').slideDown(200);
+      });
+      $('.gnb > li').mouseleave(function(){
+        $(this).find('.depth2_wrap').hide();
       });
 
       var sw_btn_play_stop = true;

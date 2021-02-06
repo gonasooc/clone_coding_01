@@ -28,6 +28,13 @@ body {
     z-index: 2;
 }
 
+#header_wrap #scroll_point {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
 #header_wrap #header {
     width: 100%;
 }
@@ -172,6 +179,8 @@ body {
     /* padding: 30px 0; */
     box-sizing: border-box;
     overflow: hidden;
+    display: none;
+
 }
 
 
@@ -197,6 +206,7 @@ body {
     /* float: left; */
     box-sizing: border-box;
     padding: 30px 0 30px 170px;
+    min-height: 270px;
 }
 
 #header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2 li {
@@ -219,25 +229,23 @@ body {
     right: 0;
     top: 0;
     overflow: hidden;
-    box-sizing: border-box;
     background: url('../images/mninfo_bg.gif') no-repeat center top;
     background-size: cover;
-    padding: 30px 0;
-    height: 330px;
+    padding: 30px;
+    height: 100%;
     box-sizing: border-box;
 }
 
-#header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2_info img {
+
+#header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2_info .img-box img {
     float: left;
     width: 50%;
-    width: 270px;
-    height: 170px;
 }
 
 #header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2_info .txt-box {
     float: right;
     width: 50%;
-    padding: 15px;
+    padding: 20px 30px;
     box-sizing: border-box;
 }
 
@@ -261,6 +269,8 @@ body {
     font-size: 13px;
     font-weight: 300;
     line-height: 25px;
+    text-align: justify;
+    word-break: keep-all;
 }
 
 #header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2 .depth3 {
