@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 @font-face {
-    font-family: 'Arita-buriSB';
+    font-family: 'Arita-buri-SemiBold_OTF00.woff';
     src: url('../fonts/Arita-buri-SemiBold_OTF00.woff2') format('woff2'),
         url('../fonts/Arita-buri-SemiBold_OTF00.woff') format('woff');
     font-weight: 600;
@@ -167,7 +167,8 @@ body {
 #header_wrap #gnb_wrap .gnb_inner .gnb > li > a {
     display: block;
     padding: 0 50px;
-    font-family: 'Arita-buriSB';
+    /* font-family: 'Arita-buriSB'; */
+    font-family: 'Arita-buri-SemiBold_OTF00.woff';
     font-size: 18px;
     color: #fff;
     height: 60px;
@@ -203,7 +204,8 @@ body {
 
 #header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth1-title > span {
     font-size: 21px;
-    font-family: 'Arita-buriSB';
+    /* font-family: 'Arita-buriSB'; */
+    font-family: 'Arita-buri-SemiBold_OTF00.woff';
     color: #c6a870;
     font-weight: 300;
 } 
@@ -222,15 +224,22 @@ body {
 
 #header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2 li {
     position: relative;
-}  
+}
 
-#header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2 li a {
+#header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2 li:hover > a {
+    color: #fff;
+}
+
+#header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2 > li > a {
     display: inline-block;
     font-weight: 400;
-    padding: 10px 0 10px;
+    padding: 10px 0;
     font-size: 16px;
     color: #b1b1b1;
-    font-family: 'Arita-buriSB';
+    /* font-family: 'Arita-buriSB'; */
+    font-family: 'Arita-buri-SemiBold_OTF00.woff';
+    transition: all .3s ease;
+    line-height: 20px;
 }
 
 #header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2_info {
@@ -262,13 +271,15 @@ body {
 
 #header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2_info .txt-box h4 {
     font-size: 14px;
-    font-family: 'Arita-buriSB';
+    /* font-family: 'Arita-buriSB'; */
+    font-family: 'Arita-buri-SemiBold_OTF00.woff';
     color: #999;
     margin-bottom: 5px;
 }
 
 #header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2_info .txt-box h3 {
-    font-family: 'Arita-buriSB';
+    /* font-family: 'Arita-buriSB'; */
+    font-family: 'Arita-buri-SemiBold_OTF00.woff';
     font-size: 24px;
     color: #fff;
 }
@@ -294,15 +305,36 @@ body {
 
 #header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2 .depth3 li {
     float: left;
+    padding: 0 7px;
 }
 
 #header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2 .depth3 li a {
     display: block;
-    padding: 10px 7px;
+    padding: 10px 0;
     font-size: 13px;
     color: #b1b1b1;
     font-family: "Noto Sans KR";
+    position: relative;
 }
+
+#header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2 .depth3 li a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #a58d5f;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2 .depth3 li a:hover::before {
+    width: 100%;
+}
+
+
+
 
 
 
@@ -436,7 +468,8 @@ body {
     box-sizing: border-box;
     text-align: center;
     font-size: 23px;
-    font-family: 'Arita-buriSB';
+    /* font-family: 'Arita-buriSB'; */
+    font-family: 'Arita-buri-SemiBold_OTF00.woff';
     background: url('../images/tit_bg.png') no-repeat 50% bottom;
     margin-bottom: 60px;
 }
@@ -540,7 +573,8 @@ body {
 
 #main .notice_wrap .notice-slide .swiper-container .swiper-slide .txt-box .n-category {
     margin-bottom: 20px;
-    font-family: 'Arita-buriSB';
+    /* font-family: 'Arita-buriSB'; */
+    font-family: 'Arita-buri-SemiBold_OTF00.woff';
 
 }
 
@@ -548,7 +582,8 @@ body {
     font-size: 34px;
     margin-bottom: 20px;
     font-weight: 300;
-    font-family: 'Arita-buriSB';
+    /* font-family: 'Arita-buriSB'; */
+    font-family: 'Arita-buri-SemiBold_OTF00.woff';
     line-height: 1.2;
 
 }
