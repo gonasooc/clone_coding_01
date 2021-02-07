@@ -158,12 +158,22 @@ a {
     text-align: left;
     display: none;
     height: 320px;
-    background: #fbfbfb;
+    background: #fff;
+}
 
+#header .header_inner .gnb > li .depth2_wrap::before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: #fbfbfb;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 #header .header_inner .gnb > li .depth2_wrap .depth2 {
-    margin-left: 520px;
+    /* margin-left: 520px; */
+    margin-left: calc(50% - 285px);
     width: 285px;
     position: relative;
     background: #fbfbfb;
@@ -194,7 +204,7 @@ a {
     background-size: 8px;
 }
 #header .header_inner .gnb > li .depth2_wrap .depth2 .bg-arrow:hover > a {
-    background: #f3f3f3 url('../images/item_arrow.png') no-repeat 90% center;
+    background: #f3f3f3 url('../images/item_arrow_hov.png') no-repeat 90% center;
     background-size: 8px;
 }
 
