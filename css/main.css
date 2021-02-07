@@ -113,13 +113,24 @@ body {
     display: inline-block;
     padding: 0 12px;
     margin-left: -4px;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
     /* inline-block 속성에서 생기는 마진 제거 */
+    position: relative;
 }
 
-#header_wrap #header .header_inner .util li:last-child {
-    border-right: none;
+#header_wrap #header .header_inner .util li::before {
+    content: '';
+    width: 1px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    left: 0;
+    top: 5px;
 }
+
+#header_wrap #header .header_inner .util li:first-child::before {
+    display: none;
+}
+
 
 #header_wrap #header .header_inner .util li a {
     font-size: 13px;
@@ -214,7 +225,7 @@ body {
 }  
 
 #header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2 li a {
-    display: block;
+    display: inline-block;
     font-weight: 400;
     padding: 10px 0 10px;
     font-size: 16px;
@@ -275,9 +286,9 @@ body {
 
 #header_wrap #gnb_wrap .gnb_inner .gnb .depth2_wrap .depth2 .depth3 {
     position: absolute;
-    left: 0;
+    left: 115px;
     top: 0;
-    padding-left: 115px;
+    /* padding-left: 115px; */
     box-sizing: border-box;
 }
 
