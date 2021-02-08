@@ -84,5 +84,29 @@ $(function(){
       });
 
 
+      const swiper3 = new Swiper('.accomm-slide .swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect: 'fade',
+      
+        // If we need pagination
+        pagination: {
+          el: '.accomm-slide .swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.accomm-slide .swiper-button-next',
+          prevEl: '.accomm-slide .swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.accomm-slide .swiper-scrollbar',
+        },
+      });
+
+
 
 })
