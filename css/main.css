@@ -5,6 +5,23 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+.btn_top {
+    position: fixed;
+    right: 20px;
+    bottom: 7%;
+    z-index: 100;
+    display: block;
+    width: 52px;
+    height: 68px;
+    background: url('../images/top_btn.png') no-repeat center center;
+    text-indent: -9999px;
+}
+
+.btn_top.off {
+    display: none;
+}
+
+
 #header {
     width: 100%;
     background: #fff;

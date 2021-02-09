@@ -24,6 +24,25 @@ $(function(){
         },
       });
 
+
+      // jquery wheel 플러그인 찾아볼 것
+    $('body, html').mousewheel(function(){
+      if($('.section2, section3').has('swiper-slide-active')) {
+        $('.btn_top').removeClass('off');
+      } else {
+        $('.btn_top').addClass('off');
+      }
+      // else if($('.section1').has('swiper-slide-active')) {
+      //   $('.btn_top').addClass('off');
+      // }
+    });
+
+    $('.btn_top').click(function(){
+      swiper.slideTo(0);
+    })
+
+
+
     $('#main .btn_next').click(function(){
       swiper.slideNext(800);
     });
