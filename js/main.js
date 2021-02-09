@@ -1,11 +1,20 @@
 $(function(){
 
-    var scrollValue = $(window).scrollTop();
-    console.log(scrollValue);
+    // var scrollValue = $(window).scrollTop();
+    // console.log(scrollValue);
 
     // $(window).scroll(function(){
     //   $('#header').slideUp(250);
     // });
+
+    $(window).scroll(function(){
+      var scroll_num = $(document).scrollTop();
+      if(scroll_num > 0) {
+          $('#header').slideUp(300);
+      } else {
+          $('#header').slideDown(300);
+      }
+  })
 
 
     const swiper = new Swiper('.visual-slide .swiper-container', {
