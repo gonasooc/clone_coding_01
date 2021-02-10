@@ -1,7 +1,25 @@
 $(function(){
     
+
+    $('#main .btn_franchise-go').click(function(){
+        $('#main').animate({'left':'-100%'}, 1000);
+        $('#main2').animate({'right':'0%'}, 1000);
+        $('#main_wrap').css({'height':'1723px'});
+        $(this).fadeOut();
+        $('#main2 .btn_main-go').fadeIn();
+    })
+    $('#main2 .btn_main-go').click(function(){
+        $('#main').animate({'left':'0%'}, 1000);
+        $('#main2').animate({'right':'-100%'}, 1000);
+        $('#main_wrap').css({'height':'auto'});
+        $(this).fadeOut();
+        $('#main .btn_franchise-go').fadeIn();
+    })
+
     $('#main .main-slide .slider').bxSlider({
-        auto: true
+        auto: true,
+        speed: 1000,
+        pause: 3000
     });
 
     $('#main .mini-slide .slider').bxSlider({
@@ -11,7 +29,16 @@ $(function(){
     $('#main2 .main-slide2 .slider').bxSlider({
         auto: true,
         controls: false,
-        mode: 'vertical'
+        mode: 'vertical',
+        speed: 1000,
+        pause: 3000
+    });
+
+    $('#main2 .mini-slide .slider').bxSlider({
+        auto: true,
+        controls: false,
+        speed: 1000,
+        pause: 3000
     });
 
 
@@ -52,5 +79,5 @@ $(function(){
         $(this).css({'background-image':num2});
     });
 
-  
+    
 })
