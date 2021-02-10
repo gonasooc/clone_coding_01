@@ -34,6 +34,13 @@ $(function(){
       $('body, html').css({'overflow':'auto'});
     })
 
+    $('#header .gnb li').mouseenter(function(){
+      $(this).find('.depth2').stop().fadeIn(200);
+    })
+    $('#header .gnb li').mouseleave(function(){
+      $(this).find('.depth2').stop().fadeOut(200);
+    })
+
 
     $('.content-list li').mouseenter(function(){
       // $(this).find('img').animate({'opacity':0});
