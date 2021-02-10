@@ -677,7 +677,9 @@ body {
     width: 60px;
     height: 60px;
     background: #fff;
-    
+    left: 50%;
+    margin-left: 480px;
+    margin-top: 155px; 
 }
 
 #main .accomm_wrap .accomm-slide .swiper-container .swiper-button-prev::before {
@@ -698,8 +700,10 @@ body {
 #main .accomm_wrap .accomm-slide .swiper-container .swiper-button-next {
     width: 60px;
     height: 60px;
-    background: #fff;   
-    margin-top: 150px;
+    background: #fff;  
+    right: 50%;
+    margin-right: -600px;
+    margin-top: 155px; 
 }
 
 #main .accomm_wrap .accomm-slide .swiper-container .swiper-button-next::after {
@@ -783,7 +787,6 @@ body {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid #000;
     position: relative;
 }
 
@@ -853,6 +856,171 @@ body {
 #main .accomm_wrap .accomm-slide .swiper-container .swiper-slide .accomm-cont .txt-box .a-btn_more:hover {
     border: 1px solid #666666;
 }
+
+
+#main .time_wrap {
+    width: 100%;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background: url('../images/time_bg.jpg') no-repeat center center;
+    overflow: hidden;
+}
+
+#main .time_wrap .time_inner {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#main .time_wrap .time-table {
+    /* width: 18.33%; */
+    width: 220px;
+    height: 540px;
+    float: left;
+    background: #fff;
+    padding: 40px;
+    padding-left: 0;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#main .time_wrap .time-table p {
+    font-family: 'Arita-buri-SemiBold_OTF00.woff';
+    font-size: 14px;
+    color: #666;
+    margin: 30px 0 30px 0;
+    text-align: right;
+}
+
+#main .time_wrap .time-table h3 {
+    font-family: 'arita Buri';
+    font-size: 30px;
+    color: #977f51;
+    font-family: 'Arita-buri-SemiBold_OTF00.woff';
+    line-height: 1.3;
+    text-align: right;
+}
+
+
+#main .time_wrap .time-slide {
+    /* width: 81.667%; */
+    width: 100%;
+    box-sizing: border-box;
+    height: 540px;
+    overflow: hidden;
+}
+
+#main .time_wrap .time-slide .img-box {
+    width: 630px;
+    float: left;
+}
+
+#main .time_wrap .time-slide .txt-box {
+    width: 350px;
+    float: left;
+    background: #fff;
+    padding: 100px 50px 0 50px;
+    box-sizing: border-box;
+    font-family: 'Arita-buri-SemiBold_OTF00.woff';
+    height: 540px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+#main .time_wrap .time-slide .txt-box .t-time {
+    display: inline-block;
+    padding: 15px 25px 7px 25px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 35px;
+    background: #c6a870;
+}
+
+#main .time_wrap .time-slide .txt-box .t-eng {
+    display: block;
+    font-size: 20px;
+    color: #858585;
+    margin-bottom: 30px;
+}
+
+#main .time_wrap .time-slide .txt-box .t-title {
+    display: block;    
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+#main .time_wrap .time-slide .txt-box .t-com {
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    color: #666;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+#main .time_wrap .time-slide .txt-box .t-btn_more {  
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #070607;
+    font-weight: 500;
+    padding: 5px 20px 3px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+}
+
+#main .time_wrap .time-slide .txt-box .t-btn_more:hover {
+    color: #fff;
+    background: #907b52;
+    border-color: #907b52;
+}
+
+
+#main .time_wrap .time-slide .swiper-container {
+    /* z-index: 2; */
+}
+
+#main .time_wrap .time-slide .swiper-container .swiper-slide {
+    padding-left: 220px;
+    box-sizing: border-box;
+}
+
+#main .time_wrap .time-slide .swiper-container .swiper-pagination {
+    position: absolute;
+    left: 180px;
+    bottom: 40px;
+}
+
+#main .time_wrap .time-slide .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    display: block;
+    margin-bottom: 20px;
+    width: 38px;
+    height: 2px;
+    background: #afafaf;
+    border-radius: 0%;
+}
+
+#main .time_wrap .time-slide .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

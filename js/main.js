@@ -98,6 +98,8 @@ $(function(){
         direction: 'horizontal',
         loop: true,
         effect: 'fade',
+        autoplay: {delay: 2000},
+        speed: 1000,
       
         // If we need pagination
         pagination: {
@@ -115,6 +117,32 @@ $(function(){
           el: '.accomm-slide .swiper-scrollbar',
         },
       });
+
+      const swiper4 = new Swiper('.time-slide .swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect: 'fade',
+
+      
+        // If we need pagination
+        pagination: {
+          el: '.time-slide .swiper-pagination',
+          clickable: true,
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.time-slide .swiper-button-next',
+          prevEl: '.time-slide .swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.time-slide .swiper-scrollbar',
+        },
+      });
+
 
 
 
