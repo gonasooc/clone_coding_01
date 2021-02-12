@@ -24,7 +24,6 @@ body {
 }
 
 .m_gnb_wrap {
-    width: 250px;
     height: 100%;
     position: fixed;
     left: -100%;
@@ -146,7 +145,21 @@ body {
 
 #main .visual-slide {
     position: relative;
-    height: 578px;
+    /* height: 578px; */
+}
+
+#main .visual-slide div {
+    margin-bottom: -1px;
+}
+
+#main .visual-slide a {
+    outline: none;
+}
+
+#main .visual-slide img {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -262,8 +275,8 @@ body {
    background: #fff url('../images/arrow_on.png') no-repeat 95% center;
    border: none;
    box-sizing: border-box;
-
 }
+
 
 #main .search_wrap .search_inner .local-search #local2 {
     width: 150px;
@@ -271,8 +284,8 @@ body {
     appearance: none;
     text-indent: 7px;
     background: #fff url('../images/arrow_on.png') no-repeat 95% center;
-   border: none;
-   box-sizing: border-box;
+    border: none;
+    box-sizing: border-box;
 
 
 }
@@ -684,7 +697,7 @@ body {
 
     #main .visual-slide {
         position: relative;
-        height: 461px;
+        /* height: 461px; */
     }
     
     #main .visual-slide a {
