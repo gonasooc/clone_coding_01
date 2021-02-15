@@ -14,6 +14,12 @@ $(function(){
       } else {
           $('#header').slideDown(300);
       }
+
+      if(scroll_num > 200) {
+          $('.btn_top').addClass('show');
+      } else {
+          $('.btn_top').removeClass('show');
+      }
   })
 
 
@@ -123,6 +129,8 @@ $(function(){
         direction: 'horizontal',
         loop: true,
         effect: 'fade',
+        autoplay: {delay: 4000},
+        speed: 1000,
 
       
         // If we need pagination
