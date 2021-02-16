@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+* {
+    letter-spacing: -1px;
+}
+
+body {
+
+}
+
+#header {
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+#header.on {
+    background: #fff;
+
+}
+
+#header h1 {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#header h1 a {
+    display: block;
+    width: 143px;
+    height: 33px;
+    background: url('../images/logo.png') no-repeat center center;
+    text-indent: -9999px;
+}
+
+#header.on h1 a {
+    background: url('../images/logo_on.png') no-repeat center center;
+}
+
+#header .gnb {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%, -50%);
+    width: 900px;
+    
+}
+
+#header .gnb > li > a {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    height: 75px;
+    line-height: 75px;
+    box-sizing: border-box;
+}
+
+#header.on .gnb > li > a {
+    color: #000;
+}
+
+
+#header .gnb > li {
+    float: left;
+    padding: 0 32.5px;
+    cursor: pointer;
+    position: relative;
+}
+
+#header .gnb > li:hover > a {
+    border-bottom: 3px solid #033e87;
+    box-sizing: border-box;
+    color: #033e87;
+    font-weight: bold;
+}
+
+
+
+
+
+#header .gnb_bg {
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 100%;
+    height: 325px;
+    background: #fff;
+    display: none;
+
+}
+
+#header .gnb .depth2 {
+    position: absolute;
+    left: 0;
+    top: 75px;
+    padding: 30px 32.5px 30px 40px;
+    box-sizing: border-box;
+    display: none;
+}
+
+#header .gnb .depth2 li {
+    margin-bottom: 15px;
+}
+
+#header .gnb .depth2 li a {
+    display: block;
+    font-size: 15px;
+    color: #555;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+#header .gnb .depth2 li a:hover {
+    color: #033e87;
+    font-weight: bold;
+}
+
+#header .util {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 75px;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+
+#header .util .link {
+    float: left;
+}
+
+#header .util .link li {
+    float: left;
+    padding: 0 14px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#header .util .link li::before {
+    content: '';
+    width: 1px;
+    height: 13px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+
+#header .util .link li:first-child::before {
+    display: none;
+}
+
+
+#header .util .link li a {
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    line-height: 22px;
+}
+
+#header.on .util .link li a {
+    color: #555;
+}
+
+
+#header .util .search {
+    float: left;
+    padding: 0 21px;
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../images/header_srch.png') no-repeat center center;
+    text-indent: -9999px;
+}
+
+#header.on .util .search {
+    background: url('../images/header_srch_on.png') no-repeat center center;
+}
+
+#header .util .search::before {
+    content: '';
+    width: 1px;
+    height: 24px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+
+#header .util .lang-box {
+    float: left;
+    margin-top: -6px;
+    text-align: center;
+}
+
+#header .util .lang-box .btn_lang {
+    display: block;
+    width: 65px;
+    font-size: 16px;
+    color: #fff;
+    height: 36px;
+    line-height: 36px;
+    background: url('../images/header_sel_icon.png') no-repeat 80% center;
+    padding-right: 18px;
+    position: relative;
+}
+
+#header .util .lang-box .btn_lang.on {
+    color: #000;
+    background: #fff url('../images/header_sel_icon_on.png') no-repeat 80% center;
+}
+
+#header .util .lang-box .btn_lang::before {
+    content: '';
+    width: 1px;
+    height: 24px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+
+#header .util .lang-box .lang-list {
+    display: none;
+    padding: 15px 0;
+    background: #fff;
+    margin-top: -1px;
+}
+
+#header .util .lang-box .lang-list.on {
+    display: block;
+}
+
+#header .util .lang-box .lang-list li {
+
+}
+
+#header .util .lang-box .lang-list li.on a {
+    color: #000;
+}
+
+#header .util .lang-box .lang-list a {
+    display: block;
+    font-size: 15px;
+    color: #555;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+#main .visual {
+    height: 1080px;
+    overflow: hidden;
+}
+
+
+#main .mainCon1 {
+    padding: 100px 0 145px;
+    width: 100%;
+    background: url('../images/mainCon_bg1.jpg') no-repeat top center;
+}
+
+#main .mainCon1 h3 {
+    text-align: center;
+}
+
+#main .mainCon1 .txt {
+    font-size: 17px;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#main .mainCon1 ul {
+    width: 1220px;
+    padding-top: 60px;
+    overflow: hidden;
+    margin: 85px auto;
+    box-sizing: border-box;
+}
+
+#main .mainCon1 ul li {
+    text-align: center;
+    float: left;
+    width: 25%;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.5s;
+
+}
+
+#main .mainCon1 ul li.on {
+    transform: translateY(-40px);
+}
+
+#main .mainCon1 ul li a {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#main .mainCon1 ul li a .txt1 {
+    font-size: 22px;
+    line-height: 1;
+    margin-top: 45px;
+    display: block;
+}
+
+#main .mainCon1 ul li a .txt2 {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 22px;
+}
+
+#main .mainCon1 ul li a .btn_more {
+    margin-top: 40px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
