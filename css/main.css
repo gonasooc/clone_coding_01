@@ -8,6 +8,18 @@ body {
 
 }
 
+
+.cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: none;
+}
+
 #header {
     width: 100%;
     height: 75px;
@@ -261,10 +273,131 @@ body {
 }
 
 
-#main .visual {
-    height: 1080px;
+#main .visual_wrap {
+    position: relative;
+    height: 100vh;
+}
+
+
+
+#main .visual_wrap .visual {
+    height: 100%;
     overflow: hidden;
 }
+
+
+#main .modal_wrap {
+    position: absolute;
+    left: 50%;
+    /* top: 225px; */
+    top: 0;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#main .modal_wrap .modal-title {
+    padding-top: 225px;
+}
+
+#main .modal_wrap .modal-tab {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 200px;
+}
+
+#main .modal_wrap .modal-tab li {
+    display: inline-block;
+    
+}
+
+#main .modal_wrap .modal-tab li a {
+    display: block;
+    width: 115px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    transition: all 0.5s;
+}
+
+#main .modal_wrap .modal-tab li:hover a {
+    background: rgba(0,0,0,0.8);
+}
+
+#main .modal_wrap .modal-tab li.on a {
+    background: rgba(0,0,0,0.8);
+}
+
+
+
+#main .modal_wrap .scroll_down {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+}
+
+
+#main .modal-list_wrap {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0, 0);
+    /* display: none; */
+    z-index: 101;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+#main .modal-list_wrap.on {
+    transform: translate(-50%, -50%) scale(1, 1);
+    opacity: 1;
+}
+
+
+#main .modal-list_wrap .modal-list {
+    
+}
+
+#main .modal-list_wrap .modal-list li {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 960px;
+    height: 542px;
+}
+
+
+
+#main .modal-list_wrap .modal-list li .btn_more {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 49px;
+    display: block;
+}
+
+#main .modal-list_wrap .modal-list li .btn_close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 25px;
+    height: 25px;
+    display: block;
+    
+}
+
+
+
+
+
 
 
 #main .mainCon1 {

@@ -19,6 +19,23 @@ $(function(){
         $('#header .lang-list').removeClass('on');
     });
 
+    $('.modal-tab li').click(function(){
+        var index_num = $(this).index();
+        console.log(index_num);
+        $('.cover').fadeIn();
+        $('.modal-list_wrap').addClass('on');
+        $('.modal-list li').eq(index_num).show().siblings().hide();
+        $(this).addClass('on').siblings().removeClass('on');
+    });
+
+  
+
+    $('.modal-list_wrap .btn_close').click(function(){
+        $('.modal-list_wrap').removeClass('on');
+        $('.cover').fadeOut();
+    })
+
+
     $('#main .mainCon1 ul li').mouseenter(function(){
         $(this).addClass('on');
         $(this).find('.btn_more').stop().fadeIn();
