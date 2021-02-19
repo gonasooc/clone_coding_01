@@ -349,8 +349,8 @@ body {
     transform: translate(-50%, -50%) scale(0, 0);
     /* display: none; */
     z-index: 101;
-    transition: 0.5s;
     opacity: 0;
+    transition: all 0.5s;
 }
 
 #main .modal-list_wrap.on {
@@ -432,13 +432,14 @@ body {
     width: 25%;
     position: relative;
     box-sizing: border-box;
-    transition: all 0.5s;
-
+    transition: all 0.4s;
 }
+
 
 #main .mainCon1 ul li.on {
     transform: translateY(-40px);
 }
+
 
 #main .mainCon1 ul li a {
     color: #fff;

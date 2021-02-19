@@ -37,11 +37,11 @@ $(function(){
 
 
     $('#main .mainCon1 ul li').mouseenter(function(){
-        $(this).addClass('on');
+        $(this).addClass('on').siblings().css({'filter':'brightness(60%)'});
         $(this).find('.btn_more').stop().fadeIn();
     })
     $('#main .mainCon1 ul li').mouseleave(function(){
-        $(this).removeClass('on');
+        $(this).removeClass('on').siblings().css({'filter':'brightness(100%)'});
         $(this).find('.btn_more').stop().fadeOut();
     })
 })
