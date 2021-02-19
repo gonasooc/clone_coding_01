@@ -262,13 +262,102 @@ button {
 
 
 
-.search_wrap {
+#wrap {
+    position: relative;
+}
 
+.search_wrap {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 60px;
+    z-index: 100;
+    background: #fff;
+    display: none;
 }
 
 .search_wrap .search_home {
-    padding: 20px 0 30px;
+    text-align: center;
+    height: 94px;
+    background-color: #6b6b6b;
+    position: relative;
 }
+
+.search_wrap .search_home .form_wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.search_wrap .search_home legend {
+    text-indent: -9999px;
+}
+
+.search_wrap .search_home input {
+    width: 270px;
+    height: 44px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding: 11px 55px 11px 5px;
+    box-sizing: border-box;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.search_wrap .search_home input::placeholder {
+    color: rgb(148, 147, 147);
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+
+.search_wrap .search_home .btn_search {
+    width: 27.5px;
+    height: 27px;
+    background: url('../images/ico-search-lg-white.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    
+}
+
+
+
+
+
+.search_wrap .search_recommend {
+    text-align: center;
+    padding: 35px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.search_wrap .search_recommend p {
+    padding: 10px 20px;
+    color: #ED274D;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.search_wrap .search_recommend ul {
+
+}
+
+.search_wrap .search_recommend ul li {
+
+}
+
+.search_wrap .search_recommend ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 16px;
+}
+
 
 
 
@@ -430,6 +519,13 @@ button {
     background: url("../images/ico-search.png") no-repeat;
     background-size: 21.5px;
     margin-top: -10.5px;
+}
+
+#header .m_search.on {
+    background: url("../images/ico-close.png") no-repeat;
+    background-size: 21.5px;
+
+    
 }
 
 #main .menu_wrap .menu_list {

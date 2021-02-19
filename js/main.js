@@ -125,6 +125,30 @@ $(function(){
           $('.floating-menu_wrap ul .btn_up-list').fadeOut();
         }
       })
+
+      
+      var sw_search = true;
+      $('#header .m_search').click(function(){
+        if(sw_search){
+         $(this).addClass('on');
+         $('.search_wrap').slideDown(300, 'swing');
+         $('body, html').css({"overflow":"hidden"});
+         sw_search = false; 
+        } else {
+          $(this).removeClass('on');
+         $('.search_wrap').slideUp(300, 'swing');
+         $('body, html').css({"overflow":"auto"});
+         sw_search = true; 
+        }
+
+      })
+        
+
+      // $('#header .m_search').click(function(){
+      //   $(this).toggleClass('on');
+      //   $('.search_wrap').slideToggle(500);
+      //   $('body, html').css({"overflow":"hidden"});
+      // })
       
 
       // $(window).scroll(function(){
