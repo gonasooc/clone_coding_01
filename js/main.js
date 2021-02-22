@@ -37,11 +37,45 @@ $(function(){
 
 
     $('#main .mainCon1 ul li').mouseenter(function(){
-        $(this).addClass('on').siblings().css({'filter':'brightness(60%)'});
+        $(this).addClass('on').find('a').siblings().css({'filter':'brightness(60%)'});
         $(this).find('.btn_more').stop().fadeIn();
     })
     $('#main .mainCon1 ul li').mouseleave(function(){
-        $(this).removeClass('on').siblings().css({'filter':'brightness(100%)'});
+        $(this).removeClass('on').find('a').siblings().css({'filter':'brightness(100%)'});
         $(this).find('.btn_more').stop().fadeOut();
     })
+
+
+    
+
+
 })
+
+
+// var player = videojs("player");
+
+// player.playlist([
+//     {
+//         sources: [{
+//             src: '../videos/00 HPIT.mp4',
+//             type: 'video/mp4'
+//         }]
+//     },
+//     {
+//         sources: [{
+//             src: '../videos/00 HPIT.mp4',
+//             type: 'video/mp4'
+//         }]
+//     },
+//     {
+//         sources: [{
+//             src: '../videos/00 HPIT.mp4',
+//             type: 'video/mp4'
+//         }],
+//         poster: 'http://media.w3.org/2010/05/sintel/poster.png'
+//     }
+// ]);
+
+// // Play through the playlist automatically.
+// player.playlist.autoadvance(0);
+// player.playlist.repeat(true);

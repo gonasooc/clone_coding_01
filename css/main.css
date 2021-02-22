@@ -424,6 +424,7 @@ body {
     overflow: hidden;
     margin: 85px auto;
     box-sizing: border-box;
+    /* height: 274px; */
 }
 
 #main .mainCon1 ul li {
@@ -432,13 +433,28 @@ body {
     width: 25%;
     position: relative;
     box-sizing: border-box;
-    transition: all 0.4s;
+}
+
+#main .mainCon1 ul li::after {
+    content: '';
+    width: 1px;
+    height: 200px;
+    background:#ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#main .mainCon1 ul li:last-child::after {
+    display: none;
 }
 
 
-#main .mainCon1 ul li.on {
+
+
+/* #main .mainCon1 ul li.on {
     transform: translateY(-40px);
-}
+} */
 
 
 #main .mainCon1 ul li a {
@@ -446,6 +462,13 @@ body {
     width: 100%;
     height: 100%;
     display: block;
+    position: relative;
+    transition: all 0.4s;
+
+}
+
+#main .mainCon1 ul li.on a {
+    transform: translateY(-40px);
 }
 
 #main .mainCon1 ul li a .txt1 {

@@ -7,9 +7,11 @@
     <title>현대글로비스</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/jquery-3.5.0.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
 <body>
@@ -105,9 +107,16 @@
 <div id="main">
     <div class="visual_wrap">
         <div class="visual">
-            <video height="1080" autoplay muted loop>
-                <source src="./videos/main_video04.mp4" type="video/mp4">
+            <video id="video01" height="1080" preload="auto" autoplay muted loop>
+                <source src="./videos/00 HPIT.mp4" type="video/mp4">
             </video>
+            <video id="video02" height="1080" preload="auto" muted>
+                <source src="./videos/01 HPIT.mp4" type="video/mp4">
+            </video>
+            <video id="video03" height="1080" preload="auto" muted>
+                <source src="./videos/main_video01.mp4" type="video/mp4">
+            </video>
+
         </div>
 
         
