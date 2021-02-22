@@ -45,37 +45,41 @@ $(function(){
         $(this).find('.btn_more').stop().fadeOut();
     })
 
+    // $("#video01").bind("ended", function() {
+    //     document.getElementById("video02").play();
+    // });
+    // $("#video02").bind("ended", function() {
+    //     document.getElementById("video03").play();
+    // });
+    // $("#video03").bind("ended", function() {
+    //     document.getElementById("video01").play();
+    // });
 
-    
 
+    var video;
+    var videoNum = 0;
+    var videoArr = ['./videos/main_video01.mp4', './videos/main_video02.mp4', './videos/main_video03.mp4', './videos/main_video04.mp4', './videos/main_video05.mp4', './videos/main_video06.mp4', './videos/main_video09.mp4', './videos/main_video10.mp4', './videos/main_video14.mp4', './videos/main_video15.mp4', './videos/main_video17.mp4', './videos/main_video18.mp4', './videos/main_video21.mp4'];
 
+    function addVideo(){
+        $('#video').attr('src', videoArr[videoNum]);
+        video = $('#video').get(0);
+        video.play();
+        chkEnded();
+    }
+
+    addVideo();
+
+    function chkEnded(){
+        video.onended = function(){
+        console.log('재생끝!!');
+        if(videoNum == videoArr.length - 1){
+            videoNum = 0;
+        } else {
+            videoNum++;
+        }
+
+        addVideo();
+        }
+    }    
 })
 
-
-// var player = videojs("player");
-
-// player.playlist([
-//     {
-//         sources: [{
-//             src: '../videos/00 HPIT.mp4',
-//             type: 'video/mp4'
-//         }]
-//     },
-//     {
-//         sources: [{
-//             src: '../videos/00 HPIT.mp4',
-//             type: 'video/mp4'
-//         }]
-//     },
-//     {
-//         sources: [{
-//             src: '../videos/00 HPIT.mp4',
-//             type: 'video/mp4'
-//         }],
-//         poster: 'http://media.w3.org/2010/05/sintel/poster.png'
-//     }
-// ]);
-
-// // Play through the playlist automatically.
-// player.playlist.autoadvance(0);
-// player.playlist.repeat(true);
