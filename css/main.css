@@ -404,7 +404,54 @@ body {
     padding: 100px 0 145px;
     width: 100%;
     background: url('../images/mainCon_bg1.jpg') no-repeat top center;
+    position: relative;
 }
+
+/* #main .mainCon1::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #598e97;
+    transition: all 0.5s;
+    
+}
+
+#main .mainCon1.on::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #598e97;
+} */
+
+/* #main .mainCon1::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    transition: all 0.5s;
+
+}
+
+#main .mainCon1.on::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+} */
+
+
 
 #main .mainCon1 h3 {
     text-align: center;
@@ -433,6 +480,7 @@ body {
     width: 25%;
     position: relative;
     box-sizing: border-box;
+    transition: all 0.4s;
 }
 
 #main .mainCon1 ul li::after {
@@ -491,6 +539,245 @@ body {
 }
 
 
+
+#main .mainCon2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+#main .mainCon2 .left-box {
+    height: 920px;
+    float: left;
+    width: 50%;
+    background: url('../images/mainCon_bg2.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+#main .mainCon2 .left-box .txt-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -130px;
+    margin-top: -135px;
+    text-align: center;
+}
+
+#main .mainCon2 .left-box .txt-box > a {
+    display: block;
+    width: 260px;
+    height: 220px;
+    padding: 40px 0 30px 0;
+    box-sizing: border-box;
+    background: rgba(0, 156, 255, 0.9);
+    transition: all 0.2s;
+}
+
+#main .mainCon2 .left-box .txt-box > a:hover {
+    height: 290px;
+    padding: 40px 0 30px 0;
+    box-sizing: border-box;
+    margin-top: -35px;
+}
+
+#main .mainCon2 .left-box .txt-box > a:hover .btn_more {
+    opacity: 1;
+}
+
+#main .mainCon2 .left-box .txt-box > a .btn_more {
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+
+
+#main .mainCon2 .left-box .txt-box h3 {
+    font-size: 32px;
+    color: #fff;
+    padding-bottom: 31px;
+    background: url('../images/bar54x1.gif') no-repeat center bottom;
+
+}
+
+#main .mainCon2 .left-box .txt-box p {
+    margin: 25px auto 40px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #fff;
+}
+
+#main .mainCon2 .left-box .txt-box .txt-bg {
+    height: 50px;
+    background: url('../images/main_box_bg.png') no-repeat center center;
+
+}
+
+#main .mainCon2 .right-box {
+    height: 920px;
+    float: left;
+    width: 50%;
+}
+
+#main .mainCon2 .right-box .right_top-box {
+    height: 50%;
+    background: url('../images/mainCon_bg3.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+#main .mainCon2 .right-box .right_top-box .txt-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -130px;
+    margin-top: -110px;
+    text-align: center;
+}
+
+#main .mainCon2 .right-box .right_top-box .txt-box > a {
+    display: block;
+    width: 260px;
+    padding: 40px 0 30px 0;
+    box-sizing: border-box;
+    height: 220px;
+    background: rgba(21, 36, 93, 0.9);
+    transition: all 0.2s;
+}
+
+#main .mainCon2 .right-box .right_top-box .txt-box > a:hover {
+    height: 290px;
+    padding: 40px 0 30px 0;
+    box-sizing: border-box;
+    margin-top: -35px;
+}
+
+#main .mainCon2 .right-box .right_top-box .txt-box > a:hover .btn_more {
+    opacity: 1;
+}
+
+#main .mainCon2 .right-box .right_top-box .txt-box > a .btn_more {
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+#main .mainCon2 .right-box .right_top-box .txt-box h3 {
+    font-size: 32px;
+    color: #fff;
+    padding-bottom: 31px;
+    background: url('../images/bar54x1.gif') no-repeat center bottom;
+}
+
+#main .mainCon2 .right-box .right_top-box .txt-box p {
+    margin: 25px auto 40px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #fff;
+}
+
+#main .mainCon2 .right-box .right_top-box .txt-box .txt-bg {
+    height: 50px;
+    background: url('../images/main_box_bg2.png') no-repeat center center;
+}
+
+
+
+#main .mainCon2 .right-box .right_bottom-box {
+    height: 50%;
+    padding: 40px 40px 30px 40px;
+    box-sizing: border-box;
+}
+
+
+#footer {
+    width: 100%;
+    background: #f1f1f1;
+}
+
+
+#footer .footer_top {
+    padding: 50px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+}
+
+#footer .footer_top .footer-link {
+    text-align: center;
+}
+
+#footer .footer_top .footer-link li {
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+    margin-left: -5px;
+}
+
+#footer .footer_top .footer-link li::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #dcdcdc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#footer .footer_top .footer-link li a {
+    font-size: 16px;
+    color: #333;
+}
+
+#footer .footer_top .footer-link .strong a {
+    font-weight: 600;
+}
+
+#footer .footer_top .family-box {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    
+}
+
+#footer .footer_top .family-box .btn_family {
+    display: block;
+    width: 220px;
+    height: 46px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    line-height: 46px;
+    font-size: 15px;
+    color: #555;
+    background: #dbdbdb url('../images/family_icon.png') no-repeat 90% center;
+}
+
+#footer .footer_top .family-box .family-list {
+    padding: 20px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 46px;
+    width: 220px;
+    box-sizing: border-box;
+    
+}
+
+#footer .footer_top .family-box .family-list li {
+    padding: 7.5px 0;
+}
+
+#footer .footer_top .family-box .family-list li a {
+    font-size: 16px;
+    color: #555;
+}
+
+
+#footer .footer_bottom {
+    padding: 50px;
+    box-sizing: border-box;
+}
 
 
 
