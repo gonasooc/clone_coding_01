@@ -38,7 +38,7 @@ body {
 
 #header h1 {
     position: absolute;
-    left: 40px;
+    left: 30px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -135,7 +135,7 @@ body {
 
 #header .util {
     position: absolute;
-    right: 40px;
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
     height: 75px;
@@ -143,18 +143,25 @@ body {
     box-sizing: border-box;
 }
 
-#header .util .link {
-    float: left;
+#header .util-link {
+    position: absolute;
+    right: 12%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-#header .util .link li {
+#header .util-link .link {
+    overflow: hidden;
+}
+
+#header .util-link .link li {
     float: left;
     padding: 0 14px;
     box-sizing: border-box;
     position: relative;
 }
 
-#header .util .link li::before {
+#header .util-link .link li::before {
     content: '';
     width: 1px;
     height: 13px;
@@ -166,19 +173,19 @@ body {
 }
 
 
-#header .util .link li:first-child::before {
+#header .util-link .link li:first-child::before {
     display: none;
 }
 
 
-#header .util .link li a {
+#header .util-link .link li a {
     font-weight: 300;
     font-size: 15px;
     color: #fff;
     line-height: 22px;
 }
 
-#header.on .util .link li a {
+#header.on .util-link .link li a {
     color: #555;
 }
 
@@ -281,8 +288,15 @@ body {
 
 
 #main .visual_wrap .visual {
+    width: 100%;
     height: 100%;
     overflow: hidden;
+}
+
+#main .visual_wrap .visual #video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -427,12 +441,9 @@ body {
 
 #main .mainCon1.on::before {
     animation: ani-slide 0.5s ease;
-    animation-delay: 0.5s;
+    animation-delay: 0.6s;
     animation-fill-mode: forwards;
-
 }
-
-
 
 #main .mainCon1::after {
     content: '';
@@ -567,7 +578,7 @@ body {
 
 #main .mainCon2 .left-box.on::before {
     animation: ani-slide 0.5s ease;
-    animation-delay: 0.5s;
+    animation-delay: 0.6s;
     animation-fill-mode: forwards;
 }
 
@@ -676,7 +687,7 @@ body {
 
 #main .mainCon2 .right-box .right_top-box.on::before {
     animation: ani-slide 0.5s ease;
-    animation-delay: 0.5s;
+    animation-delay: 0.6s;
     animation-fill-mode: forwards;
 }
 
@@ -1033,11 +1044,114 @@ body {
 }
 
 
+/* util 변경 기점 --------------------------------------------------------- */
+@media (max-width: 1700px) {
+
+    #header {
+        width: 100%;
+        height: 75px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-bottom: 1px solid #dcdcdc;
+        box-sizing: border-box;
+        z-index: 2;
+        margin-top: 40px;
+    }
+
+    #header .util-link {
+        position: absolute;
+        right: 0;
+        /* top: 50%; */
+        top: -40px;
+        height: 40px;
+        padding: 6px 30px 6px 0;
+        box-sizing: border-box;
+        /* margin-top: -30px; */
+        transform: translateY(0%);
+        width: 100%;
+        text-align: right;
+        border-bottom: 1px solid rgba(255,255,255, 0.2);
+    }
+
+    #header.on .util-link {
+        background: #f2f2f2;
+    }
+
+    #header .util-link .link li {
+        float: none;
+        display: inline-block;
+        padding: 0 14px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    #header .gnb {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 900px;
+        
+    }
+
+}
+
+
+@media (max-width: 1220px) {
+
+    #main .mainCon1 ul li {
+        text-align: center;
+        float: left;
+        width: 50%;
+        position: relative;
+        box-sizing: border-box;
+        transition: all 0.4s;
+    }
+
+
+    #main .mainCon2 .left-box {
+        height: 600px;
+        float: none;
+        width: 100%;
+        background: url('../images/mainCon_bg2.jpg') no-repeat center center;
+        background-size: cover;
+        position: relative;
+    }
+
+    #main .mainCon2 .right-box {
+        /* height: 920px; */
+        height: auto;
+        float: none;
+        width: 100%;
+    }
+
+    #main .mainCon2 .right-box .right_top-box {
+        /* height: 50%; */
+        height: 600px;
+        background: url('../images/mainCon_bg3.jpg') no-repeat center center;
+        background-size: cover;
+        position: relative;
+    }
+
+    #main .mainCon2 .right-box .right_bottom-box {
+        /* height: 50%; */
+        height: 460px;
+        padding: 40px 40px 40px 0;
+        box-sizing: border-box;
+    }
+    
+
+}
+
+
+@media (max-width: 1170px) {
 
 
 
 
-
+    
+}
 
 
 
