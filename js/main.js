@@ -90,9 +90,17 @@ $(function(){
         $('body, html').animate({'scrollTop':scrollValue});
     });
 
-    // $('.mainCon1').mouseenter(function(){
-    //     $(this).addClass('on');
-    // });
+
+    $(window).scroll(function(){
+        var windowScrollValue = $(this).scrollTop();
+        console.log(windowScrollValue);
+        if(windowScrollValue > 300){
+            $('.mainCon1').addClass('on');
+            if(windowScrollValue > 1100){
+                $('.left-box, .right_top-box').addClass('on');
+            }
+        } 
+    });
  
 
 
@@ -125,8 +133,6 @@ $(function(){
           el: '.news-slide .swiper-scrollbar',
         },
       });
-
-
 
 
     

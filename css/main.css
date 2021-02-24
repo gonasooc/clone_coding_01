@@ -408,27 +408,31 @@ body {
     position: relative;
 }
 
-/* #main .mainCon1::before {
-    content: '';
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #598e97;
-    transition: all 0.5s;
-    
-}
-
-#main .mainCon1.on::before {
+#main .mainCon1::before {
     content: '';
     width: 100%;
     height: 100%;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     background: #598e97;
+    transition: all 0.5s;
+    z-index: 2;
 }
+
+@keyframes ani-slide {
+    0% {width: 100%}
+    100% {width: 0}
+}
+
+#main .mainCon1.on::before {
+    animation: ani-slide 0.5s ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+
 
 #main .mainCon1::after {
     content: '';
@@ -439,19 +443,13 @@ body {
     top: 0;
     background: #fff;
     transition: all 0.5s;
-
+    z-index: 3;
 }
 
 #main .mainCon1.on::after {
-    content: '';
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: #fff;
-} */
-
+    animation: ani-slide 0.5s ease;
+    animation-fill-mode: forwards;
+}
 
 
 #main .mainCon1 h3 {
@@ -498,12 +496,6 @@ body {
     display: none;
 }
 
-
-
-
-/* #main .mainCon1 ul li.on {
-    transform: translateY(-40px);
-} */
 
 
 #main .mainCon1 ul li a {
@@ -560,6 +552,44 @@ body {
     background-size: cover;
     position: relative;
 }
+
+#main .mainCon2 .left-box::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #a4733a;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+#main .mainCon2 .left-box.on::before {
+    animation: ani-slide 0.5s ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+#main .mainCon2 .left-box::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 3;
+}
+
+#main .mainCon2 .left-box.on::after {
+    animation: ani-slide 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
 
 #main .mainCon2 .left-box .txt-box {
     position: absolute;
@@ -631,6 +661,47 @@ body {
     background-size: cover;
     position: relative;
 }
+
+#main .mainCon2 .right-box .right_top-box::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #163b51;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+#main .mainCon2 .right-box .right_top-box.on::before {
+    animation: ani-slide 0.5s ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+#main .mainCon2 .right-box .right_top-box::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 3;
+}
+
+#main .mainCon2 .right-box .right_top-box.on::after {
+    animation: ani-slide 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
+
+
+
 
 #main .mainCon2 .right-box .right_top-box .txt-box {
     position: absolute;
