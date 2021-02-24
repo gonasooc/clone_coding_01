@@ -1,4 +1,8 @@
 $(function(){
+
+    $('a').attr('href', 'javascript:;');
+    // 클릭했을 때 상단으로 가는 거 임시로 막기 위해 넣은 코드
+
     $('.gnb').mouseenter(function(){
         $('#header').addClass('on');
         $('#header .util .lang-box .btn_lang').addClass('on');
@@ -98,7 +102,29 @@ $(function(){
     })
 
 
-
+    const swiper = new Swiper('.news-slide .swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        simulateTouch:false,
+      
+        // If we need pagination
+        pagination: {
+          el: '.news-slide .swiper-pagination',
+          type: 'fraction',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.news-slide .swiper-button-next',
+          prevEl: '.news-slide .swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.news-slide .swiper-scrollbar',
+        },
+      });
 
 
 
