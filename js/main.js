@@ -69,12 +69,23 @@ $(function(){
 
       $(window).scroll(function(){
         var windowScrollValue = $(this).scrollTop();
+        console.log(windowScrollValue);
         if(windowScrollValue >= 116){
           $('#header').addClass('on');
         } else{
           $('#header').removeClass('on');
         }
+
+        if(windowScrollValue >= 2300){
+          $('.btn_top_wrap').fadeIn();
+        } else{
+          $('.btn_top_wrap').fadeOut();
+
+        }
       });
+
+      
+      
 
       $('.btn_close').click(function(){
         $('.popup-banner_wrap').hide();
