@@ -53,7 +53,6 @@ body {
     transform: translateY(-50%);
 }
 
-
 .m-gnb_wrap .m-home .m-lang-box li:last-child {
     margin-right: 0;
 }
@@ -85,8 +84,6 @@ body {
     transform: translateY(-50%);
 }
 
-
-
 .m-gnb_wrap .m-home .m-btn-box li:last-child {
     margin-right: 0;
 }
@@ -102,7 +99,6 @@ body {
 .m-gnb_wrap .m-home .m-btn-box li a img {
     width: 20px;
 }
-
 
 .m-gnb_wrap .m-menu {
     padding: 20px 0;
@@ -171,10 +167,6 @@ body {
     color: #555;
 }
 
-
-
-
-
 .cover {
     width: 100%;
     height: 100%;
@@ -199,7 +191,6 @@ body {
 
 #header.on {
     background: #fff;
-
 }
 
 #header h1 {
@@ -227,7 +218,6 @@ body {
     top: 50%;
     transform: translate(-60%, -50%);
     width: 900px;
-    
 }
 
 #header .gnb > li > a {
@@ -243,7 +233,6 @@ body {
     color: #000;
 }
 
-
 #header .gnb > li {
     float: left;
     padding: 0 32.5px;
@@ -258,10 +247,6 @@ body {
     font-weight: bold;
 }
 
-
-
-
-
 #header .gnb_bg {
     position: absolute;
     left: 0;
@@ -270,7 +255,6 @@ body {
     height: 325px;
     background: #fff;
     display: none;
-
 }
 
 #header .gnb .depth2 {
@@ -338,11 +322,9 @@ body {
     left: 0;
 }
 
-
 #header .util-link .link li:first-child::before {
     display: none;
 }
-
 
 #header .util-link .link li a {
     font-weight: 300;
@@ -354,7 +336,6 @@ body {
 #header.on .util-link .link li a {
     color: #555;
 }
-
 
 #header .util .search {
     float: left;
@@ -380,7 +361,6 @@ body {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-
 }
 
 #header .util .lang-box {
@@ -453,13 +433,10 @@ body {
     display: none;
 }
 
-
 #main .visual_wrap {
     position: relative;
     height: 100vh;
 }
-
-
 
 #main .visual_wrap .visual {
     width: 100%;
@@ -473,7 +450,6 @@ body {
     object-fit: cover;
 }
 
-
 #main .modal_wrap {
     position: absolute;
     left: 50%;
@@ -486,7 +462,6 @@ body {
 
 #main .modal_wrap .modal-title {
     padding-top: 225px;
-
 }
 
 #main .modal_wrap .modal-tab {
@@ -497,7 +472,6 @@ body {
 
 #main .modal_wrap .modal-tab li {
     display: inline-block;
-    
 }
 
 #main .modal_wrap .modal-tab li a {
@@ -520,15 +494,12 @@ body {
     background: rgba(0,0,0,0.8);
 }
 
-
-
 #main .modal_wrap .scroll_down {
     position: absolute;
     left: 50%;
     bottom: 40px;
     transform: translateX(-50%);
 }
-
 
 #main .modal-list_wrap {
     position: fixed;
@@ -546,7 +517,6 @@ body {
     opacity: 1;
 }
 
-
 #main .modal-list_wrap .modal-list {
     
 }
@@ -559,8 +529,6 @@ body {
     width: 960px;
     height: 542px;
 }
-
-
 
 #main .modal-list_wrap .modal-list li .btn_more {
     position: absolute;
@@ -588,12 +556,6 @@ body {
 #main .visual_wrap .m_scroll_down {
     display: none;
 }
-
-
-
-
-
-
 
 #main .mainCon1 {
     padding: 100px 0;
@@ -644,7 +606,6 @@ body {
     animation-fill-mode: forwards;
 }
 
-
 #main .mainCon1 h3 {
     text-align: center;
 }
@@ -663,7 +624,6 @@ body {
     overflow: hidden;
     margin: 85px auto;
     box-sizing: border-box;
-    /* height: 274px; */
 }
 
 #main .mainCon1 ul li {
@@ -689,8 +649,6 @@ body {
     display: none;
 }
 
-
-
 #main .mainCon1 ul li a {
     color: #fff;
     width: 100%;
@@ -698,7 +656,6 @@ body {
     display: block;
     position: relative;
     transition: all 0.4s;
-
 }
 
 #main .mainCon1 ul li.on a {
@@ -729,13 +686,10 @@ body {
     opacity: 1;
 }
 
-
-
 #main .mainCon2 {
     width: 100%;
     overflow: hidden;
 }
-
 
 #main .mainCon2 .left-box {
     height: 920px;
@@ -764,8 +718,6 @@ body {
     animation-fill-mode: forwards;
 }
 
-
-
 #main .mainCon2 .left-box::after {
     content: '';
     width: 100%;
@@ -782,7 +734,6 @@ body {
     animation: ani-slide 0.5s ease;
     animation-fill-mode: forwards;
 }
-
 
 #main .mainCon2 .left-box .txt-box {
     position: absolute;
@@ -891,10 +842,6 @@ body {
     animation: ani-slide 0.5s ease;
     animation-fill-mode: forwards;
 }
-
-
-
-
 
 #main .mainCon2 .right-box .right_top-box .txt-box {
     position: absolute;
