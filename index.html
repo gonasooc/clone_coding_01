@@ -12,11 +12,95 @@
     <script src="./js/jquery-3.5.0.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
-    <script src="./js/main.js"></script>
 </head>
 <body>
 
-    
+
+<div class="m-gnb_wrap">
+    <div class="m-home">
+        <ul class="m-lang-box">
+            <li><a href="#">Kor</a></li>
+            <li><a href="#">Eng</a></li>
+        </ul>
+        <ul class="m-btn-box">
+            <li><a href="#" class="m-search"><img src="./images/m_srch_btn.gif" alt="검색"></a></li>
+            <li><a href="#" class="m-btn_close"><img src="./images/m_menu_close_btn.gif" alt="닫기"></a></li>
+        </ul>
+    </div>
+    <div class="m-menu">
+        <ul class="m-gnb">
+            <li>
+                <a href="#">회사소개</a>
+                <ul class="m-depth2">
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">CEO 메시지</a></li>
+                    <li><a href="#">경영이념</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">수상 · 인증</a></li>
+                    <li><a href="#">CI 소개</a></li>
+                    <li><a href="#">네트워크</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">사업영역</a>
+                <ul class="m-depth2">
+                    <li><a href="#">물류</a></li>
+                    <li><a href="#">해운</a></li>
+                    <li><a href="#">KD</a></li>
+                    <li><a href="#">트레이딩</a></li>
+                    <li><a href="#">오토비즈</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">지속가능경영</a>
+                <ul class="m-depth2">
+                    <li><a href="#">지속가능경영 성과</a></li>
+                    <li><a href="#">사회책임경영</a></li>
+                    <li><a href="#">고객만족경영</a></li>
+                    <li><a href="#">SHE(안전보건환경) 경영</a></li>
+                    <li><a href="#">품질경영</a></li>
+                    <li><a href="#">공정거래</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">인재채용</a>
+                <ul class="m-depth2">
+                    <li><a href="#">WHY GLOVIS</a></li>
+                    <li><a href="#">MEET GLOVIS</a></li>
+                    <li><a href="#">직무소개</a></li>
+                    <li><a href="#">인사제도</a></li>
+                    <li><a href="#">채용전형</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">투자정보</a>
+                <ul class="m-depth2">
+                    <li><a href="#">경영정보</a></li>
+                    <li><a href="#">재무정보</a></li>
+                    <li><a href="#">주식정보</a></li>
+                    <li><a href="#">IR 정보</a></li>
+                    <li><a href="#">전자공고</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">뉴스 · 미디어</a>
+                <ul class="m-depth2">
+                    <li><a href="#">뉴스</a></li>
+                    <li><a href="#">홍보영상</a></li>
+                    <li><a href="#">브로슈어</a></li>
+                    <li><a href="#">소셜 미디어</a></li>
+                    <li><a href="#">웹진 GLOVIS+</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="m-util">
+            <li><a href="#">윤리경영</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#">럭비단</a></li>
+        </ul>
+    </div>
+</div>
+
 <div class="cover"></div>
 <div id="header">
     <h1>
@@ -106,6 +190,7 @@
             </ul>
         </div>
     </div>
+    <a href="#" class="btn_hamburger"><img src="./images/mGnb_bt.png" alt="모바일메뉴버튼"></a>
 </div>
 <div id="main">
     <div class="visual_wrap">
@@ -113,6 +198,22 @@
             <video id="video" preload="auto" muted>
                 <source src="" type="video/mp4">
             </video>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/m_mainVis_bg2.jpg" alt="모바일슬라이드1"></div>
+                        <div class="swiper-slide"><img src="./images/m_mainVis_bg3.jpg" alt="모바일슬라이드2"></div>
+                        <div class="swiper-slide"><img src="./images/m_mainVis_bg4.jpg" alt="모바일슬라이드3"></div>
+                        <div class="swiper-slide"><img src="./images/m_mainVis_bg5.jpg" alt="모바일슬라이드4"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+                
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+
+            
             <!-- <video id="video02" height="1080" preload="auto" muted>
                 <source src="./videos/main_video02.mp4" type="video/mp4">
             </video>
@@ -124,49 +225,51 @@
         <div class="modal_wrap">
                 <p class="modal-title"><img src="./images/mainVis_tit1.png" alt="모달타이틀"></p>
                 <ul class="modal-tab">
-                    <li><a href="#">물류</a></li>
-                    <li><a href="#">해운</a></li>
-                    <li><a href="#">KD</a></li>
-                    <li><a href="#">트레이딩</a></li>
-                    <li><a href="#">오토비즈</a></li>
-                    <li><a href="#">사회공헌</a></li>
+                    <li class="btn-tab01"><a href="#">물류</a></li>
+                    <li class="btn-tab02"><a href="#">해운</a></li>
+                    <li class="btn-tab03"><a href="#">KD</a></li>
+                    <li class="btn-tab04"><a href="#">트레이딩</a></li>
+                    <li class="btn-tab05"><a href="#">오토비즈</a></li>
+                    <li class="btn-tab06"><a href="#">사회공헌</a></li>
                 </ul>
                 <a href="#" class="scroll_down"><img src="./images/mainVis_scroll_btn.png" alt="아래로가기"></a>
         </div>
         <div class="modal-list_wrap">
             <ul class="modal-list">
-                <li>
-                    <img src="./images/mainVis_pop1.jpg" alt="모달1">
+                <li class="modal-list01">
+                    <img src="./images/mainVis_pop1.jpg" alt="모달1" class="modal-img">
                     <a href="#" class="btn_more"><img src="./images/mainVis_pop_btn.gif" alt="자세히보기"></a>
                     <a href="#" class="btn_close"><img src="./images/mainPop_close.png" alt="모달닫기"></a>
                 </li>
-                <li>
-                    <img src="./images/mainVis_pop2.jpg" alt="모달2">
+                <li class="modal-list02">
+                    <img src="./images/mainVis_pop2.jpg" alt="모달2" class="modal-img">
                     <a href="#" class="btn_more"><img src="./images/mainVis_pop_btn.gif" alt="자세히보기"></a>
                     <a href="#" class="btn_close"><img src="./images/mainPop_close.png" alt="모달닫기"></a>
                 </li>
-                <li>
-                    <img src="./images/mainVis_pop3.jpg" alt="모달3">
+                <li class="modal-list03">
+                    <img src="./images/mainVis_pop3.jpg" alt="모달3" class="modal-img">
                     <a href="#" class="btn_more"><img src="./images/mainVis_pop_btn.gif" alt="자세히보기"></a>
                     <a href="#" class="btn_close"><img src="./images/mainPop_close.png" alt="모달닫기"></a>
                 </li>
-                <li>
-                    <img src="./images/mainVis_pop4.jpg" alt="모달4">
+                <li class="modal-list04">
+                    <img src="./images/mainVis_pop4.jpg" alt="모달4" class="modal-img">
                     <a href="#" class="btn_more"><img src="./images/mainVis_pop_btn.gif" alt="자세히보기"></a>
                     <a href="#" class="btn_close"><img src="./images/mainPop_close.png" alt="모달닫기"></a>
                 </li>
-                <li>
-                    <img src="./images/mainVis_pop5.jpg" alt="모달5">
+                <li class="modal-list05">
+                    <img src="./images/mainVis_pop5.jpg" alt="모달5" class="modal-img">
                     <a href="#" class="btn_more"><img src="./images/mainVis_pop_btn.gif" alt="자세히보기"></a>
                     <a href="#" class="btn_close"><img src="./images/mainPop_close.png" alt="모달닫기"></a>
                 </li>
-                <li>
-                    <img src="./images/mainVis_pop6.jpg" alt="모달6">
+                <li class="modal-list06">
+                    <img src="./images/mainVis_pop6.jpg" alt="모달6" class="modal-img">
                     <a href="#" class="btn_more"><img src="./images/mainVis_pop_btn.gif" alt="자세히보기"></a>
                     <a href="#" class="btn_close"><img src="./images/mainPop_close.png" alt="모달닫기"></a>
                 </li>
             </ul>
         </div>
+        <a href="./videos/main_video10.mp4" class="m_btn_play-video" target="_blank"><img src="./images/m_play_btn.png" alt="영상을 보고 싶으면 클릭하세요"></a>
+        <a href="#" class="m_scroll_down"><img src="./images/m_mainVis_scroll_btn.png" alt="아래로가기(모바일용)"></a>
     </div>
 
     <div class="mainCon1" id="scrollArea">
@@ -183,7 +286,7 @@
             </li>
             <li>
                 <a href="#">
-                    <p><img src="./images/mainCon1_icon2.png" alt="글로벌네트워크"></p>
+                    <p><img src="./images/mainCon1_icon2.png" alt="투자정보"></p>
                     <span class="txt1">투자정보</span>
                     <span class="txt2">끊임없는 도전과 혁신으로<br>새로운 가치를 만듭니다.</span>
                     <p class="btn_more"><img src="./images/main_over_btn.png" alt="더보기"></p>
@@ -191,7 +294,7 @@
             </li>
             <li>
                 <a href="#">
-                    <p><img src="./images/mainCon1_icon3.png" alt="글로벌네트워크"></p>
+                    <p><img src="./images/mainCon1_icon3.png" alt="사회공헌"></p>
                     <span class="txt1">사회공헌</span>
                     <span class="txt2">인간 존중과 상생의 철학을 바탕으로<br>사회공헌을 펼쳐갑니다.</span>
                     <p class="btn_more"><img src="./images/main_over_btn.png" alt="더보기"></p>
@@ -199,7 +302,7 @@
             </li>
             <li>
                 <a href="#">
-                    <p><img src="./images/mainCon1_icon4.png" alt="글로벌네트워크"></p>
+                    <p><img src="./images/mainCon1_icon4.png" alt="윤리경영"></p>
                     <span class="txt1">윤리경영</span>
                     <span class="txt2">공정하고 투명한 기업경영으로<br>현대글로비스의 미래를 이끌어갑니다.</span>
                     <p class="btn_more"><img src="./images/main_over_btn.png" alt="더보기"></p>
@@ -345,9 +448,104 @@
 
 
                 </div>
+                <div class="m-news-slide">
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <p class="category">보도자료</p>
+                                    <h2 class="tit">국내 최초 ‘전기차 사용후 배터리 운송 설비’ 특허 취득</h2>
+                                    <p class="content">글로벌 SCM 전문기업 현대글로비스가 전기차 사용후 배터리 운송 시장 공략에 나선다. 수명을 다한 전기차 배터리를 경제적으로 운반할 수 있는 전...</p>
+                                    <p class="date">2021.02.03</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <p class="category">보도자료</p>
+                                    <h2 class="tit">완성차 해상운송 비계열 매출 비중 55% 역대 최대</h2>
+                                    <p class="content">글로벌 SCM전문기업 현대글로비스는 지난해 자동차 운반선(PCTC, Pure Car and Truck Carrier) 사업에서 현대차·기아를 제...</p>
+                                    <p class="date">2021.02.03</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <p class="category">보도자료</p>
+                                    <h2 class="tit">	글로벌 ‘항공 물류’ 강화…유럽에 전략 거점 구축</h2>
+                                    <p class="content">글로벌 SCM 전문기업 현대글로비스가 유럽에 항공 물류 사업을 위한 전략 거점을 개설하는 것을 시작으로 항공 화물 사업 확대에 나선다. 현...</p>
+                                    <p class="date">2021.02.03</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <p class="category">보도자료</p>
+                                    <h2 class="tit">울산항만공사와 베트남 복합물류센터 사업 추진</h2>
+                                    <p class="content">글로벌 SCM 전문기업 현대글로비스가 울산항만공사(UPA)와 베트남 복합물류센터 구축을 위한 업무협력 양해각서(MOU)를 체결했다.
 
+                                        현대글...</p>
+                                    <p class="date">2021.01.14</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <p class="category">보도자료</p>
+                                    <h2 class="tit">연말 맞아 지역사회 어린이에게 성탄 선물 전달</h2>
+                                    <p class="content">현대글로비스가 연말을 맞아 지역사회 어린이 500명에게 후원 물품을 전달했다.
 
+                                        현대글로비스는 지역사회에 따뜻한 온기를 전하고자 후원 물품...</p>
+                                    <p class="date">2020.12.23</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <p class="category">보도자료</p>
+                                    <h2 class="tit">	현대글로비스-SSG닷컴, 국내 최초 콜드체인 전기차 배...</h2>
+                                    <p class="content">현대글로비스가 국내 최초로 냉장/냉동 물류 수송체계인 콜드체인(Cold Chain) 시스템에 전기트럭을 투입하고 국내 친환경 배송 시장 저변 확...</p>
+                                    <p class="date">2020.11.26</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <p class="category">보도자료</p>
+                                    <h2 class="tit">현대글로비스, ‘선/화주 상생 우수 기업’ 최고 등급 ...</h2>
+                                    <p class="content">글로벌 SCM 전문기업 현대글로비스는 해양수산부가 시행한 ‘우수 선/화주 기업 인증제도’에서 ‘우수 화주’ 부문 1등급 인증을 획득했다.
 
+                                        ...</p>
+                                    <p class="date">2020.11.20</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <p class="category">보도자료</p>
+                                    <h2 class="tit">현대글로비스, ‘2020 DJSI’ 평가서 전세계 물류...</h2>
+                                    <p class="content">글로벌 SCM 전문기업 현대글로비스가 ‘2020 다우존스 지속가능경영 지수’ 평가에 6년 연속 편입되며 전세계 물류/해운기업 가운데 가장 높은 ...</p>
+                                    <p class="date">2020.11.16</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <p class="category">보도자료</p>
+                                    <h2 class="tit">현대글로비스 럭비단, ‘2020 코리안 럭비 챔피언십’...</h2>
+                                    <p class="content">현대글로비스는 소속 럭비단이 ‘2020 코리안 럭비 챔피언십’ 대회에서 우승했다.
+
+                                        현대글로비스 럭비단이 창단 후 세번째 우승 트로피를 들어...</p>
+                                    <p class="date">2020.11.11</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                        <a href="#" class="btn_more"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -382,16 +580,12 @@
                 <li><img src="./images/footer_mark2.gif" alt="우수물류기업 인증"></li>
                 <li><img src="./images/footer_mark3.gif" alt="국토교통부 녹색물류실천기업 지정"></li>
                 <li><img src="./images/footer_mark4.gif" alt="AEO (수출입 안전관리 공인 업체) 인증"></li>
-
             </ul>
         </div>
-
-
-
     </div>
 </div>
 
 
-
+<script src="./js/main.js"></script>
 </body>
 </html>

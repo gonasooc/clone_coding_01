@@ -1,6 +1,6 @@
 $(function(){
 
-    $('a').attr('href', 'javascript:;');
+    // $('a').attr('href', 'javascript:;');
     // 클릭했을 때 상단으로 가는 거 임시로 막기 위해 넣은 코드
 
     $('.gnb').mouseenter(function(){
@@ -41,10 +41,10 @@ $(function(){
 
 
     $('#main .mainCon1 ul li').mouseenter(function(){
-        $(this).addClass('on').find('a').parent().siblings().css({'filter':'brightness(60%)'});
+        $(this).addClass('on').find('a').parent().siblings().find('a').css({'filter':'brightness(60%)'});
     });
     $('#main .mainCon1 ul li').mouseleave(function(){
-        $(this).removeClass('on').find('a').parent().siblings().css({'filter':'brightness(100%)'});
+        $(this).removeClass('on').find('a').parent().siblings().find('a').css({'filter':'brightness(100%)'});
     });
 
     $("#video01").bind("ended", function() {
@@ -85,7 +85,7 @@ $(function(){
     }
     
     
-    $('.scroll_down').click(function(){
+    $('.scroll_down, .m_scroll_down').click(function(){
         var scrollValue = $('#scrollArea').offset().top;
         $('body, html').animate({'scrollTop':scrollValue});
     });
@@ -115,7 +115,7 @@ $(function(){
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-        simulateTouch:false,
+        simulateTouch: false,
       
         // If we need pagination
         pagination: {
@@ -135,7 +135,132 @@ $(function(){
         },
       });
 
-
+    const swiper2 = new Swiper('.visual .swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
     
+    // If we need pagination
+    pagination: {
+        el: '.visual .swiper-pagination',
+    },
+    
+    // Navigation arrows
+    navigation: {
+        nextEl: '.visual .swiper-button-next',
+        prevEl: '.visual .swiper-button-prev',
+    },
+    
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.visual .swiper-scrollbar',
+    },
+    });
+
+
+    const swiper3 = new Swiper('.m-news-slide .swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.m-news-slide .swiper-pagination',
+          type: 'fraction',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.m-news-slide .swiper-button-next',
+          prevEl: '.m-news-slide .swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.m-news-slide .swiper-scrollbar',
+        },
+      });
+
+
+
+
+    $(window).resize(function(){
+        var num = $(this).width();
+        console.log(num);    
+        if(num <= 1170){
+            $('.modal-title').find('img').attr('src','./images/m_mainVis_tit1.png');
+            $('.modal-list01').find('.modal-img').attr('src', './images/m_mainVis_pop1.jpg');
+            $('.modal-list02').find('.modal-img').attr('src', './images/m_mainVis_pop2.jpg');
+            $('.modal-list03').find('.modal-img').attr('src', './images/m_mainVis_pop3.jpg');
+            $('.modal-list04').find('.modal-img').attr('src', './images/m_mainVis_pop4.jpg');
+            $('.modal-list05').find('.modal-img').attr('src', './images/m_mainVis_pop5.jpg');
+            $('.modal-list06').find('.modal-img').attr('src', './images/m_mainVis_pop6.jpg');
+            
+            if(num <= 758){
+                $('.modal-title').find('img').attr('src','./images/m_mainVis_tit2.png');
+                $('.mainCon1 > h3').find('img').attr('src', './images/m_mainCon1_tit.png')
+                $('.mainCon1 .btn_more').find('img').attr('src', './images/m_main_over_btn.png');
+                $('.mainCon2 .btn_more').attr('src', './images/m_main_over_btn.png');
+                 
+            }
+        } else {
+            $('.modal-title').find('img').attr('src','./images/mainVis_tit1.png');
+            $('.mainCon1 > h3').find('img').attr('src', './images/mainCon1_tit.png')
+            $('.mainCon1 .btn_more').find('img').attr('src', './images/main_over_btn.png');
+            $('.mainCon2 .btn_more').attr('src', './images/main_over_btn.png');
+            $('.modal-list01').find('.modal-img').attr('src', './images/mainVis_pop1.jpg');
+            $('.modal-list02').find('.modal-img').attr('src', './images/mainVis_pop2.jpg');
+            $('.modal-list03').find('.modal-img').attr('src', './images/mainVis_pop3.jpg');
+            $('.modal-list04').find('.modal-img').attr('src', './images/mainVis_pop4.jpg');
+            $('.modal-list05').find('.modal-img').attr('src', './images/mainVis_pop5.jpg');
+            $('.modal-list06').find('.modal-img').attr('src', './images/mainVis_pop6.jpg');
+        }   
+      })
+      
+      var width_num = $(window).width();
+      if(width_num <= 1170){
+            $('.modal-title').find('img').attr('src','./images/m_mainVis_tit1.png');
+            $('.modal-list01').find('.modal-img').attr('src', './images/m_mainVis_pop1.jpg');
+            $('.modal-list02').find('.modal-img').attr('src', './images/m_mainVis_pop2.jpg');
+            $('.modal-list03').find('.modal-img').attr('src', './images/m_mainVis_pop3.jpg');
+            $('.modal-list04').find('.modal-img').attr('src', './images/m_mainVis_pop4.jpg');
+            $('.modal-list05').find('.modal-img').attr('src', './images/m_mainVis_pop5.jpg');
+            $('.modal-list06').find('.modal-img').attr('src', './images/m_mainVis_pop6.jpg');
+            if(width_num <= 758){
+                $('.modal-title').find('img').attr('src','./images/m_mainVis_tit2.png');
+                $('.mainCon1 > h3').find('img').attr('src', './images/m_mainCon1_tit.png')
+                $('.mainCon1 .btn_more').find('img').attr('src', './images/m_main_over_btn.png');
+                $('.mainCon2 .btn_more').attr('src', './images/m_main_over_btn.png');
+            }
+      } else {
+            $('.modal-title').find('img').attr('src','./images/mainVis_tit1.png');
+            $('.mainCon1 > h3').find('img').attr('src', './images/mainCon1_tit.png')
+            $('.mainCon1 .btn_more').find('img').attr('src', './images/main_over_btn.png');
+            $('.mainCon2 .btn_more').attr('src', './images/main_over_btn.png');
+            $('.modal-list01').find('.modal-img').attr('src', './images/mainVis_pop1.jpg');
+            $('.modal-list02').find('.modal-img').attr('src', './images/mainVis_pop2.jpg');
+            $('.modal-list03').find('.modal-img').attr('src', './images/mainVis_pop3.jpg');
+            $('.modal-list04').find('.modal-img').attr('src', './images/mainVis_pop4.jpg');
+            $('.modal-list05').find('.modal-img').attr('src', './images/mainVis_pop5.jpg');
+            $('.modal-list06').find('.modal-img').attr('src', './images/mainVis_pop6.jpg');
+      }
+
+
+      $('.m-gnb > li').click(function(){
+          $(this).toggleClass('on').find('.m-depth2').slideToggle().parent().siblings().find('.m-depth2').slideUp();
+      });
+
+      $('.btn_hamburger').click(function(){
+          $('.m-gnb_wrap').addClass('on');
+          $('body, html').css({'overflow':'hidden'});
+      });
+      $('.m-btn_close').click(function(){
+        $('.m-gnb_wrap').removeClass('on');
+        $('body, html').css({'overflow':'auto'});
+      });
+
+
+      
+
 })
 
