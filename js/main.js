@@ -64,8 +64,8 @@ function getCookie(name){
   } return value;
 }
 // setCookie
-function setCookie(name, value, expiredays){
-  var days=10;
+function setCookie(name, value, days){
+  // var days=10;
   if(days){
       var date=new Date(); 
       date.setTime(date.getTime()+(days*24*60*60*1000));
