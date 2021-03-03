@@ -24,7 +24,6 @@ $(function(){
         },
       });
 
-
       // jquery wheel 플러그인 찾아볼 것
     $('body, html').mousewheel(function(){
       if($('.section2, section3').has('swiper-slide-active')) {
@@ -41,8 +40,6 @@ $(function(){
       swiper.slideTo(0);
     })
 
-
-
     $('#main .btn_next').click(function(){
       swiper.slideNext(800);
     });
@@ -56,7 +53,7 @@ $(function(){
 
     $('.main-slide_wrap .video-list li').click(function(){
       var num = $(this).index();
-      console.log(num);
+      // console.log(num);
       $('.cover').show();
       $('.cover .modal_con').eq(num).show().find('iframe').attr('src', arr_video_src[num]);
     });
