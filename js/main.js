@@ -88,14 +88,6 @@ $(function(){
             $('.section10 .img-inbox').removeClass('on');
             $('.section11 .img_left, .section11 .img_right').removeClass('on');
         } 
-    
-
-        // if(scroll_num >= 1910 && scroll_num <= 3302) {
-        //     $('.mobile_case').addClass('on');
-        // } else {
-        //     $('.mobile_case').removeClass('on');
-        // }
-
 
 
         if(scroll_num >= 0 && scroll_num <= 1276){
