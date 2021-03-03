@@ -37,10 +37,6 @@ $(document).ready(function(){
       }
     });
 
-    // $(window).scroll(function(){
-    //     $('#header').addClass('on');
-    // });
-
     var scroll_value = $("#scroll_point").offset().top;
     $(window).scroll(function() {
       var window_value = $(this).scrollTop();
@@ -65,9 +61,5 @@ $(document).ready(function(){
       $(this).children('.btn_line').toggleClass('on');
       $(this).next().toggleClass('on');
     });
-
-    $('a').attr('href', 'javascript:;');
-    // a 클릭했을 때 상단으로 가는 거 막으려고 넣은 임시 코드
-
 
   });
