@@ -5,13 +5,11 @@ window.onload = function() {
     }, 100);
 }
 
-
 $(document).ready(function(){
     // $('.banner_today_wrap .btn_img_close, .banner_today_wrap input').click(function(){
     //     $('.banner_today_wrap').slideUp();
     //     $('#body_wrap').animate({'margin-top':0});
     // });
-
 // 상단 배너 오늘 하루 띄우지 않기 쿠키 ---------------------------------------------
     if(getCookie('daelim') == 'close'){
         $('.banner_today_wrap').hide();
