@@ -170,8 +170,7 @@ body {
     background: url('../images/btn_left.png') no-repeat center center;
     text-indent: -99999px;
     position: absolute;
-    left: 50%;
-    margin-left: -900px;
+    left: 5%;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
@@ -187,8 +186,7 @@ body {
     background: url('../images/btn_right.png') no-repeat center center;
     text-indent: -99999px;
     position: absolute;
-    right: 50%;
-    margin-right: -900px;
+    right: 5%;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
@@ -583,8 +581,7 @@ body {
 #footer .btn_top {
     display: block;
     position: absolute;
-    right: 50%;
-    margin-right: -800px;
+    right: 5%;
     top: 20px;
 }
 
