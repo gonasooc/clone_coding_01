@@ -1,9 +1,9 @@
 $(function(){
     $('.gnb li').mouseenter(function(){
-        $(this).find('.depth2').fadeIn(200);
+        $(this).find('.depth2').stop().fadeIn(200);
     })
     $('.gnb li').mouseleave(function(){
-        $(this).find('.depth2').fadeOut(200);
+        $(this).find('.depth2').stop().fadeOut(200);
     })
 
     $('.cover, .popup').fadeIn();
