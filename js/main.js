@@ -81,7 +81,6 @@ $(document).ready(function(){
       $('.popup').hide();
     });
     
-    // $('a').attr('href', 'javascript:;');
 
     $('.m_menu>li>a').click(function(){
       $(this).next().slideToggle().parents().siblings().find('.depth2').slideUp();
