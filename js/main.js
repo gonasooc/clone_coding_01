@@ -3,6 +3,8 @@ $(function(){
     // $('a').attr('href', 'javascript:;');
     // 클릭했을 때 상단으로 가는 거 임시로 막기 위해 넣은 코드
 
+
+    // 메뉴 풀다운 
     $('.gnb').mouseenter(function(){
         $('#header').addClass('on');
         $('#header .util .lang-box .btn_lang').addClass('on');
@@ -14,6 +16,8 @@ $(function(){
         $('#header .gnb_bg, #header .depth2').stop().slideUp(150);
     });
 
+
+    // 언어 선택 박스
     $('#header .lang-box').click(function(){
         $('#header .btn_lang').addClass('on');
         $('#header .lang-list').addClass('on');
@@ -23,6 +27,8 @@ $(function(){
         $('#header .lang-list').removeClass('on');
     });
 
+
+    // 모달 팝업 기능
     $('.modal-tab li').click(function(){
         var index_num = $(this).index();
         console.log(index_num);
@@ -32,14 +38,13 @@ $(function(){
         $(this).addClass('on').siblings().removeClass('on');
     });
 
-  
-
     $('.modal-list_wrap .btn_close').click(function(){
         $('.modal-list_wrap').removeClass('on');
         $('.cover').fadeOut();
     });
 
 
+    // 메인컨테이너1 hover 구현
     $('#main .mainCon1 ul li').mouseenter(function(){
         $(this).addClass('on').find('a').parent().siblings().find('a').css({'filter':'brightness(60%)'});
     });
@@ -47,16 +52,17 @@ $(function(){
         $(this).removeClass('on').find('a').parent().siblings().find('a').css({'filter':'brightness(100%)'});
     });
 
-    $("#video01").bind("ended", function() {
+
+    // 비디오 연속 재생
+    $("#video01").bind("ended", function(){
         document.getElementById("video02").play();
     });
-    $("#video02").bind("ended", function() {
+    $("#video02").bind("ended", function(){
         document.getElementById("video03").play();
     });
-    $("#video03").bind("ended", function() {
+    $("#video03").bind("ended", function(){
         document.getElementById("video01").play();
     });
-
 
     var video;
     var videoNum = 0;
@@ -73,30 +79,29 @@ $(function(){
 
     function chkEnded(){
         video.onended = function(){
-        console.log('재생끝!!');
+        console.log('재생 종료');
         if(videoNum == videoArr.length - 1){
             videoNum = 0;
         } else {
             videoNum++;
         }
-
         addVideo();
         }
     }
     
-    
+    // 스크롤 다운 버튼
     $('.scroll_down, .m_scroll_down').click(function(){
         var scrollValue = $('#scrollArea').offset().top;
         $('body, html').animate({'scrollTop':scrollValue});
     });
 
 
-
+    // 스크롤 시 섹션에 애니메이션 구현
     var mainCon1Value = $('.mainCon1').offset().top;
     var mainCon2Value = $('.mainCon2').offset().top;
     $(window).scroll(function(){
         var windowScrollValue = $(this).scrollTop();
-        console.log(windowScrollValue);
+        // console.log(windowScrollValue);
         if(windowScrollValue > mainCon1Value - 600){
             $('.mainCon1').addClass('on');
             if(windowScrollValue > mainCon2Value - 600){
@@ -105,10 +110,11 @@ $(function(){
         } 
     });
  
+    // 푸터 패밀리 버튼 구현
     $('.btn_family').click(function(){
         $(this).toggleClass('on');
         $('.family-list').slideToggle();
-    })
+    });
 
 
     const swiper = new Swiper('.news-slide .swiper-container', {
@@ -136,27 +142,26 @@ $(function(){
       });
 
     const swiper2 = new Swiper('.visual .swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    
-    // If we need pagination
-    pagination: {
-        el: '.visual .swiper-pagination',
-    },
-    
-    // Navigation arrows
-    navigation: {
-        nextEl: '.visual .swiper-button-next',
-        prevEl: '.visual .swiper-button-prev',
-    },
-    
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.visual .swiper-scrollbar',
-    },
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        
+        // If we need pagination
+        pagination: {
+            el: '.visual .swiper-pagination',
+        },
+        
+        // Navigation arrows
+        navigation: {
+            nextEl: '.visual .swiper-button-next',
+            prevEl: '.visual .swiper-button-prev',
+        },
+        
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.visual .swiper-scrollbar',
+        },
     });
-
 
     const swiper3 = new Swiper('.m-news-slide .swiper-container', {
         // Optional parameters
@@ -182,8 +187,7 @@ $(function(){
       });
 
 
-
-
+    // 반응형 이미지 변경
     $(window).resize(function(){
         var num = $(this).width();
         console.log(num);    
@@ -215,7 +219,7 @@ $(function(){
             $('.modal-list05').find('.modal-img').attr('src', './images/mainVis_pop5.jpg');
             $('.modal-list06').find('.modal-img').attr('src', './images/mainVis_pop6.jpg');
         }   
-      })
+      });
       
       var width_num = $(window).width();
       if(width_num <= 1170){
@@ -246,8 +250,9 @@ $(function(){
       }
 
 
+
       $('.m-gnb > li').click(function(){
-          $(this).toggleClass('on').find('.m-depth2').slideToggle().parent().siblings().find('.m-depth2').slideUp();
+          $(this).toggleClass('on').find('.m-depth2').slideToggle().parent().siblings().find('.m-depth2').slideUp().parents('li').removeClass('on');
       });
 
       $('.btn_hamburger').click(function(){
@@ -258,9 +263,5 @@ $(function(){
         $('.m-gnb_wrap').removeClass('on');
         $('body, html').css({'overflow':'auto'});
       });
-
-
-      
-
-})
+});
 
