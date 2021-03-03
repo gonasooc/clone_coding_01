@@ -1,14 +1,7 @@
 $(function(){
-
-    // var scrollValue = $(window).scrollTop();
-    // console.log(scrollValue);
-
-    // $(window).scroll(function(){
-    //   $('#header').slideUp(250);
-    // });
-
-
     
+
+    // 헤더 메뉴 변경
     $(window).scroll(function(){
       var scroll_num = $(document).scrollTop();
       var width_num = $(window).width();
@@ -60,6 +53,7 @@ $(function(){
       });
 
 
+      // 메뉴 슬라이드다운
       $('.gnb > li').mouseover(function(){
         $(this).find('.depth2_wrap').slideDown(200);
       });
@@ -67,6 +61,7 @@ $(function(){
         $(this).find('.depth2_wrap').hide();
       });
 
+      // 메인슬라이드 재생/정지 버튼
       var sw_btn_play_stop = true;
       $('.visual-slide .btn_play-stop').click(function(){
           if(sw_btn_play_stop){
@@ -160,7 +155,4 @@ $(function(){
         },
       });
 
-
-
-
-})
+});
