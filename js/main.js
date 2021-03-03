@@ -40,7 +40,7 @@ $(document).ready(function(){
     });
 
 
-    // 팝업창 부분 --------------------------------------------------- 서버에서 테스트 필요 ---
+    // 팝업창 부분 
     $('.popup_wrap .popup-close_btn, #today_close').click(function(){
       if($('input[name=today_close]').is(':checked')){
         setCookie('vitabrid', 'close', 1);
@@ -67,19 +67,11 @@ $(document).ready(function(){
 
     $('#header .depth2_wrap .depth2 > li').mouseenter(function(){
       $(this).find('.depth3_wrap .depth3 li').addClass('on');
-    })
+    });
     $('#header .depth2_wrap .depth2 > li').mouseleave(function(){
       $(this).find('.depth3_wrap .depth3 li').removeClass('on');
-    })
+    });
     
-
-    // $('#header .depth2 > li').mouseenter(function(){
-    //   $(this).find('.depth3_wrap').stop().slideDown();
-    // })
-    // $('#header .depth2 > li').mouseleave(function(){
-    //   $('.depth3_wrap').stop().slideUp();
-    // })
-
 
 
     $('.global-box').mouseenter(function(){
@@ -107,8 +99,8 @@ function getCookie(name){
   } return value;
 }
 // setCookie
-function setCookie(name, value, expiredays){
-  var days=10;
+function setCookie(name, value, days){
+  // var days=10;
   if(days){
       var date=new Date(); 
       date.setTime(date.getTime()+(days*24*60*60*1000));
