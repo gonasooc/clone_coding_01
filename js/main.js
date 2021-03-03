@@ -19,7 +19,7 @@ $(function(){
         dots: true,
         autoplaySpeed: 2000,
         arrows: false
-    })
+    });
 
     $('.slider').bxSlider({
         minSlides: 7,
@@ -64,19 +64,17 @@ $(function(){
         $('.bx-viewport ul li').width('calc(1600px / 7)');
     });
 
-
-        
     
     $('.lang').click(function(){
         $('.lang-list').stop().slideDown();
-    })
+    });
     $('.lang-list').mouseleave(function(){
         $(this).stop().slideUp();
-    })
+    });
 
     $('.btn_family').click(function(){
         $('.family-list').slideToggle();
-    })
+    });
     
     var win = $(window);
     var winHeight = win.height();
@@ -92,7 +90,7 @@ $(function(){
         } else {
             quickmenu.stop().animate({'top':480}), 500;
         }
-    })
+    });
 
     $('#main .box3').click(function(){
         $('.modal_wrap').stop().fadeIn();
@@ -103,11 +101,10 @@ $(function(){
         $('.modal_wrap').stop().fadeOut();
         $('body, html').css({'overflow':'auto'});
         $('#ytplay').attr('src', 'about:blank;');
-    })
+    });
 
 
     $('a').attr('href', 'javascript:;');
-
 
     
     // $('.popup_wrap').show();
@@ -126,7 +123,6 @@ $(function(){
         $('.popup_wrap').show();
     };
     
-
 });
 
 
@@ -145,8 +141,8 @@ function GetCookie(name){
     } return value;
 }
 // SetCookie
-function setCookie(name, value, expiredays){
-    var days=10;
+function setCookie(name, value, days){
+    // var days=10;
     if(days){
         var date=new Date(); 
         date.setTime(date.getTime()+(days*24*60*60*1000));
