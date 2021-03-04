@@ -81,6 +81,7 @@ a {
 
 .popup .close label {
 	vertical-align: middle;
+	cursor: pointer;
 }
 
 .popup .close .close_txt_btn {
