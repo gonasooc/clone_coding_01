@@ -122,6 +122,10 @@ $(function(){
     } else {
         $('.popup_wrap').show();
     };
+
+    $('.move-top').click(function(){
+        $('body, html').animate({'scrollTop': 0}, 500);
+    });
     
 });
 
