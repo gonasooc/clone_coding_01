@@ -85,7 +85,17 @@ $(function(){
       });
 
       
-      
+      if(getCookie('lotte') == 'todayClose'){
+        $('.popup-banner_wrap').hide();
+      } else {
+        $('.popup-banner_wrap').show();
+      }
+
+      $('.btn_today-close').click(function(){
+        setCookie('lotte', 'todayClose', 1);
+        $('.popup-banner_wrap').hide();
+      })
+
 
       $('.btn_close').click(function(){
         $('.popup-banner_wrap').hide();
@@ -109,3 +119,28 @@ $(function(){
 
 })
 
+
+// getCookie
+function getCookie(name){
+  var value=null, search=name+"=";
+  if(document.cookie.length > 0){
+      var offset=document.cookie.indexOf(search);
+      if(offset != -1){
+          offset+=search.length;
+          var end=document.cookie.indexOf(";", offset);
+          if(end == -1) end=document.cookie.length;
+          value=unescape(document.cookie.substring(offset, end));
+      }
+  } return value;
+}
+// setCookie
+function setCookie(name, value, days){
+  if(days){
+      var date=new Date(); 
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires="; expires="+date.toGMTString();
+  }else{
+      var expires=""; 
+  }
+  document.cookie=name+"="+value+expires+"; path=/";
+}
