@@ -21,6 +21,7 @@ a {
     position: fixed;
     left: 0;
     top: 0;
+    display: none;
 }
 
 .popup a img {
@@ -34,7 +35,7 @@ a {
 
 }
 
-.popup .close input {
+.popup .close #today_close {
     vertical-align: middle;
 }
 
@@ -43,6 +44,7 @@ a {
     font-size: 13px;
     margin-left: 3px;
     color: #000;
+    cursor: pointer;
 }
 
 .popup .close .txt_btn {
@@ -749,6 +751,7 @@ button {
     color: rgba(255, 255, 255, 0.4);
     position: relative;
     letter-spacing: -0.5px;
+    font-size: 13px;
 }
 
 #footer .footer_top li:nth-child(2) a {
@@ -807,7 +810,9 @@ button {
 }
 
 #footer .footer_bottom address {
-    font-style: normal;   
+    font-style: normal;
+    font-size: 13px;
+    line-height: 20px;   
 }
 
 #footer .footer_bottom address span {

@@ -66,8 +66,6 @@ $(document).ready(function(){
       $('body').css({'overflow':'auto'});
       });
 
-
-
     $('.btn_tab li').click(function(){
       var index_num = $(this).index();
       console.log(index_num);
@@ -75,6 +73,24 @@ $(document).ready(function(){
       $(this).find('a').addClass('on');
       $('.swiper_wrap .swiper-container').hide();
       $('.swiper_wrap .swiper-container').eq(index_num).show();
+    });
+
+
+    if(getCookie('subway') == 'todayClose'){
+      $('.popup').hide();
+    } else {
+      $('.popup').show();
+    }
+
+
+    // 오늘 하루 열지 않는 쿠키 생성
+    $('#today_close, .popup .close label').click(function(){
+      if($('#today_close').is(':checked')){
+        setCookie('subway', 'todayClose', 1);
+        $('.popup').hide();
+      } else {
+        $('.popup').hide();
+      }
     });
 
     $('.popup .close .txt_btn').click(function(){
@@ -87,3 +103,29 @@ $(document).ready(function(){
       $(this).find('.arrow_icon').toggleClass('on').parents('li').siblings().find('.arrow_icon').removeClass('on');
     });
 });
+
+
+// getCookie
+function getCookie(name){
+  var value=null, search=name+"=";
+  if(document.cookie.length > 0){
+      var offset=document.cookie.indexOf(search);
+      if(offset != -1){
+          offset+=search.length;
+          var end=document.cookie.indexOf(";", offset);
+          if(end == -1) end=document.cookie.length;
+          value=unescape(document.cookie.substring(offset, end));
+      }
+  } return value;
+}
+// setCookie
+function setCookie(name, value, days){
+  if(days){
+      var date=new Date(); 
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires="; expires="+date.toGMTString();
+  }else{
+      var expires=""; 
+  }
+  document.cookie=name+"="+value+expires+"; path=/";
+}
