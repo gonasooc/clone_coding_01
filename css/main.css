@@ -43,6 +43,10 @@ a {
     border-radius: 5px;
 }
 
+#wrap .close .today_close {
+    cursor: pointer;
+}
+
 #wrap .close #today_close {
     vertical-align: middle;
     margin-left: 0;
