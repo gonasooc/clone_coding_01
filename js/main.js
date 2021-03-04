@@ -22,5 +22,11 @@ $(function(){
         $('.allmenu').fadeOut(200);
         $('.allmenu_cover').fadeOut(200);
     })
-});
 
+    $('.btn_top').click(function(){
+        $('body, html').animate({'scrollTop': 0}, 500);
+    });
+
+
+
+});
