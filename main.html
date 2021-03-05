@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>유튜브</title>
+    <title>Youtube Web Crawling</title>
 </head>
 <body>
     <script>
-        var playlistId = 'PL2YHata9QWSZGWh0hmQdjrd_ZjEKCoO7S';
-        var apiKey = 'AIzaSyCFp1tfzIMV740oWt7ngtvPeopKVbGoxKE';
+        // 크롤링하고 싶은 플레이리스트ID 삽입 위치
+        var playlistId = '크롤링하고 싶은 플레이리스트ID 삽입 위치';
+        // 사용자의 youtube apikey 삽입 위치
+        var apiKey = '사용자의 youtube apikey 삽입 위치';
+
         var url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId='+playlistId+'&key='+apiKey+'&maxResults=50';
         function call(nextToken) {
             // 지금부터 XMLHttpRequest와 관련된 기능을 사용하겠습니다.
@@ -30,6 +33,7 @@
                         var vdes = items[i].snippet.description;
                         var replaced_vdes = vdes.replace(/\n/g,'-');
                         if (items[i].snippet.thumbnails.high != undefined) {
+                        document.write(items[i].snippet.title + '\t' + vurl + '\t' + items[i].snippet.thumbnails.high.url + '\t' + vdes + '<br>'); 
                         console.log(items[i].snippet.title + '\t' + vurl + '\t' + items[i].snippet.thumbnails.high.url + '\t' + replaced_vdes); 
                         }
                     }
