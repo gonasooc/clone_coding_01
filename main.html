@@ -33,7 +33,6 @@
                         var vdes = items[i].snippet.description;
                         var replaced_vdes = vdes.replace(/\n/g,'-');
                         if (items[i].snippet.thumbnails.high != undefined) {
-                        document.write(items[i].snippet.title + '\t' + vurl + '\t' + items[i].snippet.thumbnails.high.url + '\t' + vdes + '<br>'); 
                         console.log(items[i].snippet.title + '\t' + vurl + '\t' + items[i].snippet.thumbnails.high.url + '\t' + replaced_vdes); 
                         }
                     }
