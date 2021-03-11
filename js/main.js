@@ -77,7 +77,7 @@ $(function() {
         // Optional parameters
         direction: 'horizontal',
         slidesPerView: 4,
-        spaceBetween: 100,
+        // spaceBetween: 50,
       
         // If we need pagination
         pagination: {
