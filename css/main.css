@@ -21,7 +21,7 @@ body {
 }
 
 .m-menu_wrap {
-
+    display: none;
 }
 
 .m-menu_wrap .m-home_wrap {
