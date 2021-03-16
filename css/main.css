@@ -481,17 +481,17 @@ body {
     line-height: 50px;
     font-size: 16px;
     color: #fff;
-    background: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.4);
     text-align: center;
     transition: all 0.5s;
 }
 
 #main .modal_wrap .modal-tab li:hover a {
-    background: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 #main .modal_wrap .modal-tab li.on a {
-    background: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 #main .modal_wrap .scroll_down {
@@ -1420,33 +1420,36 @@ body {
         display: block;
         width: 138px;
         height: 60px;
-        background: rgba(0,0,0,0.4);
+        /* background-color: rgba(0,0,0,0.4); */
+        background-color: transparent;
         transition: all 0.5s;
         text-indent: -9999px;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
 
     #main .modal_wrap .modal-tab .btn-tab01 a {
-        background: transparent url('../images/m_mainVis_btn1.png') no-repeat center center;
+        background-image: url('../images/m_mainVis_btn1.png');
     }
 
     #main .modal_wrap .modal-tab .btn-tab02 a {
-        background: transparent url('../images/m_mainVis_btn2.png') no-repeat center center;
+        background-image: url('../images/m_mainVis_btn2.png');
     }
 
     #main .modal_wrap .modal-tab .btn-tab03 a {
-        background: transparent url('../images/m_mainVis_btn3.png') no-repeat center center;
+        background-image: url('../images/m_mainVis_btn3.png');
     }
 
     #main .modal_wrap .modal-tab .btn-tab04 a {
-        background: transparent url('../images/m_mainVis_btn5.png') no-repeat center center;
+        background-image: url('../images/m_mainVis_btn5.png');
     }
 
     #main .modal_wrap .modal-tab .btn-tab05 a {
-        background: transparent url('../images/m_mainVis_btn4.png') no-repeat center center;
+        background-image: url('../images/m_mainVis_btn4.png');
     }
 
     #main .modal_wrap .modal-tab .btn-tab06 a {
-        background: transparent url('../images/m_mainVis_btn6.png') no-repeat center center;
+        background-image: url('../images/m_mainVis_btn6.png');
     }
 
     #main .modal_wrap .modal-tab li:hover a {
@@ -1457,7 +1460,6 @@ body {
     #main .modal_wrap .modal-tab li.on a {
         /* background: rgba(0,0,0,0.8); */
         background-color: transparent;
-
     }
 
     
@@ -1763,49 +1765,10 @@ body {
         display: block;
         width: 69px;
         height: 30px;
-        background: rgba(0,0,0,0.4);
+        background-color: transparent;
         transition: all 0.5s;
         text-indent: -9999px;
-    }
-
-    #main .modal_wrap .modal-tab .btn-tab01 a {
-        background: transparent url('../images/m_mainVis_btn1.png') no-repeat center center;
         background-size: cover;
-    }
-
-    #main .modal_wrap .modal-tab .btn-tab02 a {
-        background: transparent url('../images/m_mainVis_btn2.png') no-repeat center center;
-        background-size: cover;
-    }
-
-    #main .modal_wrap .modal-tab .btn-tab03 a {
-        background: transparent url('../images/m_mainVis_btn3.png') no-repeat center center;
-        background-size: cover;
-    }
-
-    #main .modal_wrap .modal-tab .btn-tab04 a {
-        background: transparent url('../images/m_mainVis_btn5.png') no-repeat center center;
-        background-size: cover;
-    }
-
-    #main .modal_wrap .modal-tab .btn-tab05 a {
-        background: transparent url('../images/m_mainVis_btn4.png') no-repeat center center;
-        background-size: cover;
-    }
-
-    #main .modal_wrap .modal-tab .btn-tab06 a {
-        background: transparent url('../images/m_mainVis_btn6.png') no-repeat center center;
-        background-size: cover;
-    }
-
-    #main .modal_wrap .modal-tab li:hover a {
-        /* background: rgba(0,0,0,0.8); */
-        background: transparent;
-    }
-    
-    #main .modal_wrap .modal-tab li.on a {
-        /* background: rgba(0,0,0,0.8); */
-        background: transparent;
     }
 
     #main .modal-list_wrap .modal-list li {
