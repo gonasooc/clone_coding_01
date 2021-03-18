@@ -32,7 +32,7 @@ a {
     top: 350px;
     left: 1200px;
     z-index: 2;
-    display; none;
+    display: none;
 }
 
 .popup_wrap .imgbox {
