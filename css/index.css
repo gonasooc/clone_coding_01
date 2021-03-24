@@ -1,0 +1,112 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    background: #2c3e50;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+#wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 150px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.js-form > input {
+    appearance: none;
+    border: none;
+    width: 200px;
+    height: 30px;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 60px;
+    margin: 30px 0;
+}
+
+.js-toDoForm input {
+    appearance: none;
+    border: none;
+    width: 500px;
+    height: 30px;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.js-toDoList {
+    text-align: left;
+}
+
+.js-toDoList button {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url(../images/x.png) no-repeat center center;
+    background-size: cover;
+    appearance: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-indent: -99999px;
+    margin-right: 10px;
+}
+
+.clicked {
+    color: #7f8c8d;
+    transition:  color .5s ease-in-out;
+}
+
+.form {
+    display: none;
+}
+
+.greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn .5s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
