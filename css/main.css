@@ -4,6 +4,15 @@ body {
     background: rgba(0, 0, 0, .1);
 }
 
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #ccc;
+    color: #222;
+}
+
 .section {
     width: 1200px;
     height: 600px;
