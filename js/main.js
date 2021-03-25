@@ -1,9 +1,4 @@
 $(function(){
-
-    // $('a').attr('href', 'javascript:;');
-    // 클릭했을 때 상단으로 가는 거 임시로 막기 위해 넣은 코드
-
-
     // 메뉴 풀다운 
     $('.gnb').mouseenter(function(){
         $('#header').addClass('on');
@@ -16,7 +11,6 @@ $(function(){
         $('#header .gnb_bg, #header .depth2').stop().slideUp(150);
     });
 
-
     // 언어 선택 박스
     $('#header .lang-box').click(function(){
         $('#header .btn_lang').addClass('on');
@@ -26,7 +20,6 @@ $(function(){
         $('#header .btn_lang').removeClass('on');
         $('#header .lang-list').removeClass('on');
     });
-
 
     // 모달 팝업 기능
     $('.modal-tab li').click(function(){
@@ -43,7 +36,6 @@ $(function(){
         $('.cover').fadeOut();
     });
 
-
     // 메인컨테이너1 hover 구현
     $('#main .mainCon1 ul li').mouseenter(function(){
         $(this).addClass('on').find('a').parent().siblings().find('a').css({'filter':'brightness(60%)'});
@@ -51,7 +43,6 @@ $(function(){
     $('#main .mainCon1 ul li').mouseleave(function(){
         $(this).removeClass('on').find('a').parent().siblings().find('a').css({'filter':'brightness(100%)'});
     });
-
 
     // 비디오 연속 재생
     $("#video01").bind("ended", function(){
@@ -94,7 +85,6 @@ $(function(){
         var scrollValue = $('#scrollArea').offset().top;
         $('body, html').animate({'scrollTop':scrollValue});
     });
-
 
     // 스크롤 시 섹션에 애니메이션 구현
     var mainCon1Value = $('.mainCon1').offset().top;
@@ -249,8 +239,7 @@ $(function(){
             $('.modal-list06').find('.modal-img').attr('src', './images/mainVis_pop6.jpg');
       }
 
-
-
+      
       $('.m-gnb > li').click(function(){
           $(this).toggleClass('on').find('.m-depth2').slideToggle().parent().siblings().find('.m-depth2').slideUp().parents('li').removeClass('on');
       });
