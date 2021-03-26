@@ -380,7 +380,7 @@ a {
     width: 11px;
     height: 11px;
     background: #e1e1e1;
-    padding: none;
+    padding: 0;
     border: none;
     border-radius: 50%;
     text-indent: -99999px;
