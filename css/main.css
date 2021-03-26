@@ -585,7 +585,7 @@ body {
 }
 
 #main .program_wrap .program-list li:hover a {
-    box-shadow: 20px 25px 40px rgb(0, 0, 0, 0.2);
+    box-shadow: 20px 25px 40px rgba(0, 0, 0, 0.2);
 }
 
 #main .program_wrap .program-list li a {
