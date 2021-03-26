@@ -132,8 +132,8 @@ a {
     height: 8px;
     background-color: #fff;
     transform: rotate(45deg);
-    border-top: 1px solid #b9b9;
-    border-left: 1px solid #b9b9;
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
 }
 
 #header .header_inner .gnb_util_wrap .gnb .depth2 > li {
