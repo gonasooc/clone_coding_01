@@ -498,7 +498,7 @@ body {
     background: url('../images/btn_eventSlide_off.png') no-repeat center center;
     border: none;
     outline: none;
-    padding: none;
+    padding: 0;
     text-indent: -9999px;
     cursor: pointer;
 }
@@ -828,7 +828,7 @@ body {
     
     
     #main .story_wrap {
-        padding: none;
+        padding: 0;
         box-sizing: border-box;
     }
     
@@ -1023,7 +1023,7 @@ body {
         background: url('../images/btn_eventSlide_off.png') no-repeat center center;
         border: none;
         outline: none;
-        padding: none;
+        padding: 0;
         text-indent: -9999px;
         cursor: pointer;
     }
