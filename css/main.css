@@ -181,7 +181,7 @@ button {
     display: block;
     padding: 15px 25px;
     font-size: 14px;
-    color: #ffffff80;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .m_gnb_wrap .m_tab-list ul > li.on > a {
@@ -399,7 +399,7 @@ button {
     display: block;
     width: 47px;
     height: 47px;
-    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
     background: #fff;
     border-radius: 50%;
     text-align: center;
@@ -837,7 +837,7 @@ button {
     padding: 40px 27px 30px;
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 0px 3px 2px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0px 3px 2px 0 rgba(0, 0, 0, 0.1);
     border: 1px solid #e8e8e8;
     position: relative;
     background: #fff;
@@ -989,7 +989,7 @@ button {
 #main .section5 .con_bottom {
     padding: 30px 27px;
     box-sizing: border-box;
-    box-shadow: 0px 3px 2px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0px 3px 2px 0 rgba(0, 0, 0, 0.1);
     border: 1px solid #e8e8e8;
     margin-top: 7px;
     background: #fff;
