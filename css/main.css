@@ -357,7 +357,7 @@ a {
 }
 
 #main .quick > li > a:hover {
-	opacity: 50%;
+	opacity: .5;
 }
 
 #main .quick li:last-child > a {
@@ -379,7 +379,7 @@ a {
 }
 
 #main .top:hover {
-	opacity: 50%;
+	opacity: .5;
 }
 
 
@@ -460,7 +460,7 @@ a {
 }
 
 #main li a .product:hover {
-	opacity: 50%;
+	opacity: .5;
 }
 
 #main .section1 .new li:nth-child(4) {
@@ -477,7 +477,7 @@ a {
 }
 
 #main li a .tag:hover {
-	opacity: 50%;
+	opacity: .5;
 }
 
 #main .section1 .new li a h3 {
@@ -594,7 +594,7 @@ a {
 }
 
 #main .recent ul li:hover img {
-	opacity: 50%;
+	opacity: .5;
 	/* transition: opacity 0.5s; */
 }
 
