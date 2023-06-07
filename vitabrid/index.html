@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비타브리드C¹²</title>
+    <link rel="shortcut icon" type="x-icon/image" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/jquery-3.5.0.min.js"></script>
+    <script defer src="./js/slick.js"></script>
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="popup_wrap">
+            <div class="imgbox">
+                <img src="./images/popup.jpg" alt="구매금액별 이벤트">
+                <a href="javascript:;" class="popup-close_btn">닫기</a>
+            </div>
+            <div class="today_close">
+                <input type="checkbox" id="today_close" name="today_close">
+                <label for="today_close">오늘 하루 보이지 않음</label>
+            </div>
+        </div>
+        
+        <div id="header">
+            <div class="header_inner">
+                <h1>
+                    <a href="./index.html"><img src="./images/logo.png" alt="비타브리드로고"></a>
+                </h1>
+                <ul class="gnb">
+                    <li>
+                        <a href="javascript:;">Shop</a>
+                        <div class="depth2_wrap">
+                            <ul class="depth2">
+                                <li class="on"><a href="javascript:;">All Product</a></li>
+                                <li class="bg-arrow">
+                                    <a href="javascript:;">정기배송</a>
+                                    <div class="depth3_wrap">
+                                        <ul class="depth3">
+                                            <li style="transition-delay: 0;"><a href="javascript:;">Face Brightening</a></li>
+                                            <li style="transition-delay: 0.06s;"><a href="javascript:;">Hair Tonic Set</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="bg-arrow">
+                                    <a href="javascript:;">Skin care</a>
+                                    <div class="depth3_wrap">
+                                        <ul class="depth3">
+                                            <li style="transition-delay: 0s;"><a href="javascript:;">Face Brightening</a></li>
+                                            <li style="transition-delay: 0.06s;"><a href="javascript:;">Cleansing Care</a></li>
+                                            <li style="transition-delay: 0.12s;"><a href="javascript:;">Facial Boosting Water</a></li>
+                                            <li style="transition-delay: 0.18s;"><a href="javascript:;">Dual Drop Serum</a></li>
+                                            <li style="transition-delay: 0.24s;"><a href="javascript:;">Eye & Face Cream</a></li>
+                                            <li style="transition-delay: 0.3s;"><a href="javascript:;">Dual Mask</a></li>
+                                            <li style="transition-delay: 0.36s;"><a href="javascript:;">Sun Care</a></li>
+                                            <li style="transition-delay: 0.42s;"><a href="javascript:;">Sanitizer</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="bg-arrow">
+                                    <a href="javascript:;">Scalp care</a>
+                                    <div class="depth3_wrap">
+                                        <ul class="depth3">
+                                            <li style="transition-delay: 0s;"><a href="javascript:;">Hair Tonic Set</a></li>
+                                            <li style="transition-delay: 0.06s;"><a href="javascript:;">Shampoo</a></li>
+                                            <li style="transition-delay: 0.12s;"><a href="javascript:;">Treatment</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">정기배송</a>
+                        <div class="depth2_wrap">
+                            <ul class="depth2">
+                                <li><a href="javascript:;">Face Brightening</a></li>
+                                <li><a href="javascript:;">Hair Tonic Set</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">Event</a>
+                        <div class="depth2_wrap">
+                            <ul class="depth2">
+                                <li><a href="javascript:;">진행중 이벤트</a></li>
+                                <li><a href="javascript:;">종료된 이벤트</a></li>
+                                <li><a href="javascript:;">당첨자 발표</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">About</a>
+                        <div class="depth2_wrap">
+                            <ul class="depth2">
+                                <li class="bg-arrow">
+                                    <a href="javascript:;">Vitabrid C¹²</a>
+                                    <div class="depth3_wrap">
+                                        <ul class="depth3">
+                                            <li style="transition-delay: 0s;"><a href="javascript:;">Vitabrid C¹²</a></li>
+                                            <li style="transition-delay: 0.06s;"><a href="javascript:;">Vitabrid CG</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="bg-arrow">
+                                    <a href="javascript:;">Product Story</a>
+                                    <div class="depth3_wrap">
+                                        <ul class="depth3">
+                                            <li style="transition-delay: 0s;"><a href="javascript:;">Face Brightening</a></li>
+                                            <li style="transition-delay: 0.06s;"><a href="javascript:;">Hair Tonic Set</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:;">Technology</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">Reviews</a>
+                        <div class="depth2_wrap">
+                            <ul class="depth2">
+                                <li>
+                                    <a href="javascript:;">Live Reviews</a>
+                                    <div class="depth3_wrap">
+                                        <ul class="depth3">
+                                            <li style="transition-delay: 0s;"><a href="javascript:;">Photo review</a></li>
+                                            <li style="transition-delay: 0.06s;"><a href="javascript:;">Text reveiw</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">Lounge</a>
+                        <div class="depth2_wrap">
+                            <ul class="depth2">
+                                <li><a href="javascript:;">Live NEWS</a></li>
+                                <li><a href="javascript:;">Beauty Tips</a></li>
+                                <li class="bg-arrow">
+                                    <a href="javascript:;">CS center</a>
+                                    <div class="depth3_wrap">
+                                        <ul class="depth3">
+                                            <li style="transition-delay: 0s;"><a href="javascript:;">Notice</a></li>
+                                            <li style="transition-delay: 0.06s;"><a href="javascript:;">FAQ</a></li>
+                                            <li style="transition-delay: 0.12s;"><a href="javascript:;">Membership</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="util">
+                    <li>
+                        <a href="javascript:;" class="search"><img src="./images/search_i.png" alt="검색"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="cart">
+                            <img src="./images/cart_i.png" alt="장바구니">
+                            <span class="cart_count">0</span>
+                        </a>
+                    </li>
+                    <li class="login_off_list">
+                        <a href="javascript:;" class="login_off"><img src="./images/login_off.png" alt="마이페이지"></a>
+                        <div class="login-box">
+                            <a class="login" href="javascript:;">login</a> 
+                            <a class="join" href="javascript:;">join</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div class="main-slide_wrap">
+                <div class="main-slide">
+                    <div class="slide"><a href="javascript:;" class="slide-obj"><img src="./images/visual01.jpg" alt="1주년한정할인"></a></div>
+                    <div class="slide"><a href="javascript:;" class="slide-obj"><img src="./images/visual02.jpg" alt="비타민C홈케어"></a></div>
+                    <div class="slide"><a href="javascript:;" class="slide-obj"><img src="./images/visual03.jpg" alt="클리어런스세일"></a></div>
+                </div>
+                <a href="javascript:;" class="btn_more">VIEW MORE</a>
+            </div>
+
+            <div class="hero_product_wrap">
+                <div class="hero_product_inner">
+                    <h2>Hero Product</h2>
+                    <p class="des">비타브리드C¹²만의 기술을 담아냈어요.</p>
+                    <div class="product_info_wrap">
+                        <div class="product-left">
+                            <a href="javascript:;"><img src="./images/product01.jpg" alt="상품1"></a>
+                            <div class="tbox">
+                                <p class="tt tt1">Face Brightening</p>
+                                <p class="tt tt2">모든 화장품이<br />비타민C가 되는 기적</p>
+                                <p class="tt tt3">섞어 쓰는 피부 광채 12시간 지속되는 비타민C 팩</p>
+                                <a href="javascript:;" class="btn_more">VIEW MORE</a>
+                                <a href="javascript:;" class="delivery">정기배송</a>
+                            </div>
+                        </div>
+                        <div class="product-right">
+                            <a href="javascript:;"><img src="./images/product02.jpg" alt="상품2"></a>
+                            <div class="tbox">
+                                <p class="tt tt1">Hair Tonic Set Professional</p>
+                                <p class="tt tt2">두피 모발의 힘을 담은<br />바르는 두피 비타민 C</p>
+                                <p class="tt tt3">두피를 건강하게, 모발을 활력있게 가꿔주는 토닉 세트</p>
+                                <a href="javascript:;" class="btn_more">VIEW MORE</a>
+                                <a href="javascript:;" class="delivery">정기배송</a>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle-banner_wrap">
+                <div class="middle-banner_inner">
+                    <a href="javascript:;"><img src="./images/m-banner01.jpg" alt="중간배너1"></a>
+                    <a href="javascript:;"><img src="./images/m-banner02.jpg" alt="중간배너2"></a>
+                </div>
+            </div>
+
+            <div class="lounge_wrap">
+                <div class="lounge_inner">
+                    <h2>Global Lounge</h2>
+                    <p>팁과 뉴스, 최신 소식까지!</p>
+                    <ul class="global-list">
+                        <li>
+                            <a href="javascript:;" class="global-box">
+                                <img src="./images/global01.jpg" alt="글로벌1">
+                                <span class="hover_title">Beauty Tips</span>
+                            </a>
+                            <div class="text_wrap">
+                                <h5 class="category">Beauty Tips</h5>
+                                <p>건강하고 아름다운 피부 두피를 위한 정보</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="global-box">
+                                <img src="./images/global02.jpg" alt="글로벌2">
+                                <span class="hover_title">Live News</span>
+                            </a>
+                            <div class="text_wrap">
+                                <h5 class="category">Live News</h5>
+                                <p>매거진, 뉴스, 기사로 만나는 비타브리드¹²</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="global-box">
+                                <img src="./images/global03.jpg" alt="글로벌3">
+                                <span class="hover_title">Notice</span>
+                            </a>
+                            <div class="text_wrap">
+                                <h5 class="category">Notice</h5>
+                                <p>공지사항, FAQ, 회원 혜택</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="vitagram_wrap">
+                <div class="vitagram_inner">
+                    <h2>#Vitagram</h2>
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide"><a href="javascript:;"><img src="./images/vitagram01.png" alt="인스타그램배너1"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img src="./images/vitagram02.png" alt="인스타그램배너2"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img src="./images/vitagram03.png" alt="인스타그램배너3"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img src="./images/vitagram04.png" alt="인스타그램배너4"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img src="./images/vitagram05.png" alt="인스타그램배너5"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img src="./images/vitagram06.png" alt="인스타그램배너6"></a></li>
+                            <li class="swiper-slide"><a href="javascript:;"><img src="./images/vitagram07.png" alt="인스타그램배너7"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notice_wrap">
+                <div class="notice_inner">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="imgbox">
+                                    <img src="./images/member_i.png" alt="멤버쉽">
+                                </div>
+                                <div class="tbox">
+                                    <strong>Membership</strong>
+                                    <p>특별혜택이 기다리고 있어요.</p>
+                                </div>
+                                <div class="arrowbox">
+                                    <img src="./images/main_arrow.png" alt="더보기">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="imgbox">
+                                    <img src="./images/faq_i.png" alt="FAQ">
+                                </div>
+                                <div class="tbox">
+                                    <strong>FAQ</strong>
+                                    <p>자주 묻는 질문에 답변해드릴게요</p>
+                                </div>
+                                <div class="arrowbox">
+                                    <img src="./images/main_arrow.png" alt="더보기">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="imgbox">
+                                    <img src="./images/notice_i.png" alt="공지사항">
+                                </div>
+                                <div class="tbox">
+                                    <strong>Notice</strong>
+                                    <p>[공지] 신규가입 혜택</p>
+                                </div>
+                                <div class="arrowbox">
+                                    <img src="./images/main_arrow.png" alt="더보기">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div id="footer">
+            <div class="footer_inner">
+                <div class="footer_inner_left">
+                    <ul class="fl_top">
+                        <li><a href="javascript:;">이용약관</a></li>
+                        <li><a href="javascript:;">개인정보처리방침</a></li>
+                        <li><a href="javascript:;">사업자정보확인</a></li>
+                        <li><a href="javascript:;">고객센터</a></li>
+                    </ul>
+                    <div class="fl_bottom">
+                        <div class="bt_left-tbox">
+                            <p>
+                                <span>상호 : 현대바이오사이언스㈜</span>
+                                <span>대표자 : 오상기</span>
+                                <span>개인정보책임자 : 정진환</span>
+                                <span>개인정보보호 담당자 : 김건효</span>
+                            </p>
+                            <p>
+                                <span>사업자등록번호 : 126-81-45614</span>
+                                <span>이메일 : vitabrid@vitabrid.com</span>
+                            </p>
+                            <p>
+                                <span>통신판매업신고번호 : 2013-경북김천-0044호</span>
+                                <span>대표번호 : 1899-1257</span>
+                                <span>팩스번호 : 02-345-3373</span>
+                            </p>
+                            <p>
+                                <span>주소 : 경상북도 김천시 아포읍 아포공단길 106 현대바이오사이언스㈜</span>
+                            </p>
+                        </div>
+                        <div class="bt_right-tbox">
+                            <strong><a href="javascript:;">CS CENTER</a></strong>
+                            <p>
+                                <span class="tel">1899-1257</span>
+                                <span class="time">(이용시간:평일 10:00 - 17:00)</span>
+                            </p>
+                            <p class="time_detail">
+                                MON-FRI AM 10:00 - PM 5:00<br>
+                                LUNCH AM 11:30 - PM 1:30<br>
+                                SAT, SUN, HOLIDAY OFF
+                            </p>
+                            <img src="./images/escrow_43x43_gray.png" alt="이니페이결제유효성체크">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_inner_right">
+                    <a href="javascript:;" class="footer-logo">
+                        <img src="./images/fo-logo.png" alt="푸터로고">
+                    </a>
+                    <ul class="sns">
+                        <li><a href="javascript:;"><img src="./images/sns_i1.png" alt="페이스북"></a></li>
+                        <li><a href="javascript:;"><img src="./images/sns_i2.png" alt="인스타그램"></a></li>
+                        <li><a href="javascript:;"><img src="./images/sns_i3.png" alt="카카오톡"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright_wrap">
+                <p class="copyright">copyright. 2020. <strong>vitabrid.co.kr</strong>. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
